@@ -1,0 +1,56 @@
+% Author - Einar, NTNU MTP
+\documentclass{article}
+
+% Importing document settings from our file "packages.sty"
+\usepackage{packages}
+
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./}{title}
+
+% Defining front matter settings (Norsk: innstillinger for forord m.m.)
+\frontmatter
+\newpage
+\import{./Sections/}{00 Preface}
+\newpage
+\import{./Sections/}{01 Abstract}
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+
+% Defining main matter settings
+\newpage
+\mainmatter
+\import{./Sections/}{02 Introduction}
+\newpage
+\import{./Sections/}{02.5 System Overview}
+\newpage
+\import{./Sections/}{03 Main}
+\newpage
+\import{./Sections/}{05 Method}
+\newpage
+\import{./Sections/}{10 Results}
+\newpage
+\import{./Sections}{15 Discussion}
+\newpage
+\import{./Sections}{20 Conclusion}
+
+% Printing bibliography
+\newpage
+
+
+% \nocite
+\printbibliography[heading = bibintoc, title = Bibliography]
+
+% Inserting appendix with separate settings
+% \addappendix
+% \import{./Appendices/}{example_appendix}
+
+% End of document
+\end{document}

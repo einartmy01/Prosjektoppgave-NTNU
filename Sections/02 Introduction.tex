@@ -1,0 +1,67 @@
+\section{Introduction}
+Introduction to the paper and theories that are going to be used.
+
+\subsection{Research Objectives}
+What are we hoping to answear or achieve during this paper
+
+% ===========================
+% Body: Sections (paste into your .tex)
+% ===========================
+\subsection{ATO}
+Automatic Train Operation (ATO) describes systems that automate driving tasks normally performed by a human driver. ATO implementation range from assisting the driver with speed guidance, optimized speed profiles and other information to fully unattended operation where starting, cruising, stopping and door control are automatic. The primary goals are improved punctuality, energy efficiency and safe, repeatable performance \cite{milroy1980aspects} .\textit{In freight-specific research such as the ATO-Cargo project, ATO is combined with existing train protection systems (for example ETCS Level~2) and a Remote Supervision and Control Centre (RSC) to allow remote human oversight and intervention during degraded operation or faults} \cite{dlr2025atocargo}. 
+
+\subsection{GoA}
+The Grade of Automation (GoA) classifies how much of the train operation is automated. Standards such as IEC 62290 and industry reports \cite{cbtc_goa} describe the commonly used levels from GoA~0 to GoA~4. The table below summarises the practical meaning of each level.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|p{10cm}|}
+\hline
+\textbf{GoA} & \textbf{Meaning / operator role} \\
+\hline
+GoA~0 & On-sight, manual operation without automatic protection. \\
+\hline
+GoA~1 & Manual driving with assisted protection rutines. Human driver performs traction, braking and door tasks while safety limits are done automatic. That includes track speed, safe routing and safe separation. \\
+\hline
+GoA~2 & Semi-automated (STO). ATO handles start/stop and trajectory control between stations; a driver remains onboard for door operation, obstacle response and degraded mode handling. \\
+\hline
+GoA~3 & Driverless (DTO). No driver needed for normal operation. Staff may be on board for passenger assistance and emergencies. ATO handle operational tasks including avoiding collision with obstacles and persons. \\
+\hline
+GoA~4 & Unattended Train Operation (UTO). Fully automated operation without staff onboard. Remote supervision and controls are required for special incidents. \\
+\hline
+\end{tabular}
+\caption{Grades of Automation (GoA), summary based on IEC and industry sources.}
+\label{tab:goa}
+\end{table}
+
+The formal definitions and required functions per level are described in IEC 62290 and discussed in CBTC Solutions \cite{iec62290,cbtc_goa}.
+
+\subsection{ETCS}
+The European Train Control System (ETCS) is the signalling and train protection element of the broader ERTMS initiative. ETCS provides in-cab movement authorities and continuously (or intermittently) supervises train speed and braking to ensure safe train separation. It replaces or complements national trackside signals by delivering standardized information to onboard equipment, enabling safer and more interoperable cross-border operation \cite{era_ertms,eu_etcs_levels}.
+
+\subsubsection{Levels}
+ETCS is commonly described with levels that express how information is exchanged:
+\begin{itemize}
+  \item \textbf{Level 0:} No ETCS trackside data used (rolling stock may be ETCS-capable but interacts with legacy signals).
+  \item \textbf{Level 1:} Spot transmission (e.g., Eurobalises) providing intermittent movement authorities while legacy signalling can remain in place.
+  \item \textbf{Level 2:} Continuous radio exchange (Radio Block Centre, typically via GSM-R or successor) where movement authority is provided by the RBC; Eurobalises are used primarily for precise positioning.
+  \item \textbf{Level 3 (and Level 2 with Level 3 option):} Moving towards train integrity reporting and purely radio-based spacing (no fixed track occupancy detection). Regulatory updates have merged some Level~3 functionality into Level~2 options; consult ERA guidance for the current state of Level~3 deployment and specifications \cite{eu_etcs_levels,era_ertms_doc}.
+\end{itemize}
+
+\subsubsection{Modes}
+ETCS defines operational modes (for example Full Supervision, On-Sight, Staff Responsible, Shunting, and Automatic Driving). Modes determine how the onboard equipment supervises movement authority and interacts with ATO where present — e.g. Automatic Driving mode is used when conditions for ATO are satisfied and ETCS provides the required movement and track data \cite{eu_etcs_levels,era_ertms_doc}.
+
+\subsection{Digitalization in Railway}
+Railway digitalization evolved from early computer-assisted signalling and centralized traffic control, through modern Automatic Train Protection (ATP) systems, to full ERTMS/ETCS deployments and traffic management platforms. Recent steps have focused on communication-based train control (CBTC) in metros, ETCS rollout on mainlines, and the integration of predictive maintenance and data analytics tools. Projects such as national ETCS rollouts, the UK East Coast Digital Programme, and research initiatives like ATO-Cargo exemplify a shift from isolated automation pilots to system-wide modernization that combines ATO, interoperability standards (TSIs), and remote supervision concepts \cite{era2020digitalrail,news_eastcoast,dlr2025atocargo}. 
+
+\subsection{Latency}
+\textbf{Definition:} Latency is the time delay between when a command or data packet is sent and when it is received or acted upon. In railway automation, latency is critical for control loops (e.g., brake initiation following an emergency command) and for ensuring the onboard ATO and trackside/remote systems remain synchronized. 
+
+\textbf{Impact:} Excessive one-way delay or variable delay (jitter) can degrade braking calculations, delay alarm propagation, and reduce the margin available for safe intervention. For real-time safety commands (e.g., emergency stop), systems are designed with strict latency and reliability budgets and use prioritized and redundant communication channels.
+
+\textbf{Measurement:} Latency is measured as Round-Trip Time (RTT) or One-Way Delay (OWD). Standards and methodologies such as ITU and TWAMP/IETF describe measurement methods and test tools; measurements are typically expressed in milliseconds and include metrics for delay variation (packet delay variation) and loss \cite{itu_g1051,twamp_rfc}. Practical projects define maximum allowable latency thresholds for telemetry, command/control and safety messages and validate them with network tests and laboratory emulation.
+
+\subsection{Regulations}
+Railway automation must satisfy national and EU regulatory frameworks. In the EU, the \textit{Technical Specifications for Interoperability} (TSIs) — notably the Control-Command and Signalling (CCS) TSI — define safety and interoperability requirements for ETCS, ATO interfaces and signalling subsystems. The European Union Agency for Railways (ERA) provides technical guidance, variables coordination and ERTMS documentation \cite{era_tsi_ccs,era_ertms}. 
+
+National authorities (for example the Norwegian Railway Directorate and the Norwegian Railway Authority / Statens jernbanetilsyn) implement national legislation, issue national safety rules, and specify how EU TSIs map to national processes; operators must demonstrate compliance with both national rules and applicable TSIs for approval and operation \cite{sjt_regulations,banenor_network}. For freight ATO trials (such as ATO-Cargo), project teams must prepare evidence on safety, human factors (remote supervision ergonomics), communication performance and conformity with the CCS TSI and national rules before trials are permitted \cite{dlr2025atocargo,era_tsi_ccs}.
