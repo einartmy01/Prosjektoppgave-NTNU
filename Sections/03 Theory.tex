@@ -1,0 +1,119 @@
+\section{Theory}
+
+\subsection{ATO}
+Automatic Train Operation (ATO) describes systems that automate driving tasks normally performed by a human driver. ATO implementation range from assisting the driver with speed guidance, optimized speed profiles and other information to fully unattended operation where starting, cruising, stopping and door control are automatic. The primary goals are improved punctuality, energy efficiency and safe, repeatable performance \cite{milroy1980aspects} .\textit{In freight-specific research such as the ATO-Cargo project, ATO is combined with existing train protection systems (for example ETCS Level~2) and a Remote Supervision and Control Centre (RSC) to allow remote human oversight and intervention during degraded operation or faults} \cite{dlr2025atocargo}. 
+
+\subsection{GoA}
+The Grade of Automation (GoA) classifies how much of the train operation is automated. Standards such as IEC 62290 and industry reports \cite{cbtc_goa} describe the commonly used levels from GoA~0 to GoA~4. The table below summarises the practical meaning of each level.
+
+\import{./Tables/}{GoATable}
+
+GoA also changes and updates regulary because of new techonology added that shifts the definition. The figure below is UITP's definition of how GoA is graded.
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Images/GoA from UITP.png}
+    \caption[GoA]{UITP's simple defintion of GoA}
+    \source{\cite{uitp2018metro}}
+  \end{figure}
+
+The formal definitions and required functions per level are described in IEC 62290 and discussed in CBTC Solutions as well as UITP \cite{iec62290,cbtc_goa,uitp2018metro}.
+
+\subsection{ETCS}
+The European Train Control System (ETCS) is a signalling and train protection element developed and included in the ERTMS initiative. ETCS provides movement authorities and intermittently or continuously supervises train speed and braking to ensure safe train separation. It replaces or complements national trackside signals by delivering standardized information to onboard equipment, enabling safer and more interoperable cross-border operation \cite{era_ertms,eu_etcs_levels}.
+
+\subsubsection{Levels}
+ETCS is commonly described with levels that express how information is exchanged:
+\import{./Tables/}{ETCSItems}
+
+\subsubsection{Modes}
+ETCS defines different operational modes such as Full Supervision, On-Sight, Staff Responsible, Shunting, and Automatic Driving. Modes determine how the onboard equipment supervises movement authority and interacts with ATO where present. Automatic Driving mode is used when conditions for ATO are satisfied and ETCS provides the required movement and track data while Full Supervision is when ETCS is supplied with all possible train and track data needed \cite{eu_etcs_levels}.
+
+
+\subsection{5G}
+5G is built up by OFDM, Orthogonal Frequency Division Multiplexing.
+Divides "Spectrum" into small subcarriers
+\subsection{5G URLLC}
+Ultra-Reliable Low-Latency Communications.
+How its different from other 5G networks.
+How to connect to it. 
+
+
+\subsection{ERTMS}
+European Rail Traffic Management System (ERTMS) is a new system popular in Europa, but also countries as XX XX XX, (Source). ERTMS is built by ETCS, XX and XX togheter (Source)
+As of now both Norway and Sweden? har implementing ERTMS which will be crucial for all ATO projects.
+\textit{Få inn bane nor her}
+
+\subsubsection{ERTMS/ATO}
+Because of the international rollout of ERTMS, ATO will have to follow along. ERA has designed a solution to have an integrated ERTMS/ATO solution as you can see in the figure below. It showcase how ETCS can be independent, but for ATO to be operational it is crucial for ETCS to garantee safety.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/ERTMS-ATO solution.png}
+    \caption[ERTMS/ATO solution]{Architecture of ERA's ERTMS/ATO solution}
+    \source{\cite{era_ertms}}
+\end{figure}
+Showcasing different ATO working togheter with different responsibility and how they communicate with eachoter \cite{era_ertms}.
+
+\subsection{Latency}
+Latency is the time delay between when a command or data packet is sent and when it is received or acted upon. In railway automation, latency is critical for control loops, including brake initiation following an emergency command, and for ensuring the onboard ATO and remote systems remain synchronized. 
+
+The impact of latency, such as excessive one-way delay or variable delay can degrade braking calculations, delay alarm propagation, and reduce the margin available for safe intervention. For real-time safety commands systems are designed with strict latency and reliability budgets and use prioritized and redundant communication channels.
+
+\subsubsection{Latency Measurements}
+There is many ways to measure and structure latency. Some of the most commonly refered to are:
+\import{./Tables/}{LatencyMeasurements}
+
+Following the different structure of latency measurements, there is different protocols and methodes to get these measurments.
+
+
+Internet Control Message Protocol (ICMP): With ICMP we can use two effective methodes, Ping and Traceback. Both return RTT latency but in different ways. Ping sends data packets to a spesified destination, and report the time it takes before a the same data packets is recieved. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
+
+Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing. \cite{itu_g1051}.
+
+Request for Comments (RFC) : Is a seriers of publications from IETF and other describing methodes and protocols for measuring latency. 
+
+Institutions:
+international Telecommunication Union (ITU): has published recommendations on measuring network performance, including latency, using protocols similar.
+
+Internet Engineering Task Force (IETF): has defined standards for network performance measurement, including latency measurement techniques.
+
+\subsubsection{}
+
+describe measurement methods and test tools. Measurements are typically expressed in milliseconds and include metrics for delay variation and loss \cite{itu_g1051}. 
+
+\subsection{Regulations}
+%Sjekk master til Emilia om regler
+Railway automation must satisfy national and EU regulatory frameworks. In the EU, the \textit{Technical Specifications for Interoperability} (TSIs) notably the Control-Command and Signalling (CCS) TSI — define safety and interoperability requirements for ETCS, ATO interfaces and signalling subsystems. The European Union Agency for Railways (ERA) provides technical guidance, variables coordination and ERTMS documentation \cite{era_tsi,era_ertms}. 
+
+National authorities, for example the Norwegian Railway Directorate and the Norwegian Railway Authority, implement national legislation, issue national safety rules, and specify how EU TSIs map to national processes; operators must demonstrate compliance with both national rules and applicable TSIs for approval and operation \cite{sjt_regulations,banenor_network}. For freight ATO trials (such as ATO-Cargo), project teams must prepare evidence on safety, human factors (remote supervision ergonomics), communication performance and conformity with the CCS TSI and national rules before trials are permitted \cite{dlr2025atocargo,era_tsi}.
+
+From \cite{era_ertms}
+8.2 ATO 2: Supervision and regulation 
+8.2.1 ATO 2.1 - Supervise train operations 
+During ATO operation, it shall be possible to: 
+• Supervise train location by monitoring trains automatically using train identification and status 
+(including delay information) to recognise deviations from normal operation as soon as 
+possible; 
+8.2.2 ATO 2.2 - Manage the train service 
+During ATO operation, it shall be possible to: 
+• Input the journey profile from the planning system; 
+• Start the journey profile; 
+• Dynamically modify the journey profile in real time to take account of changes in operating 
+conditions including: 
+disruption management; 
+re-routing; 
+re-timing. 
+• Adapt the train’s journey profile to meet any update of the operational timetable; 
+• Regulate trains to avoid bunching of trains and to reduce delays to trains in the case of 
+disturbances; 
+• Dispatch ATO trains to harmonise the starting of ATO trains, corresponding to results of train 
+regulation and ensuring connecting services; 
+• Operate both ATO and non-ATO trains simultaneously. 
+
+
+
+I think this could be very useful: 
+Commission Regulation (EU) 2016/919 of 27 May 2016 on the technical specification for 
+interoperability relating to the ‘control-command and signalling’ subsystems of the rail 
+system in the European Union 
+
+

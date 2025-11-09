@@ -3,9 +3,9 @@
   title        = {Aspects of Automatic Train Control},
   school       = {Loughborough University},
   year         = {1980},
-  url          ={https://repository.lboro.ac.uk/articles/thesis/Aspects_of_automatic_train_control/9537395/1/files/17166803.pdf},
-  urldate       = {2025-10-15}
-}
+  url          = {https://repository.lboro.ac.uk/articles/thesis/Aspects_of_automatic_train_control/9537395/1/files/17166803.pdf},
+  urldate      = {2025-9-27}
+} //Brukes i ATO forklaring
 
 @report{dlr2025atocargo,
   author      = {German Aerospace Center (DLR)},
@@ -14,15 +14,23 @@
   year        = {2025},
   url         = {https://www.dlr.de/en/ts/research-transfer/projects/ato-cargo},
   urldate     = {2025-10-8}
-}
+} //Refert til i ATO forklaring, kanskje flytte til lignende
+
+@standard{iec62290,
+  author      = {International Electrotechnical Commission (IEC)},
+  title       = {IEC 62290-1:2025 -Railway applications - Urban guided transport management and command/control systems - Part 3: System requirements specification},
+  year        = {2025},
+  institution = {IEC},
+  url         = {https://online.standard.no/nb/nek-iec-62290-3-2025}
+} //Brukes i GoA forklaring og ATO forklaring
 
 @misc{cbtc_goa,
   author       = {CBTC Solutions Inc.},
   title        = {Grades of Automation (GoA) Explained},
   year         = {2023},
   url          = {https://www.cbtcsolutions.ca/goa},
-  urldate      = {2025-10-14}
-}
+  urldate      = {2025-10-1}
+} //Brukes i GoA forklaring
 
 
 @techreport{era_ertms_doc,
@@ -31,38 +39,44 @@
   institution = {European Union Agency for Railways (ERA)},
   year        = {2022},
   url         = {https://www.era.europa.eu/domains/european-rail-traffic-management-system-ertms_en}
+} Denne fungerer ikke, og vet ikke hvorfor den brukes
+
+@techreport{era_ertms,
+  author      = {European Union Agency for Railways (ERA)},
+  title       = {ERTMS},
+  institution = {European Union Agency for Railways (ERA)},
+  url         = {https://www.era.europa.eu/domains/infrastructure/european-rail-traffic-management-system-ertms_en},
+  urldate     = {2025-10-9},
 }
 
 @misc{eu_etcs_levels,
   author      = {European Commission, Directorate-General for Mobility and Transport},
   title       = {ETCS Levels and Modes},
   year        = {2023},
-  url         = {https://transport.ec.europa.eu/transport-modes/rail/ertms/what-ertms-and-how-does-it-work/etcs-levels-and-modes_en}
+  url         = {https://transport.ec.europa.eu/transport-modes/rail/ertms/what-ertms-and-how-does-it-work/etcs-levels-and-modes_en},
+  urldate     = {2025-10-9},
 }
 
-@standard{iec62290,
-  author      = {International Electrotechnical Commission (IEC)},
-  title       = {IEC 62290-1:2025 -Railway applications - Urban guided transport management and command/control systems - Part 3: System requirements specification},
-  year        = {2025},
-  institution = {IEC},
-  url         = {https://online.standard.no/nb/nek-iec-62290-3-2025}
-}
-/Denne brukes ikke på starten lenger
 @report{uitp2018metro,
   author      = {International Association of Public Transport (UITP)},
   title       = {World Report on Metro Automation},
   institution = {UITP},
   year        = {2018},
-  url         = {https://www.uitp.org/publications/world-report-on-metro-automation/}
-}
+  url         = {https://www.uitp.org/publications/world-report-on-metro-automation/},
+  urldate     = {2025-10-15}
+} Snakker om GoA og mengde ATO i metro systemer
 
-@report{era_tsi_ccs,
+@report{era_tsi,
   author      = {European Union Agency for Railways (ERA)},
-  title       = {Control-Command and Signalling (CCS) Technical Specification for Interoperability (TSI)},
+  title       = {Technical Specifications for Interoperability (TSIs)},
   institution = {European Union Agency for Railways (ERA)},
   year        = {2016},
   url         = {https://www.era.europa.eu/domains/technical-specifications-interoperability_en}
-}
+} Her burde jeg gå inn igjen og gå inn på CCS av TSI, og Operation n Traffic Managment
+
+https://www.era.europa.eu/domains/technical-specifications-interoperability/control-command-and-signalling-tsi_en
+
+https://www.era.europa.eu/domains/technical-specifications-interoperability/operation-and-traffic-management-tsi_en
 
 @misc{sjt_regulations,
   author      = {Norwegian Railway Authority (Statens jernbanetilsyn)},
@@ -83,13 +97,21 @@
   title       = {ITU-T G.1051 -- Latency Measurement and Methodologies},
   institution = {International Telecommunication Union},
   year        = {2023},
-  url         = {https://www.itu.int/rec/T-REC-G.1051}
+  url         = {https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.1051-202303-I!!PDF-E&type=items}
+} Støtter opp om TWAMP fra IETF
+
+@misc{rfc_twamp_ietf,
+  author      = {Internet Engineering Task Force (IETF)},
+  title       = {Two-Way Active Measurement Protocol (TWAMP)},
+  year        = {2003},
+  url         = {https://datatracker.ietf.org/doc/html/rfc5357}
+} 
+
+@misc{dns_latency_protocols,
+  author       = {DNSstuff},
+  title        = {Network Latency Test Tools: Measuring Ping, Traceroute, and Delay},
+  year         = {2024},
+  url          = {https://www.dnsstuff.com/network-latency-test-tools},
+  urldate      = {2025-10-15}
 }
 
-@article{news_eastcoast,
-  author      = {The Times},
-  title       = {The End of Railway Signal Failures? A Digital Plan Points a Way},
-  journal     = {The Times},
-  year        = {2024},
-  url         = {https://www.thetimes.co.uk/article/digital-plan-points-a-way-to-stop-railway-signal-failures-60z5vdj87}
-}
