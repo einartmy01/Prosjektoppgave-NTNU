@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  9 NOV 2025 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  20 NOV 2025 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1164,7 +1164,7 @@ Package gensymb Info: Using \textmu for \micro on input line 9.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./title.tex
-<./Images/NTNU_logo.png, id=158, 426.393pt x 110.5731pt>
+<./Images/NTNU_logo.png, id=222, 426.393pt x 110.5731pt>
 File: ./Images/NTNU_logo.png Graphic file (type png)
 <use ./Images/NTNU_logo.png>
 Package pdftex.def Info: ./Images/NTNU_logo.png  used on input line 9.
@@ -1195,13 +1195,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
- (main.lot)
+ (main.lot
+
+[4])
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
 
 
-[4] (Sections/02 Introduction.tex)
+[5] (Sections/02 Introduction.tex)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1209,15 +1211,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.31 \newpage
               [1] (Sections/03 Theory.tex (Sections/./Tables/GoATable.tex)
-<Images/GoA from UITP.png, id=250, 247.42438pt x 176.66pt>
+<Images/GoA from UITP.png, id=339, 247.42438pt x 176.66pt>
 File: Images/GoA from UITP.png Graphic file (type png)
 <use Images/GoA from UITP.png>
-Package pdftex.def Info: Images/GoA from UITP.png  used on input line 14.
+Package pdftex.def Info: Images/GoA from UITP.png  used on input line 16.
 (pdftex.def)             Requested size: 298.75262pt x 213.32256pt.
 
 
 [2] (Sections/./Tables/ETCSItems.tex
-<Images/ETCS lv1.png, id=265, 507.8975pt x 251.43938pt>
+<Images/ETCS lv1.png, id=353, 507.8975pt x 251.43938pt>
 File: Images/ETCS lv1.png Graphic file (type png)
 <use Images/ETCS lv1.png>
 Package pdftex.def Info: Images/ETCS lv1.png  used on input line 7.
@@ -1225,7 +1227,7 @@ Package pdftex.def Info: Images/ETCS lv1.png  used on input line 7.
 
 
 [3 <./Images/GoA from UITP.png>]
-<Images/ETCS lv2.png, id=279, 504.88625pt x 238.39063pt>
+<Images/ETCS lv2.png, id=367, 504.88625pt x 238.39063pt>
 File: Images/ETCS lv2.png Graphic file (type png)
 <use Images/ETCS lv2.png>
 Package pdftex.def Info: Images/ETCS lv2.png  used on input line 14.
@@ -1233,10 +1235,10 @@ Package pdftex.def Info: Images/ETCS lv2.png  used on input line 14.
 )
 
 [4 <./Images/ETCS lv1.png> <./Images/ETCS lv2.png>]
-<Images/ERTMS-ATO solution.png, id=290, 459.7175pt x 416.05438pt>
+<Images/ERTMS-ATO solution.png, id=378, 459.7175pt x 416.05438pt>
 File: Images/ERTMS-ATO solution.png Graphic file (type png)
 <use Images/ERTMS-ATO solution.png>
-Package pdftex.def Info: Images/ERTMS-ATO solution.png  used on input line 50.
+Package pdftex.def Info: Images/ERTMS-ATO solution.png  used on input line 52.
 (pdftex.def)             Requested size: 213.39566pt x 193.13316pt.
  (Sections/./Tables/LatencyMeasurements.tex
 
@@ -1248,21 +1250,23 @@ Package pdftex.def Info: Images/ERTMS-ATO solution.png  used on input line 50.
 
 [8])
 
-[9] (Sections/05 Method.tex)
+[9] (Sections/05 Method.tex
 
-[10] (Sections/06 Expected Results.tex)
+[10])
 
-[11] (Sections/15 Discussion.tex)
+[11] (Sections/06 Results.tex)
 
-[12] (Sections/20 Conclusion.tex)
+[12] (Sections/15 Discussion.tex)
 
-Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 49.
+[13] (Sections/20 Conclusion.tex)
+Overfull \hbox (5.4434pt too wide) in paragraph at lines 49--49
+[]\OT1/cmr/m/n/10 John W. Creswell. \OT1/cmr/m/it/10 Re-search Design: Qual-it-at-ive, Quant-it-at-ive, and Mixed Meth-ods Ap-proaches\OT1/cmr/m/n/10 .
+ []
 
 
 
-[13]
-runsystem(latexminted cleantemp  --timestamp 20251109153300 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+[14]
+runsystem(latexminted cleantemp  --timestamp 20251120133516 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (main.aux)
  ***********
@@ -1270,23 +1274,23 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8E800E92E952DF4FD6774EF2070F0E3F;4377.
+(rerunfilecheck)             Checksum: 3F8944B4DE996D411D1C2F9EA38E0BFF;7552.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43414 strings out of 468081
- 936325 string characters out of 5425788
- 1858945 words of memory out of 5000000
- 71347 multiletter control sequences out of 15000+600000
+ 43471 strings out of 468081
+ 937755 string characters out of 5425788
+ 1865410 words of memory out of 5000000
+ 71380 multiletter control sequences out of 15000+600000
  637806 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,11n,121p,976b,2859s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,12n,121p,976b,2879s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\einar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (18 pages, 891227 bytes).
+Output written on main.pdf (20 pages, 919768 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 342 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

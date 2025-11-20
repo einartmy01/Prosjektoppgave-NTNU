@@ -8,6 +8,8 @@ The Grade of Automation (GoA) classifies how much of the train operation is auto
 
 \import{./Tables/}{GoATable}
 
+Remote Train Operations (RTO), as we will discuss in this paper, is a part of stage GoA~3 as a distruption management handling system and as a safety system for GoA~4 if it were to fail.
+
 GoA also changes and updates regulary because of new techonology added that shifts the definition. The figure below is UITP's definition of how GoA is graded.
  \begin{figure}[H]
     \centering
@@ -62,26 +64,24 @@ The impact of latency, such as excessive one-way delay or variable delay can deg
 There is many ways to measure and structure latency. Some of the most commonly refered to are:
 \import{./Tables/}{LatencyMeasurements}
 
-Following the different structure of latency measurements, there is different protocols and methodes to get these measurments.
+Following the different structure of latency measurements, there is different protocols and methodes to get these measurments. Many have been posted and created through Request for Comments (RFC) which is a series of publications from Internet Engineering Task Force (IETF) and other institutions working on standarization of the web. Many of these RFC's has been backed further by institutions as International Telecommunication Union (ITU) and Institute of Electrical and Electronics Engineers (IEEE). \cite{itu_g1051,techtarget_rfc_definition}.
+
+\textit{Table these protocols to match structure above}
+Internet Control Message Protocol (ICMP): With ICMP we can use two effective methodes, Ping and Traceback. Both return the RTT latency but in different ways. Ping sends data packets to a spesified destination, and report the time it takes before a the same data packets is recieved. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
+
+Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing. \textit{Needs more depth} \cite{itu_g1051}.
+
+\textit{Need more protocols we can use}
 
 
-Internet Control Message Protocol (ICMP): With ICMP we can use two effective methodes, Ping and Traceback. Both return RTT latency but in different ways. Ping sends data packets to a spesified destination, and report the time it takes before a the same data packets is recieved. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
 
-Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing. \cite{itu_g1051}.
+Test tools. Measurements are typically expressed in milliseconds and include metrics for delay variation and loss.
 
-Request for Comments (RFC) : Is a seriers of publications from IETF and other describing methodes and protocols for measuring latency. 
-
-Institutions:
-international Telecommunication Union (ITU): has published recommendations on measuring network performance, including latency, using protocols similar.
-
-Internet Engineering Task Force (IETF): has defined standards for network performance measurement, including latency measurement techniques.
-
-\subsubsection{}
-
-describe measurement methods and test tools. Measurements are typically expressed in milliseconds and include metrics for delay variation and loss \cite{itu_g1051}. 
+\subsection{Static and Dynamic latency}
+\textit{What is the difference}
 
 \subsection{Regulations}
-%Sjekk master til Emilia om regler
+\textit{Sjekk master til Emilia om hva hun fant av regler}
 Railway automation must satisfy national and EU regulatory frameworks. In the EU, the \textit{Technical Specifications for Interoperability} (TSIs) notably the Control-Command and Signalling (CCS) TSI — define safety and interoperability requirements for ETCS, ATO interfaces and signalling subsystems. The European Union Agency for Railways (ERA) provides technical guidance, variables coordination and ERTMS documentation \cite{era_tsi,era_ertms}. 
 
 National authorities, for example the Norwegian Railway Directorate and the Norwegian Railway Authority, implement national legislation, issue national safety rules, and specify how EU TSIs map to national processes; operators must demonstrate compliance with both national rules and applicable TSIs for approval and operation \cite{sjt_regulations,banenor_network}. For freight ATO trials (such as ATO-Cargo), project teams must prepare evidence on safety, human factors (remote supervision ergonomics), communication performance and conformity with the CCS TSI and national rules before trials are permitted \cite{dlr2025atocargo,era_tsi}.

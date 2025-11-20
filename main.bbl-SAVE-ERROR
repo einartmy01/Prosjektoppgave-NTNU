@@ -52,7 +52,7 @@
       \endverb
       \warn{\item report entry 'dlr2025atocargo' (references.bib): Invalid format '2025-10-8' of date field 'urldate' - ignoring}
     \endentry
-    \entry{iec62290}{standard}{}{}
+    \entry{iec62290}{report}{}{}
       \name{author}{1}{}{%
         {{hash=dd17c6e87cb58188cabe57d8b0d283df}{%
            family={(IEC)},
@@ -111,10 +111,41 @@
       \field{type}{techreport}
       \field{year}{2023}
       \verb{urlraw}
-      \verb https://www.itu.int/rec/T-REC-G.1051
+      \verb https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.1051-202303-I!!PDF-E&type=items
       \endverb
       \verb{url}
-      \verb https://www.itu.int/rec/T-REC-G.1051
+      \verb https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.1051-202303-I!!PDF-E&type=items
+      \endverb
+    \endentry
+    \entry{dns_latency_protocols}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7a6949c0cc179351f826f697de88ff43}{%
+           family={DNSstuff},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{fullhash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{fullhashraw}{7a6949c0cc179351f826f697de88ff43}
+      \strng{bibnamehash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{authorbibnamehash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{authornamehash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{authorfullhash}{7a6949c0cc179351f826f697de88ff43}
+      \strng{authorfullhashraw}{7a6949c0cc179351f826f697de88ff43}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Network Latency Test Tools: Measuring Ping, Traceroute, and Delay}
+      \field{urlday}{8}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.dnsstuff.com/network-latency-test-tools
+      \endverb
+      \verb{url}
+      \verb https://www.dnsstuff.com/network-latency-test-tools
       \endverb
     \endentry
     \entry{eu_etcs_levels}{misc}{}{}
@@ -379,6 +410,37 @@
       \endverb
       \verb{url}
       \verb https://www.era.europa.eu/domains/technical-specifications-interoperability_en
+      \endverb
+    \endentry
+    \entry{techtarget_rfc_definition}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=700f0e630e939fff4cff6be3fc518b34}{%
+           family={TechTarget},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{fullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{fullhashraw}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{bibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorbibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authornamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorfullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorfullhashraw}{700f0e630e939fff4cff6be3fc518b34}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Request for Comments (RFC) Definition}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.techtarget.com/whatis/definition/Request-for-Comments-RFC
+      \endverb
+      \verb{url}
+      \verb https://www.techtarget.com/whatis/definition/Request-for-Comments-RFC
       \endverb
     \endentry
   \enddatalist

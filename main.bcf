@@ -2397,8 +2397,9 @@
     <bcf:citekey order="15" intorder="1">era_ertms</bcf:citekey>
     <bcf:citekey order="16" intorder="1">era_ertms</bcf:citekey>
     <bcf:citekey order="17" intorder="1">era_ertms</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">dns_latency_protocols</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">itu_g1051</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">itu_g1051</bcf:citekey>
+    <bcf:citekey order="18" intorder="2">techtarget_rfc_definition</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">dns_latency_protocols</bcf:citekey>
     <bcf:citekey order="20" intorder="1">itu_g1051</bcf:citekey>
     <bcf:citekey order="21" intorder="1">era_tsi</bcf:citekey>
     <bcf:citekey order="21" intorder="2">era_ertms</bcf:citekey>
@@ -2411,6 +2412,9 @@
     <bcf:citekey order="26" intorder="1">era_ertms</bcf:citekey>
     <bcf:citekey order="27" intorder="1">dlr2025atocargo</bcf:citekey>
     <bcf:citekey order="28" intorder="1">dlr2025atocargo</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">creswell2014researchdesign</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">george2021mixedmethods</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">lim2008evidencebased</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
