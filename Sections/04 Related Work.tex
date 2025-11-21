@@ -40,6 +40,19 @@ All the ways human control needs to be adjusted for in acceptance levels.
 
 How humans adapt to stable v unstable latencies.
 
+
+
+"Fixed latency seems to be better than varied latency" (Davis et al., 2010, Gnatzig et al., 2013) 
+
+Gorsich et al. (2018) found that a higher latency results in more inaccurate behavior, with a drastic decrease starting at a latency of 600 ms, and Gnatzig et al. (2013) found that a constant latency of 500 ms was unproblematic for drivers when the vehicle was steadily kept at 30 km/h on their track. Neumeier et al. (2019) stated that 300 ms might be manageable for trained operators but in some conditions during their simulator study there were tendencies that even smaller latencies affected the performance of the operator negatively.
+Jernberg(2024) 
+\cite{jernberg2024latency}
+- Voysys
+- G2G
+- Average delay of 88.8 ms and added conditions of +100 -> 188 ms and +200 -> 288 ms
+- 50km/h and 70km/h
+
+
 \subsection{Acceptance levels}
 \textit{Sjekk master til Emilia om hva hun fant av regler}
 Connect up to what other projects have set as acceptance level, and why.
@@ -56,7 +69,12 @@ How we can protect the system from attacks. What regulations are in place.
 \subsection{Calculation of latency}
 The math behind calculations of latency. How to measure most precisely and what errors  we find in the calculations.
 
-\subsection{Other Experiences}
+Very difficult from related works:
+Real time video latency: \cite{kaknjo2018videolatency}
+Here, the time of the visual event in front of
+the camera is denoted as T1 and the time when the event
+was detected on the receiving end as T2. The start of frame processing is denoted as T3.
+\textit{TVL =(T1 - T1)-(T2 -T3)=T3 -T1}
 
 
 

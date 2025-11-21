@@ -2412,9 +2412,13 @@
     <bcf:citekey order="26" intorder="1">era_ertms</bcf:citekey>
     <bcf:citekey order="27" intorder="1">dlr2025atocargo</bcf:citekey>
     <bcf:citekey order="28" intorder="1">dlr2025atocargo</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">creswell2014researchdesign</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">george2021mixedmethods</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">lim2008evidencebased</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">jernberg2024latency</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">kaknjo2018videolatency</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">creswell2014researchdesign</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">george2021mixedmethods</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">lim2008evidencebased</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">jernberg2024latency</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">jernberg2024latency</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
