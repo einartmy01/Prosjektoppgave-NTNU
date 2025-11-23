@@ -117,7 +117,7 @@
       \verb https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.1051-202303-I!!PDF-E&type=items
       \endverb
     \endentry
-    \entry{akhila20235G}{article}{}{}
+    \entry{akhila20235g}{article}{}{}
       \name{author}{2}{}{%
         {{hash=ffba2e388a1a4ce917b97a33a670de6c}{%
            family={Akhila},
@@ -151,6 +151,49 @@
       \endverb
       \verb{url}
       \verb https://ieeexplore.ieee.org/document/10112312
+      \endverb
+    \endentry
+    \entry{amador2022wifi}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d59cb60b2ce75bfd28fae2474080b18e}{%
+           family={Amador},
+           familyi={A\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d7cddf8feb9baeddf6eefe16427adfcd}{%
+           family={Aramrattana},
+           familyi={A\bibinitperiod},
+           given={Maytheewat},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b1eeb394d288bf38263096dba672703d}{%
+           family={Vinel},
+           familyi={V\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23c2ccec5c84b1d81b8777d8c90be246}
+      \strng{fullhash}{9604687671b67291f794ea23d0a69e07}
+      \strng{fullhashraw}{9604687671b67291f794ea23d0a69e07}
+      \strng{bibnamehash}{9604687671b67291f794ea23d0a69e07}
+      \strng{authorbibnamehash}{9604687671b67291f794ea23d0a69e07}
+      \strng{authornamehash}{23c2ccec5c84b1d81b8777d8c90be246}
+      \strng{authorfullhash}{9604687671b67291f794ea23d0a69e07}
+      \strng{authorfullhashraw}{9604687671b67291f794ea23d0a69e07}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Survey on Remote Operation of Road Vehicles}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9984654
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9984654
       \endverb
     \endentry
     \entry{creswell2014researchdesign}{book}{}{}
@@ -285,6 +328,74 @@
       \endverb
       \verb{url}
       \verb https://www.scribbr.com/methodology/mixed-methods-research/
+      \endverb
+    \endentry
+    \entry{he2016gsmr}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=c70d4de4f100d3d6fca380329bdb05cc}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ruisi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=871a30cc70f411906df29414b5f6da03}{%
+           family={Ai},
+           familyi={A\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7705d3960063d37bd63c928d210403a7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Gongpu},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fb533b712bc77bcf27946e482f9fc2e5}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1474ab37600b35b13199d849f0785929}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Zhangdui},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=965301119804722511b3c0553e7ebb0d}{%
+           family={Molisch},
+           familyi={M\bibinitperiod},
+           given={Andreas\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2e5f873a75e4ac8fb92ec6818ef2d2ad}{%
+           family={Briso-Rodriguez},
+           familyi={B\bibinithyphendelim R\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1595cfec7b7dc981162d0173f15fe48b}{%
+           family={Oestges},
+           familyi={O\bibinitperiod},
+           given={Claude\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2dd32c891feef37b9ade205222c67e12}
+      \strng{fullhash}{72879743b76f751bb237895dcfd5933f}
+      \strng{fullhashraw}{72879743b76f751bb237895dcfd5933f}
+      \strng{bibnamehash}{2dd32c891feef37b9ade205222c67e12}
+      \strng{authorbibnamehash}{2dd32c891feef37b9ade205222c67e12}
+      \strng{authornamehash}{2dd32c891feef37b9ade205222c67e12}
+      \strng{authorfullhash}{72879743b76f751bb237895dcfd5933f}
+      \strng{authorfullhashraw}{72879743b76f751bb237895dcfd5933f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{High-Speed Railway Communications: From GSM-R to LTE-R}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7553613
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7553613
       \endverb
     \endentry
     \entry{cbtc_goa}{misc}{}{}
@@ -487,7 +598,45 @@
       \verb https://www.researchgate.net/publication/329369713_Real-Time_Video_Latency_Measurement_between_a_Robot_and_Its_Remote_Control_Station_Causes_and_Mitigation
       \endverb
     \endentry
-    \entry{li20185G}{article}{}{}
+    \entry{pandey2022wifi}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5fc9b391c694f2adb52e838236240744}{%
+           family={Kumar\bibnamedelima Pandey},
+           familyi={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f2ed7e14ebc0ce503a0ea70e6a808312}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Warish},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{fullhash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{fullhashraw}{89a7e20be93d0ca20c1213648caee389}
+      \strng{bibnamehash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{authorbibnamehash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{authornamehash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{authorfullhash}{89a7e20be93d0ca20c1213648caee389}
+      \strng{authorfullhashraw}{89a7e20be93d0ca20c1213648caee389}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Smart Vehicle Control Remotely using Wifi}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10047780
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10047780
+      \endverb
+    \endentry
+    \entry{li20185g}{article}{}{}
       \name{author}{4}{}{%
         {{hash=c6f416e6451069f390ab14b0f9f81ac2}{%
            family={Li},
@@ -831,6 +980,44 @@
       \endverb
       \verb{url}
       \verb https://www.era.europa.eu/domains/technical-specifications-interoperability_en
+      \endverb
+    \endentry
+    \entry{sniady2012gsmr}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3a7676f9442676fd8b699a760bb61d4b}{%
+           family={Sniady},
+           familyi={S\bibinitperiod},
+           given={Aleksander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1c7e71c6025c66c9e4670ca4a85af67f}{%
+           family={Soler},
+           familyi={S\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9b837ac42d364854258f29a05b90505}
+      \strng{fullhash}{d9b837ac42d364854258f29a05b90505}
+      \strng{fullhashraw}{d9b837ac42d364854258f29a05b90505}
+      \strng{bibnamehash}{d9b837ac42d364854258f29a05b90505}
+      \strng{authorbibnamehash}{d9b837ac42d364854258f29a05b90505}
+      \strng{authornamehash}{d9b837ac42d364854258f29a05b90505}
+      \strng{authorfullhash}{d9b837ac42d364854258f29a05b90505}
+      \strng{authorfullhashraw}{d9b837ac42d364854258f29a05b90505}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An overview of GSM-R technology and its shortcomings}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/6425256
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/6425256
       \endverb
     \endentry
     \entry{techtarget_rfc_definition}{misc}{}{}
