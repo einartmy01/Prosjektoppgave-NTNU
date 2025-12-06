@@ -854,6 +854,64 @@
       \verb https://www.ashpublications.org/hematology/article/2008/1/26/95823/Evidence-Based-Guidelines-An-Introduction
       \endverb
     \endentry
+    \entry{mejias2024}{report}{}{}
+      \name{author}{6}{}{%
+        {{hash=826d33cd0a14c7180865f96fc30aacf1}{%
+           family={Mejías},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=260a31583a6369af1f43a17fbcfc876e}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0b2fa02ee6b0b2300a4742d14ad4613c}{%
+           family={Viola},
+           familyi={V\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=46081ac0f9584a56165185e9be2ee4f4}{%
+           family={Aramburu},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6cba38aaf5431b875a3c0fbd45b9fcf2}{%
+           family={Lopez},
+           familyi={L\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e5091ff4b22fd906359d4eb468c7dbe8}{%
+           family={Diaz},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{73f293b416c504fd7a0bb6bf1bc77344}
+      \strng{fullhash}{5e2d5183a1f9a0d478750fbfd8a23475}
+      \strng{fullhashraw}{5e2d5183a1f9a0d478750fbfd8a23475}
+      \strng{bibnamehash}{73f293b416c504fd7a0bb6bf1bc77344}
+      \strng{authorbibnamehash}{73f293b416c504fd7a0bb6bf1bc77344}
+      \strng{authornamehash}{73f293b416c504fd7a0bb6bf1bc77344}
+      \strng{authorfullhash}{5e2d5183a1f9a0d478750fbfd8a23475}
+      \strng{authorfullhashraw}{5e2d5183a1f9a0d478750fbfd8a23475}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Towards Railways Remote Driving: Analysis of Video Streaming Latency and Adaptive Rate Control}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10597107
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10597107
+      \endverb
+    \endentry
     \entry{milroy1980aspects}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=e3909d5ddf8434a29f1bab3e87c25058}{%

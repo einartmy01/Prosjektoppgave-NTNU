@@ -8,7 +8,7 @@ Experiences from other simialar fields, self driving cars, drones, maybe other r
 As mentionted in ERA's ERTMS. Commission Regulation (EU) 2016/919 of 27 May 2016 on the technical specification for 
 interoperability relating to the "control-command and signalling" subsystems of the rail system in the European Union \cite{era_ertms}
 
-\subsubsection{ATO-Cargo Project}
+\paragraph{ATO-Cargo Project}
 The ATO-Cargo project, led by the German Aerospace Center (DLR) in cooperation with DB Cargo AG, Digitale Schiene Deutschland (DSD), and ProRail B.V., focuses on developing and testing highly automated technologies for freight trains. The goal is to enhance rail freight efficiency by optimizing speed profiles, improving route utilization, and increasing competitiveness with road transport \cite{dlr2025atocargo}.
 
 A key component of the project is the integration of an Automatic Train Operation (ATO) unit on locomotives in combination with the European Train Control System (ETCS) Level 2. This setup allows for real-time automation while maintaining human oversight. In case of system malfunctions or degraded operation, human operators at a Remote Supervision and Control Centre (RSC) can take over tasks such as remote monitoring, diagnosis, and manual control. 
@@ -24,7 +24,79 @@ Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes
 And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
 Which references (Lane, 2002) and (Neumier, 2019)
 
+(Kozarevic 2024)
+%emilia prosjektoppgave
+Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
+Reference drone and says 100 ms
+Reference Chen?, and Neumier, 170 ms and 300 ms have minimal impact on remote operators.
+
+(Mejías 2024)
+\cite{mejias2024}
+Compare:
+- RTSP
+- WebRTC Web Real time communcation
+as their Real-time Transport Protocol (RTP) protocol.
+
+- E2E
+- H.264
+
+
+Methodology for latency measurment.
+Network Time Protocol (NTP) is necesarry to synchronize sender and receiver.
+Server obtains the TS1 when image is captured. Adds it to the RTP packets generated after the encoding. Player retrives the timestamp (TS1) from the RTP packets and compares it with the current time TS2 when the image is beeing displayed. To do this, you must retrive it from the package before the decoder and comapre it with the image comming out of the decoder. 
+
+1 Capture: the camera captures an image together with the timestamp. The timestamp is added to the metadata of the image.
+2 Encoding: the image is encoded into a H.264 bitstream. The metadata is maintained unaltered along the encoding process.
+3 Encapsulation: the H.264 video stream is encapsulated into RTP payload. The capture timestamp is extracted from the metadata and added to the RTP header. For this, it is required both the RTP standard header and its RFC 8286 extension.
+4 Sender: RTP packets are sent on the communication channel. In the case of RTSP, the player opens a connection with the sender. For WebRTC, a negotiation between the sender and receiver is performed through the signaling server to determine the communication route.
+
+The player receives the RTP packets through RTSP or WebRTC and calculates the latency:
+1 Receiver: it receives the RTP packets through the channel established with the media server.
+2 Decapsulation: the original H.264 content is extracted from the RTP payload. In addition, the timestamp contained in the RTP header is extracted and added as metadata of the H.264 content.
+3 Decoding: the H.264 content is decoded to retrieve the uncompressed image. The metadata is maintained unaltered along the decoding process.
+4 Displaying: the image is displayed. Moreover, the timestamp is extracted from the metadata and subtracted from the current time to obtain the End-to-End latency. This is shown to the remote driver, who will consider it during the operations.
+
+BITRATE 
+Change bitrate regarding quality of output (jitter or packet loss). Bitrate vary between 5Mbps, 3.5Mbps, 2Mbps.
+A change of 2\% packet loss and 500Hz / 1000Hz jitter.
+
+
+implementation.
+GStreamer framework. (Open source)
+Pylon source from Basler element that capture of camera images and timestamps.
+H.264 NVidia en/de coder. Provided by NVIDIA graphics cards. It is the key to enable bitrate adaption.
+RTP H.264 pay/depay. For packaging encoded video signal into RTP packets, and RTP includes timestamp in header.
+
+WebRTCbin. Allows communcation via WebRTC, peer2peer, must connect to signaling server resposible for negotiation.
+RTSP server/client. Manage connection and send/recive data.
+
+Camera, Media server on Jetson Xavier (Either WebRTC or RTSP), Network equipment (switch or laptop simulating a router, allowing to evaluate against bandwith degradation). Computer as player and reciver.
+
+
+Results
+E2E, time after capture to the time before display
+S2S, time in front of camera to time displayed on player image 
+
+Measurments for each camera and alternating available bandwidth.
+When enough bandwidth results in 150 ms S2S and <75 ms E2E 
+Bandwidth of <=10 results in 570 ms - 1000 ms or pixelation freezing in both S2S and E2E
+
+RTSP
+Difference in S2S and E2E is approx 70 ms - 100 ms which is image capturing and displaying.
+
+WebRTC is faster E2E but not S2S
+
+RTSP with rate control
+Allows the bandwidth to go past 7 Mbps that was issue before, although with high latency. 
+Adjust itself back up again. Also we can see a shift in latency between latency when increased bitsize of video.  
+
 \subsubsection{Car Control}
+
+(Sato 2021)
+%https://ieeexplore.ieee.org/document/9575817
+
+(Nakamura 2021)
+%https://ieeexplore.ieee.org/abstract/document/9622069
 
 (Ouden 2022)
 \cite{ouden2022}
@@ -34,7 +106,7 @@ Which references (Lane, 2002) and (Neumier, 2019)
 - Split latency up into Control and video and does
 - min, mean, 95\%ile, max latency in ms
 
-Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
+Includes a test that results in at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
 
 
 (Jernberg 2024) 
@@ -43,8 +115,11 @@ Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes
 - G2G
 - Average delay of 88.8 ms and added conditions of +100 -> 188 ms and +200 -> 288 ms
 - 50km/h and 70km/h (Try to keep speedlimits)
-- was not given a latency
-Neumeier et al. (2019) stated that 300 ms might be manageable for trained operators but in some conditions during their simulator study there were tendencies that even smaller latencies affected the performance of the operator negatively.
+- driver was not given a latency
+Reference Neumeier et al. (2019) stated that 300 ms might be manageable for trained operators but in some conditions during their simulator study there were tendencies that even smaller latencies affected the performance of the operator negatively.
+
+
+
 
 (Kaknjo 2018)
 \cite{kaknjo2018videolatency}
@@ -60,7 +135,7 @@ Found detoriation in performance in latencies above 300 ms and increase in error
 
 (Neumier 2019)
 \cite{neumeier2019}
- - Round Trip Time (RTT)
+ - Round-Trip Time (RTT)
  - Average delay of 67 ms and added conditions of +100 +300 +500
  - Was given the ca. latency
 
@@ -78,13 +153,70 @@ Scenarios, was driving with turns, and one parking. No hazards except latency.
 
 Sjekk T-teknikk
 
-
-
-
 \subsubsection{Drone Control}
-%Sjekk Emilia sin
+%Ikke sjekk Emilia sin, hun har ikke kilder
+(N. González 2023)
+%https://www.sciencedirect.com/science/article/pii/S1389128623005340
+4K quality res 1080 x 720, at 30 FPS
+H.264 encoded
+
+LTE server, LTE direct, WiFi -> avg packet delay =  500 ms, 42 ms 4 ms %Er et bilde i filutforsker hvis trengs
+Can activate low latency mode. 
+Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for unmanned aerial vehicles
+Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
+concludes with a e2e of 250 ms is vaiable for service usability.
+
+(Larsen 2021)
+%https://ieeexplore.ieee.org/abstract/document/9836059
+5G URLLC network
+H.264
+
+Le2e = Lprop agation + Lproc essing + Lser ialisation
+Lprop = distance / v in medium
+Lser = S datasize / R transmission rate
+
+Le2e = nLproc + (n+1)Lser + Lprop + LQ 
+n = switches along the network
+n+1 = number of links
+LQ = queing latency.
+
+0.5 Mbps video rate in uplink and a 60 Hz update rate in downlink. Further, we assume that the higher quality video for inspection require 8 Mbps.
+
+
+(Böhmer 2020)
+%https://ieeexplore.ieee.org/abstract/document/9183573
+Predictably Reliable Real-time Transport (PRRT) protocol [A. Schmidt, “Cross-layer latency-aware and -predictable data communication 2019]
+The Crazyflie is controlled by Bitcraze’s application layer protocol called Crazy Real-Time Protocol (CRTP)
+
+Rasberry Pi including WiFi 2.4GHz due to Rasberry Pi constraints
+timestamps by controller to drone: 
+tp1 -> packet1 -> drone
+tr1 <- response1 <- drone
+tp2 -> packet2 -> drone
+tr2 <- response2 <- drone
+
+the Crazyradio communication path using the traditional radio link
+the PRRT communication path with the Python bridge, and
+the PRRT communication path with the Rust bridge.
+
+IPT = tp2 - tp1 (Time between packets)
+RTT = tr1 - tp1 (Round-trip time)
 
 \subsubsection{Crane Control?}
+
+(Brunnström 2020)
+%https://www.sciencedirect.com/science/article/pii/S0923596520301648
+To study QoE. 
+- VR.
+- 270 angle HMD video threw 4 cameras on crane.
+Mission is to offload a truck full of logs.
+Tested with diffrent delays for display and joystick. Baseline was 25 ms for display and 80 ms for joystick.
+- Display, 5, 10, 20, 30 -> 25, 30, 35, 45, 55
+- Joystick, 10, 20, 50, 100, 200, 400, 800 -> 80, 90, 100, 130, 180, 280, 480, 880
+
+Comfort of the subject was not affected by joystick delay, but the display delayed had an negative effect of Comfort quality. Why this could be discussed alot. Might have to do with VR and a more moving image. 
+
+480 ms gave a mild reduction in effect and quality of the work at hand but at 880 it was a major decrease in effect and operatbility. 
 
 \subsubsection{Offshore Control}
 
@@ -94,11 +226,13 @@ All the ways human control needs to be adjusted for in acceptance levels.
 
 How humans adapt to stable v unstable latencies.
 
+How humans act depending on knowing the latency they have and not knowing.
 
 
 "Fixed latency seems to be better than varied latency" (Davis et al., 2010, Gnatzig et al., 2013) 
 
 Gorsich et al. (2018) found that a higher latency results in more inaccurate behavior, with a drastic decrease starting at a latency of 600 ms, and Gnatzig et al. (2013) found that a constant latency of 500 ms was unproblematic for drivers when the vehicle was steadily kept at 30 km/h on their track. 
+
 Jernberg(2024) 
 \cite{jernberg2024latency}
 
@@ -146,9 +280,13 @@ This is promosing new with the implementation of ERTMS as the only input stimulu
 After certain bitrate less helpful
 
 
+%CHECK LINK ABOUT CRANE CONTROL
+
 \subsection{Ethics}
 Who is responsible. Fully automated, or remote driver.
 What obligation do we have in a project like this.
+
+%https://www.tandfonline.com/doi/full/10.1080/01441647.2020.1862355#d1e508
 
 
 \subsection{Cyber Security}

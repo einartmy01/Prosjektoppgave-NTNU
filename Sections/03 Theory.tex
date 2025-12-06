@@ -29,11 +29,11 @@ As of now both Norway and Sweden? har implementing ERTMS which will be crucial f
 \subsection{ETCS}
 The European Train Control System (ETCS) is a signalling and train protection element developed and included in the ERTMS initiative. ETCS provides movement authorities and intermittently or continuously supervises train speed and braking to ensure safe train separation. It replaces or complements national trackside signals by delivering standardized information to onboard equipment, enabling safer and more interoperable cross-border operation \cite{era_ertms,eu_etcs_levels}.
 
-\subsubsection{Levels}
+\paragraph{Levels} \indent
 ETCS is commonly described with levels that express how information is exchanged:
 \import{./Tables/}{ETCSItems}
 
-\subsubsection{Modes}
+\paragraph{Modes} \indent
 ETCS defines different operational modes such as Full Supervision, On-Sight, Staff Responsible, Shunting, and Automatic Driving. Modes determine how the onboard equipment supervises movement authority and interacts with ATO where present. Automatic Driving mode is used when conditions for ATO are satisfied and ETCS provides the required movement and track data while Full Supervision is when ETCS is supplied with all possible train and track data needed \cite{eu_etcs_levels}.
 
 
@@ -41,6 +41,7 @@ ETCS defines different operational modes such as Full Supervision, On-Sight, Sta
 A very import part of latency for operating a train remotly will be cellular communication. It is extremly vital to have a stable and good source of communication between the remote operator and the train. 
 
 \subsubsection{5G URLLC}
+%BONUS KILDE: Toward ultrareliable low-latency communications: Typical scenarios, possible solutions, and open issues
 5G is built up by OFDM, Orthogonal Frequency Division Multiplexing wich divides "Spectrum" into small subcarriers. 5G is designed to support three different service categories, one of which is Ultra-Reliable and Low-Latency Communications (URLLC). URLLC is a communication service characterized by the need to successfully deliver packets with strict requirements in terms of availability, latency, and reliability. This capability is essential for providing connectivity to new services and applications from vertical domains, such as autonomous driving and factory automation. \cite{akhila20235g, li20185g}
 
 URLLC could be crucial for supporting emerging applications like wireless control and automation in industrial factory environments. For the specific use case of Remote Control, the required key performance indicators are an end-to-end latency of 5 ms and a reliability of 99.999\%. Remote control applications often involve closed-loop control applications, like the use of collaborative robots in a factory, which require URLLC services. \cite{akhila20235g, li20185g}
@@ -51,12 +52,19 @@ The Global System for Mobile Communications - Railway (GSM-R) serves as the unif
 GSM-R is built upon the commercial GSM standard, the system operates within a dedicated harmonized frequency band, with 876-880 MHz uplink and 921-925 MHz downlink, and utilizes a linear network of base stations to ensure continuous connectivity for trains traveling at speeds up to 500 km/h. 
 GSM-R employs Time Division Multiple Access (TDMA) to organize radio resources and primarily relies on circuit-switched connections to guarantee dedicated bandwidth for critical transmissions. \cite{sniady2012gsmr, he2016gsmr}
 
+\subsubsection{FRMCS}
+\textit{3GPP Rel-16}
+Defines video quality for railway operations. 
+Min requirments of H.264 codec, 320x240 resolutuion at 10 fps.
+Recommended 1920x1080 at 30 FPS
+\cite{mejias2024}
+
 \subsubsection{Wi-Fi}
 Wi-Fi is a wireless communication technology following the standars of IEEE 802.11 that enables data transmission across networks. It operates across specific frequency bands such as 2.4 GHz and 5 GHz and the technology has evolved to support high speed data transfer and robust connectivity through advanced methods like beamforming, which strengthens wireless connections by targeting specific devices rather than broadcasting signals. \cite{amador2022wifi, pandey2022wifi}
 
 In the domain of vehicular control, Wi-Fi functions by establishing Local Area Networks (LAN) that allow for the secure transmission of real-time control commands and audiovisual feeds, demonstrating in some specific single-access point configurations a lower median latency compared to LTE and 5G cellular networks. Although primarily associated with general data networking, the principles of Wi-Fi signal extension are relevant to railway logistics with the concept of relay chains. Wireless networks can employ repeating nodes to extend the operational range of remote monitoring and control systems to trains far away from the operator. \cite{amador2022wifi, pandey2022wifi}
 
-\subsubsection{ERTMS/ATO}
+\subsection{ERTMS/ATO}
 Because of the international rollout of ERTMS, ATO will have to follow along. ERA has designed a solution to have an integrated ERTMS/ATO solution as you can see in the figure below. It showcase how ETCS can be independent, but for ATO to be operational it is crucial for ETCS to garantee safety.
 \begin{figure}[H]
     \centering
@@ -78,7 +86,7 @@ There is many ways to measure and structure latency. Some of the most commonly r
 Following the different structure of latency measurements, there is different protocols and methodes to get these measurments. Many have been posted and created through Request for Comments (RFC) which is a series of publications from Internet Engineering Task Force (IETF) and other institutions working on standarization of the web. Many of these RFC's has been backed further by institutions as International Telecommunication Union (ITU) and Institute of Electrical and Electronics Engineers (IEEE). \cite{itu_g1051,techtarget_rfc_definition}.
 
 \textit{Table these protocols to match structure above}
-Internet Control Message Protocol (ICMP): With ICMP we can use two effective methodes, Ping and Traceback. Both return the RTT latency but in different ways. Ping sends data packets to a spesified destination, and report the time it takes before a the same data packets is recieved. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
+Internet Control Message Protocol (ICMP): With ICMP we can use two effective methodes, Ping and Traceback. Both return the Round-Trip Time(RTT) latency but in different ways. Ping sends data packets to a spesified destination, and report the time it takes before a the same data packets is recieved. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
 
 Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing. \textit{Needs more depth} \cite{itu_g1051}.
 
