@@ -17,14 +17,20 @@ The project also emphasizes human factors engineering, ensuring that the RSC is 
 
 \paragraph{Jürgensen 2025}
 \cite{jürgensen2025rcrailvehicles}
-Is a project in \dots
+- Finds actually latency in project
+- Uses Car threshold to evaluate
+Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
 
 Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
 And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
 Which references (Lane, 2002) and (Neumier, 2019)
 
 
-\paragraph{Kozarevic 2024}
+
+
+\paragraph{Kozarevic 2025}
+- Finds actually latency in project
+- Uses Car / Drone threshold to evaluate
 %emilia prosjektoppgave
 Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
 Reference drone and says 100 ms
@@ -32,6 +38,8 @@ Reference Chen?, and Neumier, 170 ms and 300 ms have minimal impact on remote op
 
 \paragraph{Mejías 2024}
 \cite{mejias2024}
+- Finds actually latency in project
+
 Compare:
 - RTSP
 - WebRTC Web Real time communcation
@@ -90,13 +98,18 @@ Allows the bandwidth to go past 7 Mbps that was issue before, although with high
 Adjust itself back up again. Also we can see a shift in latency between latency when increased bitsize of video.  
 
 \paragraph{FP2R2Dato, EuropesRail 2023 D5.4}
-Based on drone latency. enhensive calculations of latency to match to train. 
-\cite{fp2r2dato2023d5.4}
+\cite{fp2r2dato2023d5_4}
+- Uses Drone latency to evaluate threshold
+
+Based on drone latency. Enhensive calculations of latency to match to train. 
+
 
 \paragraph{FP2R2Dato, EuropesRail 2024 D41.2}
 D41.2 - Testing reports \& assessment 
 Results of the remote driving of tramways demonstrator. 
-\cite{fp2r2dato2024report}
+\cite{fp2r2dato2024d41_2}
+- Finds actually latency
+
 Image latency 
 - G2G, (capturing processing, compression, transmission, reception, decompressing, displaying)
 - Oslo to Berlin
@@ -133,6 +146,7 @@ Time reduction in these processes are efficiency improvments.
 
 \paragraph{Brandernburger 2023}
 \cite{brandenburger2023vqreactiontimertc}
+- Evaluates latency by performance, IRL
 Test of human factors and realiable communcations via 5g
 "Limited literature on:" 
 "Positive effect of bitrate on quaility", "Stalling has worse effect on QoExperience, if bitrate is higher"
@@ -178,6 +192,8 @@ After certain bitrate less helpful
 
 \paragraph{Ouden 2022}
 \cite{ouden2022}
+- Evaluates Latency by performance, (people) IRL  
+
 - 4G and 5G 
 - 4 times 120 angle camera
 - H.264
@@ -189,6 +205,8 @@ Includes a test that results in at 300ms, you get loss of performance, and at 10
 
 \paragraph{Jernberg 2024}
 \cite{jernberg2024}
+- Evaluates Latency by performance, (people) Sim
+
 - Voysys
 - G2G
 - Average delay of 88.8 ms and added conditions of +100 -> 188 ms and +200 -> 288 ms
@@ -206,6 +224,8 @@ H5/P5: Bicycal in lane that driver needs to pass in oppsing lane.
 
 \paragraph{Kaknjo 2018}
 \cite{kaknjo2018videolatency}
+- Evaluate latency by perfomance, (different tools) IRL, 
+
 - G2G
 - Time stamps
 - H.264
@@ -218,6 +238,8 @@ Found detoriation in performance in latencies above 300 ms and increase in error
 
 \paragraph{Neumier 2019}
 \cite{neumeier2019}
+- Evaluate latency by performance, (people) Sim
+
  - Round-Trip Time (RTT)
  - Average delay of 67 ms and added conditions of +100 +300 +500
  - Was given the ca. latency
@@ -229,18 +251,20 @@ Scenarios, was driving with turns, and one parking. No hazards except latency.
 
 \paragraph{Kang 2018}
 \cite{kang2018}
+- Evaluate latency by perfomance, (different tools) IRL, 
+
 - 3 different resulutions (320x240, 640x480, 1280x960)
 - 3 different bitrate (0.5Mbps, 1Mbps, 4Mbps)
 - LTE and WiFi
 - Video and camerea catching timestamps
 
-Sjekk T-teknikk
+
 
 \subsubsection{Drone Control}
 %Ikke sjekk Emilia sin, hun har ikke kilder
 
 \paragraph{N. González 2023}
-%https://www.sciencedirect.com/science/article/pii/S1389128623005340
+\cite{gonzález2023}
 4K quality res 1080 x 720, at 30 FPS
 H.264 encoded
 
@@ -250,8 +274,8 @@ Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for 
 Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
 concludes with a e2e of 250 ms is vaiable for service usability.
 
-\paragraph{Larsen 2021}
-%https://ieeexplore.ieee.org/abstract/document/9836059
+\paragraph{Larsen 2022}
+\cite{larsen2022}
 5G URLLC network
 H.264
 
@@ -268,7 +292,7 @@ LQ = queing latency.
 
 
 \paragraph{Böhmer 2020}
-%https://ieeexplore.ieee.org/abstract/document/9183573
+\cite{böhmer2020}
 Predictably Reliable Real-time Transport (PRRT) protocol [A. Schmidt, “Cross-layer latency-aware and -predictable data communication 2019]
 The Crazyflie is controlled by Bitcraze’s application layer protocol called Crazy Real-Time Protocol (CRTP)
 

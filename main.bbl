@@ -806,6 +806,49 @@
       \verb https://dl.acm.org/doi/pdf/10.1145/3177102.3177104
       \endverb
     \endentry
+    \entry{fp2r2dato2023d41.1}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=c9bc18f8836f14ab0cb87ed9fdcc6890}{%
+           family={Klago},
+           familyi={K\bibinitperiod},
+           given={Dusan\bibnamedelima Patrick},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=793ef7e2e905cc229980917054ccd704}{%
+           family={Kuzmina},
+           familyi={K\bibinitperiod},
+           given={Daria},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cd886c93b757b80473e29e30971e6127}{%
+           family={Vela},
+           familyi={V\bibinitperiod},
+           given={Nacho\bibnamedelima Celaya},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea03ca47e3c67c568e19ded3ba3ccc85}
+      \strng{fullhash}{154aba3dac0a13a571613da6ac9e9720}
+      \strng{fullhashraw}{154aba3dac0a13a571613da6ac9e9720}
+      \strng{bibnamehash}{154aba3dac0a13a571613da6ac9e9720}
+      \strng{authorbibnamehash}{154aba3dac0a13a571613da6ac9e9720}
+      \strng{authornamehash}{ea03ca47e3c67c568e19ded3ba3ccc85}
+      \strng{authorfullhash}{154aba3dac0a13a571613da6ac9e9720}
+      \strng{authorfullhashraw}{154aba3dac0a13a571613da6ac9e9720}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{D41.1 - Collection of test cases and validation criteria}
+      \field{urlday}{8}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e508af73fc&appId=PPGMS
+      \endverb
+      \verb{url}
+      \verb https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e508af73fc&appId=PPGMS
+      \endverb
+    \endentry
     \entry{pandey2022wifi}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5fc9b391c694f2adb52e838236240744}{%
