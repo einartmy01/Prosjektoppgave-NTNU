@@ -1,7 +1,7 @@
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
-    \caption{Attributes of Different Vehicle Types}
+    \caption{Human evaluation of Latency}
     \label{tab:vehicle_attributes}
     \begin{tabularx}{\textwidth}{l|C|C|C|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
         \toprule
@@ -9,20 +9,11 @@
         \textbf{Paper} & 
         \textbf{Release year} & 
         \textbf{Method} & 
-        \textbf{Latency for slight perfromance downgrade} & 
-        \textbf{Latency for major perfromance downgrade} & 
+        \textbf{Slight perfromance downgrade} & 
+        \textbf{Major perfromance downgrade} & 
         \textbf{Test subjects} \\
         \midrule
-        
-        % --- CAR Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Car}} 
-        & Paper A & 2020 & X & XX & X \\
-        \cmidrule{2-6} 
-         & Paper B & 2021 & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & 2023 & X & X & X \\
-        \midrule 
-        
+
         % --- RAILWAY Category (4 Rows) ---
         \multirow{4}{*}{\textbf{Railway}} 
         &Brandernburger 2023 \cite{brandenburger2023vqreactiontimertc} & 2024 & X & X & X \\
@@ -33,9 +24,37 @@
         \cmidrule{2-6}
          & Paper G & 2024 & X & X & X \\
         \midrule 
+
+        % --- CAR Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Car}} 
+        & Paper A & 2020 & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & 2021 & XX & XX & XX \\
+        \cmidrule{2-6}
+         & Paper C & 2023 & X & X & X \\
+        \midrule 
+
+        % --- Drone Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Drone}} 
+        & Paper A & X & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & X & XX & XX & XX \\
+        \cmidrule{2-6}
+         & Paper C & X & X & X & X \\
+        \midrule 
         
-        % --- FUTURE Category (Example of an added category) ---
-        \multirow{2}{*}{\textbf{Drone}} 
+        % --- Crane Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Crane}} 
+        & Paper A & X & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & X & XX & XX & XX \\
+        \cmidrule{2-6}
+         & Paper C & X & X & X & X \\
+        \midrule 
+        
+        
+        % --- Offshore Category  ---
+        \multirow{2}{*}{\textbf{Offshore}} 
         & Paper H & 2025 & Vision & Battery & 150 \\
         \cmidrule{2-6}
          & Paper I & 2025 & Control & Battery & 120 \\

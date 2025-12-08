@@ -1,4 +1,4 @@
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \caption{Different Latency Thresholds used}
     \label{tab:LatencyThresholds}
@@ -13,15 +13,7 @@
         \textbf{Source} \\
         \midrule
         
-        % --- CAR Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Car}} 
-        & Paper A & 2020 & CNN & Petrol & 220 \\
-        \cmidrule{2-6} % A partial rule to separate rows within a category
-         & Paper B & 2021 & LSTM & Diesel & 180 \\
-        \cmidrule{2-6}
-         & Paper C & 2023 & Transformer & Electric & 250 \\
-        \midrule % A full rule to separate categories
-        
+
         % --- RAILWAY Category (4 Rows) ---
         \multirow{5}{*}{\textbf{Railway}} 
         & Jurgensen 2025 \cite{jürgensen2025rcrailvehicles} & 2025 & SVM & Electric & 300 \\
@@ -34,10 +26,40 @@
          & 2024 & ANN & Electric & 280 \\
         \cmidrule{2-6}
         & FP2R2DATO\cite{fp2r2dato2024report} & 2024 & X & X & X \\
-        \midrule % A full rule to separate categories
+        \midrule 
+
+
+        % --- CAR Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Car}} 
+        & Paper A & 2020 & CNN & Petrol & 220 \\
+        \cmidrule{2-6} 
+         & Paper B & 2021 & LSTM & Diesel & 180 \\
+        \cmidrule{2-6}
+         & Paper C & 2023 & Transformer & Electric & 250 \\
+        \midrule 
         
-        % --- FUTURE Category (Example of an added category) ---
-        \multirow{2}{*}{\textbf{Drone}} 
+        
+        % --- Drone Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Drone}} 
+        & Paper A & X & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & X & XX & XX & XX \\
+        \cmidrule{2-6}
+         & Paper C & X & X & X & X \\
+        \midrule 
+        
+        % --- Crane Category (3 Rows) ---
+        \multirow{3}{*}{\textbf{Crane}} 
+        & Paper A & X & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & X & XX & XX & XX \\
+        \cmidrule{2-6}
+         & Paper C & X & X & X & X \\
+        \midrule 
+        
+        
+        % --- Offshore Category  ---
+        \multirow{2}{*}{\textbf{Offshore}} 
         & Paper H & 2025 & Vision & Battery & 150 \\
         \cmidrule{2-6}
          & Paper I & 2025 & Control & Battery & 120 \\
