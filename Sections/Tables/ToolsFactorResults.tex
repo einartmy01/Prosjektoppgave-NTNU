@@ -3,58 +3,57 @@
 \begin{table}[H]
     \centering
     \caption{Tools evaluation of Latency}
-    \label{tab:vehicle_attributes}
-    \begin{tabularx}{\linewidth}{l|X|c|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
+    \label{tab:ToolsEvaluation}
+    \begin{tabularx}{\linewidth}{l|X|c|C|C|C} 
         \toprule
         \textbf{Vehicle} & 
         \textbf{Paper} & 
         \textbf{Published} & 
         \textbf{Method} & 
-        \textbf{Slight perfromance downgrade} & 
-        \textbf{Major perfromance downgrade}  \\
+        \textbf{Tools} & 
+        \textbf{Major findings}  \\
         \midrule
 
-        % --- RAILWAY Category (4 Rows) ---
+        % --- RAILWAY Category ---
         \multirow{2}{*}{\textbf{Railway}} 
-         & Mejías 2024 \cite{mejias2024} & 2024 & X & X & X & X\\
+         & Mejías 2024 \cite{mejias2024} & 2024 & Method  \\
         \cmidrule{2-6}
-         & Paper E & 2022 & X & X & X \\
+         & Paper C & 2023 & X & X & X \\ 
         \midrule 
 
-        % --- CAR Category (3 Rows) ---
+        % --- CAR Category ---
         \multirow{3}{*}{\textbf{Car}} 
-        & Paper A & 2020 & X & XX & X \\
+            & Kaknjo 2018 \cite{kaknjo2018videolatency} & 2018 & X & X & X \\ % Correct: 5 &s, 6 columns of data
         \cmidrule{2-6} 
-         & Paper B & 2021 & XX & XX & XX \\
+            & Kang 2018 \cite{kang2018} & 2018 & X & X & X \\ % Corrected: Added one 'X'
         \cmidrule{2-6}
-         & Paper C & 2023 & X & X & X \\
+            & Paper C & 2023 & X & X & X \\ 
         \midrule 
 
-        % --- Drone Category (3 Rows) ---
+        % --- Drone Category --- (Looks correct, no change)
         \multirow{3}{*}{\textbf{Drone}} 
-        & Paper A & X & X & XX & X \\
+            & N. González 2023 \cite{gonzález2023} & 2023 & Video in front of camera & LTE server, LTEdirect WifiDirect & 500 ms for LTEs and 42 ms for LTEd, 4 ms for Wifid \\
         \cmidrule{2-6} 
-         & Paper B & X & XX & XX & XX \\
+            & Larsen 2022 \cite{larsen2022} & 2022 & X & X & X \\
         \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
+            & Böhmer 2020 \cite{böhmer2020} & 2020 & X & X & X \\
         \midrule 
-        
-        % --- Crane Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Crane}} 
-        & Paper A & X & X & XX & X \\
+            
+        % --- Crane Category ---
+        \multirow{2}{*}{\textbf{Crane}} 
+            & Paper A & X & X & X & X \\ 
         \cmidrule{2-6} 
-         & Paper B & X & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
-        \midrule 
+            & Paper B & X & X & X & X \\ 
+        \midrule
         
         
         % --- Offshore Category  ---
         \multirow{2}{*}{\textbf{Offshore}} 
-        & Paper H & 2025 & Vision & Battery & 150 \\
+         & Paper C & 2023 & X & X & X \\ 
         \cmidrule{2-6}
-         & Paper I & 2025 & Control & Battery & 120 \\
+         & Paper C & 2023 & X & X & X \\ 
         \bottomrule
+
     \end{tabularx}
 \end{table}
 \end{landscape}

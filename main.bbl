@@ -1348,8 +1348,8 @@
       \strng{authornamehash}{9f2f1453729ea907d73aa7b63e1638d7}
       \strng{authorfullhash}{51f3359b2fcc0590d32a87d2362146ed}
       \strng{authorfullhashraw}{51f3359b2fcc0590d32a87d2362146ed}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Teleoperation: The Holy Grail to Solve Problems of Automated Driving? Sure, but Latency Matters}

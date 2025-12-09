@@ -2,10 +2,10 @@
 \begin{landscape}
 \begin{table}[H]
     \centering
-    \caption{Human evaluation of Latency}
+    \caption{Human evaluation of Signal Attributes and Latency}
     \label{tab:HumanEvaluation}
     \begin{tabularx}{\linewidth}{l|X|c|C|C|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
-        \toprule
+        \toprule 
         \textbf{Vehicle} & 
         \textbf{Paper} & 
         \textbf{Published} & 
@@ -16,46 +16,40 @@
         \textbf{Test subjects} \\
         \midrule
 
-        % --- RAILWAY Category (4 Rows) ---
+        % --- RAILWAY Category  ---
         \multirow{2}{*}{\textbf{Railway}} 
-         & Brandernburger \cite{brandenburger2023vqreactiontimertc} & 2023 & Simulation of Differentiation in bitrate and FPS to find responsetime & React to light signals / distance marker & Higher Bitrate -> lower responsetime and higher accuracy & Higher FPS -> same responsetime and same accuracy & 31 subjects, novizes, 37\% male and 63\% female, Age 42 SD 19\\
-        \cmidrule{2-6}
+         & Brandernburger \cite{brandenburger2023vqreactiontimertc} & 2023 & Sim w/ Real image, Differentiation in bitrate and FPS to find responsetime & React to light signals / distance marker & 6 Mbps & 1 Mbps & 31 subjects, Novize train drivers, Age 42 SD 19\\
+        \cmidrule{2-8}
          & Paper E & 2022 & X & X & X \\
         \midrule 
 
-        % --- CAR Category (3 Rows) ---
+        % --- CAR Category ---
         \multirow{3}{*}{\textbf{Car}} 
-         & Ouden 2022 \cite{ouden2022} & 2022 & Simulation Artifical latency of 0, 10+-3 ms, 20+-5 ms & Drive slalom &  &  &  \\
-        \cmidrule{2-6}
-         & Jernberg 2024 \cite{jernberg2024} & 2024 & Simulation Artificial latency of 100 ms, 200 ms on 89 ms  & Adapt to Hazards &  \\
-        \cmidrule{2-6}
-         & Paper C & 2023 & X & X & X \\
+         & Ouden 2022 \cite{ouden2022} & 2022 & Sim, Artifical latency of 0, 10+-3 ms, 20+-5 ms and packet loss & Drive slalom and parking & Packet loss at 1\% & Packet loss 2\% & - \\
+        \cmidrule{2-8}
+         & Jernberg 2024 \cite{jernberg2024} & 2024 & Sim, Artificial latency of +100, +200 on base 89 ms  & Adapt to Hazards & 280 ms for lane bypassing & - & 30 subjects, Experience drivers or gamers. Age 35 SD 11\\
+        \cmidrule{2-8}
+         & Neumier 2019 \cite{neumeier2019} & 2019 & Sim, Artifical latency of +100, +300, +500 on base 97 ms & Drive slalom and parking & 300 ms & 500 ms & 28 subjects, Experienced drivers. Age 27 SD 7\\
         \midrule 
 
-        % --- Drone Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Drone}} 
-        & Paper A & X & X & XX & X \\
-        \cmidrule{2-6} 
+        % --- Drone Category ---
+        \multirow{2}{*}{\textbf{Drone}} 
+        & N. González 2023 \cite{gonzález2023}& 2023 & IRL, Artificial latency of +25, +50, +100, +200, +300, +500 on base 53 ms and packet loss & Fly drone & 0.2\% packet loss or 250 ms & 0.3\% packet loss or 300 ms & -\\
+        \cmidrule{2-8} 
          & Paper B & X & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
         \midrule 
         
-        % --- Crane Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Crane}} 
-        & Paper A & X & X & XX & X \\
-        \cmidrule{2-6} 
+        % --- Crane Category ---
+        \multirow{2}{*}{\textbf{Crane}} 
+        & Brunnström 2020 \cite{brunnström2020} & 2020 & IRL, Artificial latency of +10, +20, +50, +100, +200, +400, +800 on base 80 ms & Offload lumber from truck & 480 ms & 880 ms & 18 subjects, Experienced log lifters and novice,  Age 40 SD 9  \\
+        \cmidrule{2-8} 
          & Paper B & X & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
         \midrule 
         
         
         % --- Offshore Category  ---
-        \multirow{2}{*}{\textbf{Offshore}} 
-        & Paper H & 2025 & Vision & Battery & 150 \\
-        \cmidrule{2-6}
-         & Paper I & 2025 & Control & Battery & 120 \\
+        \multirow{1}{*}{\textbf{Offshore}} 
+        & Paper H & 2025 & X & X & X \\
         \bottomrule
     \end{tabularx}
 \end{table}
