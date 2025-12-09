@@ -2,32 +2,30 @@
 \begin{landscape}
 \begin{table}[H]
     \centering
-    \caption{Human evaluation of Latency}
-    \label{tab:HumanEvaluation}
-    \begin{tabularx}{\linewidth}{l|X|c|C|C|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
+    \caption{Tools evaluation of Latency}
+    \label{tab:vehicle_attributes}
+    \begin{tabularx}{\linewidth}{l|X|c|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
         \toprule
         \textbf{Vehicle} & 
         \textbf{Paper} & 
         \textbf{Published} & 
         \textbf{Method} & 
-        \textbf{Task} &
         \textbf{Slight perfromance downgrade} & 
-        \textbf{Major perfromance downgrade} & 
-        \textbf{Test subjects} \\
+        \textbf{Major perfromance downgrade}  \\
         \midrule
 
         % --- RAILWAY Category (4 Rows) ---
         \multirow{2}{*}{\textbf{Railway}} 
-         & Brandernburger \cite{brandenburger2023vqreactiontimertc} & 2023 & Simulation of Differentiation in bitrate and FPS to find responsetime & React to light signals / distance marker & Higher Bitrate -> lower responsetime and higher accuracy & Higher FPS -> same responsetime and same accuracy & 31 subjects, novizes, 37\% male and 63\% female, Age 42 SD 19\\
+         & Mejías 2024 \cite{mejias2024} & 2024 & X & X & X & X\\
         \cmidrule{2-6}
          & Paper E & 2022 & X & X & X \\
         \midrule 
 
         % --- CAR Category (3 Rows) ---
         \multirow{3}{*}{\textbf{Car}} 
-         & Ouden 2022 \cite{ouden2022} & 2022 & Simulation Artifical latency of 0, 10+-3 ms, 20+-5 ms & Drive slalom &  &  &  \\
-        \cmidrule{2-6}
-         & Jernberg 2024 \cite{jernberg2024} & 2024 & Simulation Artificial latency of 100 ms, 200 ms on 89 ms  & Adapt to Hazards &  \\
+        & Paper A & 2020 & X & XX & X \\
+        \cmidrule{2-6} 
+         & Paper B & 2021 & XX & XX & XX \\
         \cmidrule{2-6}
          & Paper C & 2023 & X & X & X \\
         \midrule 

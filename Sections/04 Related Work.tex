@@ -1,24 +1,25 @@
 \section{Related Work}
 
-\subsection{Other Experiences}
 Experiences from other simialar fields, self driving cars, drones, maybe other remote controlled trains in different countries
 
-\subsubsection{Train Control}
+\subsection{Train Control}
 %Usikker
 As mentionted in ERA's ERTMS. Commission Regulation (EU) 2016/919 of 27 May 2016 on the technical specification for 
 interoperability relating to the "control-command and signalling" subsystems of the rail system in the European Union \cite{era_ertms}
 
-\paragraph{ATO-Cargo Project}
+\subsubsection{ATO-Cargo Project}
 The ATO-Cargo project, led by the German Aerospace Center (DLR) in cooperation with DB Cargo AG, Digitale Schiene Deutschland (DSD), and ProRail B.V., focuses on developing and testing highly automated technologies for freight trains. The goal is to enhance rail freight efficiency by optimizing speed profiles, improving route utilization, and increasing competitiveness with road transport \cite{dlr2025atocargo}.
 
 A key component of the project is the integration of an Automatic Train Operation (ATO) unit on locomotives in combination with the European Train Control System (ETCS) Level 2. This setup allows for real-time automation while maintaining human oversight. In case of system malfunctions or degraded operation, human operators at a Remote Supervision and Control Centre (RSC) can take over tasks such as remote monitoring, diagnosis, and manual control. 
 
 The project also emphasizes human factors engineering, ensuring that the RSC is ergonomically designed for operator efficiency and safety. For this project, researchers have employ virtual reality tools to simulate realistic control room environments and train personnel for future remote supervision tasks. Tests are being conducted on Betuweroute, a freight only railway, linking Rotterdam and the Ruhr region to validate the technical and operational readiness of this automation concept. The ultimate goal is to establish a European reference model for automated freight train operation \cite{dlr2025atocargo}.
 
-\paragraph{Jürgensen 2025}
+\subsubsection{Jürgensen 2025}
 \cite{jürgensen2025rcrailvehicles}
 - Finds actually latency in project
 - Uses Car threshold to evaluate
+
+
 Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
 
 Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
@@ -28,7 +29,7 @@ Which references (Lane, 2002) and (Neumier, 2019)
 
 
 
-\paragraph{Kozarevic 2025}
+\subsubsection{Kozarevic 2025}
 - Finds actually latency in project
 - Uses Car / Drone threshold to evaluate
 %emilia prosjektoppgave
@@ -36,9 +37,9 @@ Talks about the dangers of latency in high speed vehicles. Comparing it to drone
 Reference drone and says 100 ms
 Reference Chen?, and Neumier, 170 ms and 300 ms have minimal impact on remote operators.
 
-\paragraph{Mejías 2024}
+\subsubsection{Mejías 2024}
 \cite{mejias2024}
-- Finds actually latency in project
+- Evaluate latency depending on parameters / tools
 
 Compare:
 - RTSP
@@ -97,14 +98,14 @@ RTSP with rate control
 Allows the bandwidth to go past 7 Mbps that was issue before, although with high latency. 
 Adjust itself back up again. Also we can see a shift in latency between latency when increased bitsize of video.  
 
-\paragraph{FP2R2Dato, EuropesRail 2023 D5.4}
+\subsubsection{FP2R2Dato, EuropesRail 2023 D5.4}
 \cite{fp2r2dato2023d5_4}
 - Uses Drone latency to evaluate threshold
 
 Based on drone latency. Enhensive calculations of latency to match to train. 
 
 
-\paragraph{FP2R2Dato, EuropesRail 2024 D41.2}
+\subsubsection{FP2R2Dato, EuropesRail 2024 D41.2}
 D41.2 - Testing reports \& assessment 
 Results of the remote driving of tramways demonstrator. 
 \cite{fp2r2dato2024d41_2}
@@ -144,9 +145,11 @@ Time reduction in these processes are efficiency improvments.
 
 
 
-\paragraph{Brandernburger 2023}
+\subsubsection{Brandernburger 2023}
 \cite{brandenburger2023vqreactiontimertc}
-- Evaluates latency by performance, IRL
+- Evaluates latency by performance, (human) IRL
+
+
 Test of human factors and realiable communcations via 5g
 "Limited literature on:" 
 "Positive effect of bitrate on quaility", "Stalling has worse effect on QoExperience, if bitrate is higher"
@@ -182,17 +185,19 @@ This is promosing new with the implementation of ERTMS as the only input stimulu
 After certain bitrate less helpful
 
 
-\subsubsection{Car Control}
+\subsection{Car Control}
 
-\paragraph{Sato 2021}
+\subsubsection{Sato 2021}
 %https://ieeexplore.ieee.org/document/9575817
 
-\paragraph{Nakamura 2021}
+\subsubsection{Nakamura 2021}
 %https://ieeexplore.ieee.org/abstract/document/9622069
 
-\paragraph{Ouden 2022}
+\subsubsection{Ouden 2022}
 \cite{ouden2022}
 - Evaluates Latency by performance, (people) IRL  
+
+- Evaluate Latency threshold on SIMulation
 
 - 4G and 5G 
 - 4 times 120 angle camera
@@ -200,10 +205,20 @@ After certain bitrate less helpful
 - Split latency up into Control and video and does
 - min, mean, 95\%ile, max latency in ms
 
+- Speed of 10, 20, 30 and 40km/h
+100 manual test runs for benchmark
+180 runs of RC with 4G
+300 runs of RC with 5G 
+One Trip Latency.” Every unit
+was time synchronized with a GPS-PPP source.
+Packets logged using tcpdump.
+
+
 Includes a test that results in at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
 
+Did not find resonable difference in the latencies of straight acceleration test. 
 
-\paragraph{Jernberg 2024}
+\subsubsection{Jernberg 2024}
 \cite{jernberg2024}
 - Evaluates Latency by performance, (people) Sim
 
@@ -212,6 +227,8 @@ Includes a test that results in at 300ms, you get loss of performance, and at 10
 - Average delay of 88.8 ms and added conditions of +100 -> 188 ms and +200 -> 288 ms
 - 50km/h and 70km/h (Try to keep speedlimits)
 - driver was not given a latency
+
++100 and +200 was chosen because of Neumeier result.
 Reference Neumeier et al. (2019) stated that 300 ms might be manageable for trained operators but in some conditions during their simulator study there were tendencies that even smaller latencies affected the performance of the operator negatively.
 
 That was:
@@ -222,7 +239,7 @@ H4/P4: Child runs into traffic from behind a bus.
 H5/P5: Bicycal in lane that driver needs to pass in oppsing lane.
 
 
-\paragraph{Kaknjo 2018}
+\subsubsection{Kaknjo 2018}
 \cite{kaknjo2018videolatency}
 - Evaluate latency by perfomance, (different tools) IRL, 
 
@@ -236,7 +253,7 @@ H5/P5: Bicycal in lane that driver needs to pass in oppsing lane.
 Found MJPEG to be 300 ms lower latency than H.264. However it found H.264 to demand less bandwitdh 50-380Kbps as it compresses more enhensive than MJPEG 4.6-5Mbps.
 Found detoriation in performance in latencies above 300 ms and increase in errors during control for latencies larger than 500 ms.
 
-\paragraph{Neumier 2019}
+\subsubsection{Neumier 2019}
 \cite{neumeier2019}
 - Evaluate latency by performance, (people) Sim
 
@@ -249,7 +266,7 @@ Talks about how participent leave the car lane significanlty more with higher la
 Scenarios, was driving with turns, and one parking. No hazards except latency.
 
 
-\paragraph{Kang 2018}
+\subsubsection{Kang 2018}
 \cite{kang2018}
 - Evaluate latency by perfomance, (different tools) IRL, 
 
@@ -260,11 +277,12 @@ Scenarios, was driving with turns, and one parking. No hazards except latency.
 
 
 
-\subsubsection{Drone Control}
+\subsection{Drone Control}
 %Ikke sjekk Emilia sin, hun har ikke kilder
 
-\paragraph{N. González 2023}
+\subsubsection{N. González 2023}
 \cite{gonzález2023}
+- Evaluation tools for latency
 4K quality res 1080 x 720, at 30 FPS
 H.264 encoded
 
@@ -274,8 +292,10 @@ Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for 
 Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
 concludes with a e2e of 250 ms is vaiable for service usability.
 
-\paragraph{Larsen 2022}
+\subsubsection{Larsen 2022}
 \cite{larsen2022}
+- Evaluation latency on perfomance, (tools) IRL
+
 5G URLLC network
 H.264
 
@@ -291,10 +311,12 @@ LQ = queing latency.
 0.5 Mbps video rate in uplink and a 60 Hz update rate in downlink. Further, we assume that the higher quality video for inspection require 8 Mbps.
 
 
-\paragraph{Böhmer 2020}
+\subsubsection{Böhmer 2020}
 \cite{böhmer2020}
+- Evaluation latency on perfomance, (tools) IRL
+
 Predictably Reliable Real-time Transport (PRRT) protocol [A. Schmidt, “Cross-layer latency-aware and -predictable data communication 2019]
-The Crazyflie is controlled by Bitcraze’s application layer protocol called Crazy Real-Time Protocol (CRTP)
+The Crazyflie is controlled by Bitcraze's application layer protocol called Crazy Real-Time Protocol (CRTP)
 
 Rasberry Pi including WiFi 2.4GHz due to Rasberry Pi constraints
 timestamps by controller to drone: 
@@ -310,9 +332,12 @@ the PRRT communication path with the Rust bridge.
 IPT = tp2 - tp1 (Time between packets)
 RTT = tr1 - tp1 (Round-trip time)
 
-\subsubsection{Crane Control}
-\paragraph{Brunnström 2020}
+\subsection{Crane Control}
+\subsubsection{Brunnström 2020}
 \cite{brunnström2020}
+- Evaluate latency on performance, (Humans) Sim
+
+
 To study QoE. 
 - VR.
 - 270 angle HMD video threw 4 cameras on crane.
@@ -324,14 +349,14 @@ Tested with diffrent delays for display and joystick. Baseline was 25 ms for dis
 Comfort of the subject was not affected by joystick delay, but the display delayed had an negative effect of Comfort quality. Why this could be discussed alot. Might have to do with VR and a more moving image. 
 480 ms gave a mild reduction in effect and quality of the work at hand but at 880 it was a major decrease in effect and operatbility. 
 
-\subsubsection{Offshore Control}
+\subsection{Offshore Control}
 
 \subsection{Human factors}
 All the ways human error can effect the results from the tests.
 All the ways human control needs to be adjusted for in acceptance levels.
 How humans act depending on knowing the latency they have and not knowing.
 
-\subsubsection{Adaptation to stable latency.} % Må endre tittel
+\subsection{Adaptation to stable latency.} % Må endre tittel
 Jernberg(2024) 
 "Fixed latency seems to be better than varied latency" (Davis et al., 2010, Gnatzig et al., 2013) 
 
@@ -355,7 +380,7 @@ https://www.tandfonline.com/doi/full/10.1080/01441647.2020.1862355
 
 \subsection{Cyber Security}
 How we can protect the system from attacks. What regulations are in place. 
-
+"[CYB] CLC/TS 50701:2023, Railway applications - Cybersecurity" used in \cite{fp2r2dato2023d5_4}
 
 \subsection{Calculation of latency}
 The measurements and therefore the calculations of latency is not easily done. Since its a fluctuating measurement that varies alot depending on the components in the system used, the way to calculate various on what the personens want to find. 

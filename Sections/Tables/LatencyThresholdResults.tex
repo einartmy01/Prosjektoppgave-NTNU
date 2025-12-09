@@ -1,38 +1,37 @@
+\clearpage
+\begin{landscape}
 \begin{table}[H]
     \centering
-    \caption{Different Latency Thresholds used}
-    \label{tab:LatencyThresholds}
-    \begin{tabularx}{\textwidth}{l|C|C|C|C|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
+    \caption{Different Latency Measured and Thresholds used}
+    \label{tab:LatencyMeasured}
+    \begin{tabularx}{\linewidth}{l|X|c|C|C|C|C} % 'l' for Vehicle column (left-aligned) and 'C' for the attribute columns (centered, equal width)
         \toprule
         \textbf{Vehicle} & 
         \textbf{Paper} & 
         \textbf{Release year} & 
-        \textbf{Latency found} &
-        \textbf{Latency for slight perfromance downgrade} & 
-        \textbf{Latency for major perfromance downgrade} & 
         \textbf{Method} & 
+        \textbf{Latency found} &
+        \textbf{Threshold used} & 
+        %\textbf{Latency for major perfromance} & 
         \textbf{Source} \\
         \midrule
         
 
         % --- RAILWAY Category (4 Rows) ---
-        \multirow{5}{*}{\textbf{Railway}} 
-        & Jurgensen 2025 \cite{jürgensen2025rcrailvehicles} & 2025 & X & X & X \\
+        \multirow{4}{*}{\textbf{Railway}} 
+        & Jürgensen 2025 \cite{jürgensen2025rcrailvehicles} & 2025 & X & X & X \\
         \cmidrule{2-6}
          & Kozarevic & 2025 & X & X & X \\
         \cmidrule{2-6}
-         & Mejias \cite{mejias2024} & 2024 & X & X & X \\
+         & FP2R2Dato  D5.4 \cite{fp2r2dato2023d5_4} & 2023 & - & - & 500 ms & Drone \\
         \cmidrule{2-6}
-         & FP2R2Dato, EuropesRail 2023 D5.4 \cite{fp2r2dato2023d5_4}
-         & 2023 & L1 & L2 & Method & Drone \\
-        \cmidrule{2-6}
-        & FP2R2DATO\cite{fp2r2dato2024d41_2} & 2024 & 380 ms & L1 & L2 & G2G, synchronized phone clocks & Own test \\
+        & FP2R2DATO\cite{fp2r2dato2024d41_2} & 2024 &  G2G, synchronized phone clocks  & 340 - 380 ms & - & Own test \\
         \midrule 
 
 
         % --- CAR Category (3 Rows) ---
         \multirow{3}{*}{\textbf{Car}} 
-        & Paper A & year & L1 & L2 & Method & Source \\
+        & Ouden 2022 \cite{ouden2022} & 2022 & E2E, Video and Control, 5G. Time synchronized with a GPS-PPP source.  & G2G: 95 ms + 5 - 26 ms (95\%) max: 500 ms + 43 ms & 300 - 1000 ms & Neumeier \cite{neumeier2019} \\
         \cmidrule{2-6} 
          & Paper B & year & L1 & L2 & Method & Source \\
         \cmidrule{2-6}
@@ -41,21 +40,15 @@
         
         
         % --- Drone Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Drone}} 
+        \multirow{2}{*}{\textbf{Drone}} 
         & Paper A & X & X & XX & X \\
         \cmidrule{2-6} 
          & Paper B & X & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
         \midrule 
         
         % --- Crane Category (3 Rows) ---
-        \multirow{3}{*}{\textbf{Crane}} 
+        \multirow{1}{*}{\textbf{Crane}} 
         & Paper A & X & X & XX & X \\
-        \cmidrule{2-6} 
-         & Paper B & X & XX & XX & XX \\
-        \cmidrule{2-6}
-         & Paper C & X & X & X & X \\
         \midrule 
         
         
@@ -68,3 +61,4 @@
 
     \end{tabularx}
 \end{table}
+\end{landscape}

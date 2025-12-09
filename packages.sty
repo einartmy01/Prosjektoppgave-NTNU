@@ -35,6 +35,7 @@
             bibstyle = numeric, 
             urldate = long,
             maxcitenames = 2,
+            sorting = none
             ]{biblatex}
 \addbibresource{references.bib}     % Adding our file 
 
@@ -89,6 +90,26 @@
 \urlstyle{sf}           % Set url-style as "sans-serif". Other options are e.g. "same" or "rm"
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}   % Ruler
 
+% --- TABLE ----
+% Make Latex stop complaining
+\usepackage{silence}
+\WarningFilter{latex}{`h' float specifier changed to `ht'}
+
+\usepackage{pdflscape}
+
+% Importing document settings from our file "packages.sty"
+\usepackage{titlesec}
+\usepackage{float}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Define a new column type 'C' for centered cells in tabularx
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+
+
 % --- Language ---
 \usepackage{siunitx}    % Enable SI units
 \usepackage[british]{babel}     % Defining UK English as language. This will among other things ensure that dates are displayed as 24/03/1997 rather than 03/24/1997 in the bibliography.
@@ -103,6 +124,12 @@
     \def\subsectionautorefname{\sectionautorefname} % Autoref-name for subsections
     \def\subsubsectionautorefname{\sectionautorefname} % Autoref-name for subsubsections
 }
+% For adding paragraph to numbers. It is possible to get it into List as well, but i didnt yet.
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 % --- Main matter ---
 % This is the main part of the paper.
