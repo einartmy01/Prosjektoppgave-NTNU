@@ -94,6 +94,45 @@
       \verb https://www.dlr.de/en/ts/research-transfer/projects/ato-cargo
       \endverb
     \endentry
+    \entry{arksey2005scoping}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6fe2d953ee3aaa433f0a3477dc48ed8a}{%
+           family={Arksey},
+           familyi={A\bibinitperiod},
+           given={Hilary},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5325eb7f9c27ab66346943362dd705b3}{%
+           family={O'Malley},
+           familyi={O\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{fullhash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{fullhashraw}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{bibnamehash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{authorbibnamehash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{authornamehash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{authorfullhash}{3277d031ac27f1740567dd87ffcbb403}
+      \strng{authorfullhashraw}{3277d031ac27f1740567dd87ffcbb403}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Social Research Methodology}
+      \field{title}{Scoping studies: towards a methodological framework}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/1364557032000119616
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/abs/10.1080/1364557032000119616
+      \endverb
+    \endentry
     \entry{creswell2014researchdesign}{book}{}{}
       \name{author}{1}{}{%
         {{hash=b1380c24c67c845904268779de94b743}{%
@@ -113,8 +152,8 @@
       \strng{authornamehash}{b1380c24c67c845904268779de94b743}
       \strng{authorfullhash}{b1380c24c67c845904268779de94b743}
       \strng{authorfullhashraw}{b1380c24c67c845904268779de94b743}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4th}
@@ -147,8 +186,8 @@
       \strng{authornamehash}{e23c50e392ecba769299b04e5e54d0e4}
       \strng{authorfullhash}{e23c50e392ecba769299b04e5e54d0e4}
       \strng{authorfullhashraw}{e23c50e392ecba769299b04e5e54d0e4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mixed Methods Research | Definition, Guide \& Examples}
@@ -210,8 +249,8 @@
       \strng{authornamehash}{a8642186059100a8c62ce2847a44e325}
       \strng{authorfullhash}{1347234e67a0f35c2f4606a27b9590f2}
       \strng{authorfullhashraw}{1347234e67a0f35c2f4606a27b9590f2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Hematology. American Society of Hematology Education Program}
@@ -250,8 +289,8 @@
       \strng{authornamehash}{e3909d5ddf8434a29f1bab3e87c25058}
       \strng{authorfullhash}{e3909d5ddf8434a29f1bab3e87c25058}
       \strng{authorfullhashraw}{e3909d5ddf8434a29f1bab3e87c25058}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Aspects of Automatic Train Control}
@@ -284,8 +323,8 @@
       \strng{authornamehash}{0e4ea719015d42bb487082ec9e6a4ac1}
       \strng{authorfullhash}{0e4ea719015d42bb487082ec9e6a4ac1}
       \strng{authorfullhashraw}{0e4ea719015d42bb487082ec9e6a4ac1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Grades of Automation (GoA) Explained}
@@ -330,8 +369,8 @@
       \strng{authornamehash}{a6ab8d587636550d84bac7c72d6337b5}
       \strng{authorfullhash}{a012e850a5b727d6e5e9eb28fb1b7a20}
       \strng{authorfullhashraw}{a012e850a5b727d6e5e9eb28fb1b7a20}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Effects of Video Quality on Perception and Reaction Time in Video-based Remote Train Control}
@@ -368,8 +407,8 @@
       \strng{authornamehash}{ed5616019213d3251db24236cadd32e0}
       \strng{authorfullhash}{ed5616019213d3251db24236cadd32e0}
       \strng{authorfullhashraw}{ed5616019213d3251db24236cadd32e0}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{World Report on Metro Automation}
@@ -511,8 +550,8 @@
       \strng{authornamehash}{c66e1edff2ee4c49b57ccf0ad7217662}
       \strng{authorfullhash}{c66e1edff2ee4c49b57ccf0ad7217662}
       \strng{authorfullhashraw}{c66e1edff2ee4c49b57ccf0ad7217662}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{5G Ultra-Reliable Low-Latency Communication: Use Cases, Concepts and Challenges}
@@ -559,8 +598,8 @@
       \strng{authornamehash}{6e8484cf8c9bbaa278343e039988a414}
       \strng{authorfullhash}{d66746696556603165e9657ab239fbe0}
       \strng{authorfullhashraw}{d66746696556603165e9657ab239fbe0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 International Symposium on Wireless Communication Systems (ISWCS)}
@@ -841,8 +880,8 @@
       \strng{authornamehash}{bd5b83a0a2a947ddbe291c72b3eba0cb}
       \strng{authorfullhash}{bd5b83a0a2a947ddbe291c72b3eba0cb}
       \strng{authorfullhashraw}{bd5b83a0a2a947ddbe291c72b3eba0cb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ITU-T G.1051 -- Latency Measurement and Methodologies}
@@ -873,8 +912,8 @@
       \strng{authornamehash}{700f0e630e939fff4cff6be3fc518b34}
       \strng{authorfullhash}{700f0e630e939fff4cff6be3fc518b34}
       \strng{authorfullhashraw}{700f0e630e939fff4cff6be3fc518b34}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Request for Comments (RFC) Definition}
@@ -1289,8 +1328,8 @@
       \strng{authornamehash}{b3a64faa8dc0c1b5ccf96afa15c9a280}
       \strng{authorfullhash}{a6ea819838a42d964debbe1597c9cc44}
       \strng{authorfullhashraw}{a6ea819838a42d964debbe1597c9cc44}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Wireless Communications and Mobile Computing}

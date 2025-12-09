@@ -53,8 +53,11 @@ GSM-R is built upon the commercial GSM standard, the system operates within a de
 GSM-R employs Time Division Multiple Access (TDMA) to organize radio resources and primarily relies on circuit-switched connections to guarantee dedicated bandwidth for critical transmissions. \cite{sniady2012gsmr, he2016gsmr}
 
 \subsubsection{FRMCS}
+FRMCS or Future Railway Mobile Communication System is product of International Union of Railways (UIC) to find a successor for GSM-R as it was getting older. FRMCS is built upon 3GPP standards with 5G URLLC and other more modern techonology. FRMCS is set to replace GSM-R as the unified radio communication for ERTMS and will be a huge part of the future of railway technology.
+
 \textit{3GPP Rel-16}
 Defines video quality for railway operations. 
+
 Min requirments of H.264 codec, 320x240 resolutuion at 10 fps.
 Recommended 1920x1080 at 30 FPS
 \cite{mejias2024}
@@ -95,10 +98,6 @@ Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Proto
 
 
 Test tools. Measurements are typically expressed in milliseconds and include metrics for delay variation and loss.
-
-\subsection{Differnt aspects of latency}
-\textit{What is the difference}
-Fixed, static v dynamic.
 
 
 \subsection{Regulations}
@@ -143,3 +142,22 @@ Including: Solution QoE (1-5), Image Quality (1-5), Image latency (ms), Availabi
 
 
 
+\subsection{3GPP TS 22.289}
+End-to-end latency: the time that takes to transfer a given piece of information unidirectional from a source to a 
+destination, measured at the communication interface, from the moment it is transmitted by the source to the moment it 
+is successfully received at the destination.
+Target Values:
+Very Critical 
+Video 
+Communication 
+with direct 
+impact on train 
+safety 
+E2E: < 100 ms 
+ 
+Reliability 99,9\%
+Speed limit < 500 km/h 10 Mbps up to 20 Mbps Medium Up to 1 Gbps/km 200 km along rail tracks <10 ms 
+ 
+99,9\% <40 km/h 10 Mbps up to 30 Mbps Medium Up to 1 Gbps/km 2 km along rail tracks urban or station  
+
+But is not yet considered in ERA's TSI CCS

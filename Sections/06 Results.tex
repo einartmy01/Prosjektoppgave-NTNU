@@ -1,5 +1,4 @@
-\section{Results og discussion}
-A page with all the information i found and aanalyzise of it.
+\section{Results and discussion}\label{sec:ResultsDiscussion}
 
 \textit{Results in 2 parts.
 1. part analyzise
@@ -8,6 +7,7 @@ A page with all the information i found and aanalyzise of it.
 
 \subsection{Human factors results}
 Discuss how a high stable latency could be more acceptable than a low unstable latency due to info found in Theory, Human Factors.
+
 
 Its important to include how humans act in different scenarios, as regardless of the systems, the remote operator will always be a constant high latency of atleast 500 - 1000 ms \cite{ouden2022}. And how they react to a possible system latency will also be crucial for the full remote operation.
 \import{./Tables/}{HumanFactorResults}
@@ -45,7 +45,20 @@ After certain bitrate less helpful
 
 
 
+\subsubsection{Adaptation to stable latency.} % Må endre tittel
+Jernberg(2024) 
+"Fixed latency seems to be better than varied latency" (Davis et al., 2010, Gnatzig et al., 2013) 
 
+Gorsich et al. (2018) found that a higher latency results in more inaccurate behavior, with a drastic decrease starting at a latency of 600 ms, and Gnatzig et al. (2013) found that a constant latency of 500 ms was unproblematic for drivers when the vehicle was steadily kept at 30 km/h on their track. 
+\cite{jernberg2024}
+
+(Neumier 2019)
+Could not confirm that fixed latency resultet in any better result than varied latency.
+Could not confirm "Kang et al" \cite{kang2018} who stated that fixed latency leads to better driving performance than varying. \cite{neumeier2019}
+% Kang did not at all mention fixed vs variable latencies. 
+
+In the event of offloading a truck with a crane, the participents where exposed to constant levels of latency, and showing that delaly of joystick all the way up to 480 ms was basicly irrelevant for QoE and the results of task done pr time. However a delay of 880 significantly reduced the performance overall by atleast halfing the rating on the scores (1-5).
+\cite{brunnström2020}
 
 
 \subsection{Comparing latency for different vehicles}
@@ -71,7 +84,16 @@ Image latency
 - Two atomic clocks on phones.
 - Measured to be 340 - 380 ms (Always under 400 ms)
 
+\subsubsection{Calculation of latency}
+The measurements and therefore the calculations of latency is not easily done. Since its a fluctuating measurement that varies alot depending on the components in the system used, the way to calculate various on what the personens want to find. 
 
+
+Very difficult from related works:
+Real time video latency: \cite{kaknjo2018videolatency}
+Here, the time of the visual event in front of
+the camera is denoted as T1 and the time when the event
+was detected on the receiving end as T2. The start of frame processing is denoted as T3.
+\textit{TVL =(T1 - T1)-(T2 -T3)=T3 -T1}
 
 
 \subsection{Threshold for acceptable latency}
@@ -94,6 +116,11 @@ Compare from the PreDraft of what expected result and hopes were, and discussing
 
 \subsection{Future work}
 - MJPEG vs H.264
+
+- Offshore or other remote controlled vehicles that can shead light or contribute to remote control railway.
+
+Differnt aspects of latency \textit{What is the difference}
+Fixed, static v dynamic.
 
 \subsection{Parameters for latency testing}
 What parameters are we measuring. 

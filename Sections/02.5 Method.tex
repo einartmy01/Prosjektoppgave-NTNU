@@ -3,6 +3,8 @@
 \subsection{Research Methodology}
 The following sections detail the methodological approach and structured review process used to address the research questions of this study. This methodology is designed to ensure a robust foundation for the evaluation of latency for remote train operations.
 
+As of a scoping study described by Arksey \cite{arksey2005scoping} the process followed the steps of deciding research questions before moving over to idenifying relevant studies. The research questions has been slightly modify to adapt to the information available and what was discover during the reseach fase. All the papers and studies was also selected before charting data, comparing, summarizing and reporting on the results. As altso mentioned in \cite{arksey2005scoping}, one point of a scope study is to identify research gaps in the existing literature. Which was very useful and ended up being most of the focus for this paper.
+
 This study uses a Mixed Methods approach. Which includes combining two types of information: qualitative (ideas, experiences, and opinions) and quantitative (numbers and statistics). This method is chosen because using both together gives us a complete picture, where relying on only one type of data would not be enough \cite{creswell2014researchdesign}.
 
 The study utelizes convergent parallel design for this. Which entails collecting and analyzing the numbers and the opinions at the same time. Then comparering the results from both to see how they fit together and explain our final findings \cite{george2021mixedmethods}. The results from technical performance testing (quantitative) are thus validated and enriched by the practical feedback received from user trials (qualitative), leading to more actionable conclusions.
@@ -22,7 +24,7 @@ A multi-platform search approach was utilized to retrieve a wide array of high-q
 While maintaining a strong reliance on peer-reviewed scientific material, relevant non-academic reports and industry publications were also considered to provide a comprehensive perspective, with all information traced to reliable sources. Espacially theoretical part of the background research has benefitted from non-academic sources.
 
 \subsubsection{Inclusion Criteria}
-To ensure the study is based on the most relevant and current information, specific criteria were applied to filter the search results. Given the rapid pace of technological change, a focus was placed on recent publications.
+To ensure the study is based on the most relevant and current information, specific criteria were applied to filter the search results. Given the rapid pace of technological change, a focus was placed on recent publications. Where modern papers have refrenced to older papers, I have include some as to say and show where certain numbers are comming from and how they have influenced results.
 
 \begin{table}[h]
     \centering
@@ -44,33 +46,52 @@ To ensure the study is based on the most relevant and current information, speci
 I did not include a spesific keyword criteria because of the exploratory nature of the research questions. Instead, broad search terms were used initially, with relevance determined through title and abstract screening against the inclusion criteria.
 
 \subsubsection{Search Queries and Refinement}
-Initial broad queries were executed and subsequently refined to focus on specific research gaps, such as the intersection of video communication and system latency. For example, Table \ref{tab:search_results} illustrates a query targeting the core technological elements of the study.
+Initial broad queries were executed and subsequently refined to focus on specific research gaps, such as the intersection of video communication and system latency. For example, Table \ref{tab:genericSearch} illustrates a query targeting the core technological elements of the study.
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
-    \caption{Summary of Refined Search Queries. \label{tab:search_results}}
-    \begin{tabular}{|p{7cm}|c|c|}
+    \caption{Summary of Refined Search Queries. \label{tab:genericSearch}}
+    \begin{tabularx}{\textwidth}{|X|c|c|}
         \hline
-        Search Query & Initial Hits & Filtered Hits (IC Applied) \\
+        Search Query & Initial Hits & Filtered Hits\\
         \hline
-        "Remote train operation"                    & XX & XX \\
+        "Remote" "Train operation" OR "Train control"               & 12 900 & 5 380 \\
         \hline
-        "Remote train operation latency threshold"  & XX & XX \\
+        "Automatic" "Train operation" OR "Train control"            & 17 600 & 11 900 \\
         \hline
-        "Remote control latency threshold"          & XX & XX \\
+        "Vehicle" "streaming" "protocols" "real-time" "performance" & 36 800 & 17 400 \\
         \hline
-        "Automatic train operation"                 & XX & XX \\
+        "Ethics" "Remote" Control" "Vehicle"                        & 298 000 & 34 200 \\
         \hline
-        "Video streaming protocols AND real-time performance" & XX & XX \\
+        "Cybersecurity" "Remote" "Control" "Vehicle"                & 42 600 & 21 600 \\
         \hline
-        "Ethics remote control"                     & XX & XX \\
+        "Latency awareness" "Remote" "Control"                      & 460  & 294 \\
         \hline
-        ""Latency awareness" AND "Remote control""  & XX & XX \\
-        \hline
-    \end{tabular}
+    \end{tabularx}
 \end{table}
 
-The analysis \textit{confirmed} a limited number of high-relevance articles specifically addressing the impact of video streaming protocols on real-time performance, thereby confirming a critical area for this research to address.
+For more detailed searches and for finding reports to compare with, the following queries in Table \ref{tab:vehicleSearch} stands for the majority of papers.
+
+\begin{table}[H]
+    \centering
+    \caption{Summary of Refined Search Queries. \label{tab:vehicleSearch}}
+    \begin{tabularx}{\textwidth}{|X|c|c|}
+        \hline
+        Search Query & Initial Hits & Filtered Hits\\
+        \hline
+        "Remote" "Latency" "Operation" OR "Control"                         & 841 000 & 83 000 \\
+        \hline
+        "Remote" "Latency" "Operation" OR "Control" "Railway"               & 11 800 & 6 580 \\
+        \hline
+        "Remote" "Latency" "Threshold" "Operation" OR "Control"             & 245 000 & 33 700 \\
+        \hline
+        "Remote" "Latency" "Threshold" "Operation" OR "Control" "Railway"   & 4 350  & 2 530 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+The results of the query clearly show a minor part of the total remote control "community" specialize in railway operation. There is also possible to see a trend showing that it has become increasingly more popular in recent years as around half of the papers are from the last 5 years.
+
 
 \subsection{Supporting Tools}
 Several digital tools as mentioned below were used for this paper. The main purpose of the usage was to enhance clarity, assisting in latex, and in general increase quality. Spesifics include writing reference list in correct format. Structuring sentences and paragraphs. Checking for typos and grammatical errors.
@@ -83,6 +104,9 @@ Several digital tools as mentioned below were used for this paper. The main purp
 \end{itemize}
 
 \subsection{Validitity}
+As for finding papers, I have tried different setups and keywords to make sure they give the wanted output. An example is to use just "Train" instead of "Railway" will give alot more results as it will includes all reports talking about training personel or computers. Or if you restrict to "Train Control" the results drop signifaicantly, loosing important papers for this topic.
+It is difficult to determine if the aspects I have focused on is the best and correct way to compare and find a good solution. However, as I will also discuss in Chapter \ref{sec:ResultsDiscussion} "Results and Discussion", many of the other vehicle industires have decided to focus on the same aspects. 
 
 \subsection{Reliability}
-
+This report takes a varying span of reports from different industries before trying to compare. By the amount of papers read, and the amount of papers used, I belive to have found a pretty general results in the theme of latency and threshold that any other will be able to duplicate, even with none of the same reports. As this is very broad examination of the topic the general result should be reproducible.
+For the subject of how we can test and evaluate tools and protocol, other people will be able to come to a different conclusion as it is more personal and decided from spesific prevoius examples.
