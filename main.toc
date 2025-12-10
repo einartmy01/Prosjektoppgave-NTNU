@@ -73,3 +73,4 @@
 \contentsline {subsection}{\numberline {6.4}Parameters for latency evaluation}{25}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Calculations of parameters}{25}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Conclusion}{26}{section.7}%
+\contentsline {section}{Bibliography}{27}{section.7}%
