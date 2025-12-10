@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1765367209.13028 "main.bcf" "main.bbl" "main" 1765367226.38162 0
-  "main.bcf" 1765367226 115578 7852214a4d1c9d3fb2fbacc446a5a792 "pdflatex"
+["biber main"] 1765370042.17056 "main.bcf" "main.bbl" "main" 1765370050.73677 0
+  "main.bcf" 1765370050 115578 7852214a4d1c9d3fb2fbacc446a5a792 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765367219.21541 "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Overleaf github/Prosjektoppgave-NTNU/main.tex" "main.pdf" "main" 1765367226.38226 0
-  "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765126175 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1765370047.35968 "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Overleaf github/Prosjektoppgave-NTNU/main.tex" "main.pdf" "main" 1765370050.73752 0
+  "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765368953 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1760786514 11548 f6a9dfd2457f37b31e2a8605d46c0ab7 ""
   "C:/Users/einar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760786364 13321623 0f0cfbfa57017b5a90a6cd5a43911fd5 ""
   "C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -260,19 +260,19 @@
   "Sections/01 Abstract.tex" 1760780607 100 ebd4e2d72d80f4e9c40f833ebc22c4cb ""
   "Sections/02 Introduction.tex" 1765197761 2031 1209e733f46320dfd371d9f592f387a6 ""
   "Sections/02.5 Method.tex" 1765361965 8870 a60f0335a5cdb0872de0470dc3d7eb73 ""
-  "Sections/03 Theory.tex" 1765366180 15404 abe9faa2664bdf3f4304a80ecf641611 ""
+  "Sections/03 Theory.tex" 1765368793 15594 9970c253033ca8297a65d237af350a57 ""
   "Sections/04 Related Work.tex" 1765298736 16532 d2d26920de952e01ea28d1ff7369e0de ""
   "Sections/06 Results.tex" 1765299635 7705 5b5265a4b6923a1eb079def048195171 ""
   "Sections/20 Conclusion.tex" 1765294045 124 eccec5b0370e63a3820b215084196583 ""
-  "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Overleaf github/Prosjektoppgave-NTNU/main.tex" 1765367206 963 0c26e0bbe0459eb4fc1e3e0730b4ac39 ""
-  "main.aux" 1765367225 20082 d395740705f04e4240ae576dceb0965c "pdflatex"
-  "main.bbl" 1765367218 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.lof" 1765367226 387 b4b39670dc88d4ebba61912bb5b7f469 "pdflatex"
-  "main.lot" 1765367226 990 b7420f498ef87bb037be95ad7f5b7133 "pdflatex"
-  "main.out" 1765367225 10348 2e4dac72a65c55d1165a92acdbcad072 "pdflatex"
-  "main.run.xml" 1765367226 2341 06ef909e3ef92008c8fe1f4499f90c70 "pdflatex"
-  "main.tex" 1765367206 963 0c26e0bbe0459eb4fc1e3e0730b4ac39 ""
-  "main.toc" 1765367226 6317 83f552d3e6e4dfce9a09a8967e815cca "pdflatex"
+  "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Overleaf github/Prosjektoppgave-NTNU/main.tex" 1765369135 965 8002e408799d03a8ecf1b9e14b5c5293 ""
+  "main.aux" 1765370050 20082 d395740705f04e4240ae576dceb0965c "pdflatex"
+  "main.bbl" 1765370043 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
+  "main.lof" 1765370050 387 b4b39670dc88d4ebba61912bb5b7f469 "pdflatex"
+  "main.lot" 1765370050 990 b7420f498ef87bb037be95ad7f5b7133 "pdflatex"
+  "main.out" 1765370050 10348 2e4dac72a65c55d1165a92acdbcad072 "pdflatex"
+  "main.run.xml" 1765370050 2341 06ef909e3ef92008c8fe1f4499f90c70 "pdflatex"
+  "main.tex" 1765369135 965 8002e408799d03a8ecf1b9e14b5c5293 ""
+  "main.toc" 1765370050 6317 83f552d3e6e4dfce9a09a8967e815cca "pdflatex"
   "packages.sty" 1765362396 6573 0f2b982c0dbe53540c4ea207b4fcb929 ""
   "title.tex" 1765299334 832 49015bd91f82fa836b6adc384fcb38e8 ""
   (generated)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  10 DEC 2025 12:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.18)  10 DEC 2025 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1393,84 +1393,84 @@ LaTeX Warning: Citation 'uic_frmcs' on page 8 undefined on input line 56.
 LaTeX Warning: Citation 'mandoc2019erauicfrmcs' on page 8 undefined on input line 56.
 
 
-LaTeX Warning: Citation 'mejias2024' on page 8 undefined on input line 63.
+LaTeX Warning: Citation 'mejias2024' on page 8 undefined on input line 58.
 
 
-LaTeX Warning: Citation 'amador2022wifi' on page 8 undefined on input line 66.
+LaTeX Warning: Citation 'amador2022wifi' on page 8 undefined on input line 61.
 
 
-LaTeX Warning: Citation 'pandey2022wifi' on page 8 undefined on input line 66.
+LaTeX Warning: Citation 'pandey2022wifi' on page 8 undefined on input line 61.
 
 
-LaTeX Warning: Citation 'amador2022wifi' on page 8 undefined on input line 68.
+LaTeX Warning: Citation 'amador2022wifi' on page 8 undefined on input line 63.
 
 
-LaTeX Warning: Citation 'pandey2022wifi' on page 8 undefined on input line 68.
+LaTeX Warning: Citation 'pandey2022wifi' on page 8 undefined on input line 63.
 
 <Images/ERTMS-ATO solution.png, id=469, 459.7175pt x 416.05438pt>
 File: Images/ERTMS-ATO solution.png Graphic file (type png)
 <use Images/ERTMS-ATO solution.png>
-Package pdftex.def Info: Images/ERTMS-ATO solution.png  used on input line 74.
+Package pdftex.def Info: Images/ERTMS-ATO solution.png  used on input line 69.
 (pdftex.def)             Requested size: 213.39566pt x 193.13316pt.
 
-LaTeX Warning: Citation 'era_ertms' on page 8 undefined on input line 76.
+LaTeX Warning: Citation 'era_ertms' on page 8 undefined on input line 71.
 
 
-LaTeX Warning: Citation 'era_ertms' on page 8 undefined on input line 76.
+LaTeX Warning: Citation 'era_ertms' on page 8 undefined on input line 71.
 
 
 
 [8]
 
-LaTeX Warning: Citation 'era_ertms' on page 9 undefined on input line 78.
+LaTeX Warning: Citation 'era_ertms' on page 9 undefined on input line 73.
 
 (Sections/./Tables/HowToMeasure.tex
 
 [9 <./Images/ERTMS-ATO solution.png>])
 
+LaTeX Warning: Citation 'itu_g1051' on page 10 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'techtarget_rfc_definition' on page 10 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'dns_latency_protocols' on page 10 undefined on input line 87.
+
+
 LaTeX Warning: Citation 'itu_g1051' on page 10 undefined on input line 89.
 
 
-LaTeX Warning: Citation 'techtarget_rfc_definition' on page 10 undefined on input line 89.
+LaTeX Warning: Citation 'era_tsi' on page 10 undefined on input line 101.
 
 
-LaTeX Warning: Citation 'dns_latency_protocols' on page 10 undefined on input line 92.
+LaTeX Warning: Citation 'era_ertms' on page 10 undefined on input line 101.
 
 
-LaTeX Warning: Citation 'itu_g1051' on page 10 undefined on input line 94.
+LaTeX Warning: Citation 'sjt_regulations' on page 10 undefined on input line 103.
 
 
-LaTeX Warning: Citation 'era_tsi' on page 10 undefined on input line 106.
+LaTeX Warning: Citation 'banenor_network' on page 10 undefined on input line 103.
 
 
-LaTeX Warning: Citation 'era_ertms' on page 10 undefined on input line 106.
+LaTeX Warning: Citation 'dlr2025atocargo' on page 10 undefined on input line 103.
 
 
-LaTeX Warning: Citation 'sjt_regulations' on page 10 undefined on input line 108.
+LaTeX Warning: Citation 'era_tsi' on page 10 undefined on input line 103.
 
 
-LaTeX Warning: Citation 'banenor_network' on page 10 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'dlr2025atocargo' on page 10 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'era_tsi' on page 10 undefined on input line 108.
-
-
-LaTeX Warning: Citation 'era_ertms' on page 10 undefined on input line 110.
+LaTeX Warning: Citation 'era_ertms' on page 10 undefined on input line 105.
 
 
 
 [10]
 
-LaTeX Warning: Citation 'fp2r2dato2023d41_1' on page 11 undefined on input line 133.
+LaTeX Warning: Citation 'fp2r2dato2023d41_1' on page 11 undefined on input line 128.
 
 
-LaTeX Warning: Citation 'uic_frmcs' on page 11 undefined on input line 146.
+LaTeX Warning: Citation 'uic_frmcs' on page 11 undefined on input line 141.
 
 
-LaTeX Warning: Citation '3gppts22289' on page 11 undefined on input line 146.
+LaTeX Warning: Citation '3gppts22289' on page 11 undefined on input line 141.
 
 (Sections/./Tables/Regulations3GPP.tex
 Overfull \vbox (6.94444pt too high) detected at line 18
@@ -1491,10 +1491,10 @@ Overfull \hbox (130.35704pt too wide) in alignment at lines 18--18
 
 )
 
-LaTeX Warning: Citation '3gppts22289' on page 11 undefined on input line 153.
+LaTeX Warning: Citation '3gppts22289' on page 11 undefined on input line 148.
 
 
-LaTeX Warning: Citation 'era_tsi' on page 11 undefined on input line 158.
+LaTeX Warning: Citation 'era_tsi' on page 11 undefined on input line 153.
 
 )
 
@@ -1824,7 +1824,7 @@ Missing character: There is no ¶ in font cmbx10!
 
 LaTeX Warning: Empty bibliography on input line 43.
 
-runsystem(latexminted cleantemp  --timestamp 20251210124659 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20251210133407 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
 (main.aux)
  ***********
@@ -1855,7 +1855,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  117i,14n,121p,1290b,2877s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\einar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/einar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (32 pages, 966575 bytes).
+Output written on main.pdf (32 pages, 966723 bytes).
 PDF statistics:
  629 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)

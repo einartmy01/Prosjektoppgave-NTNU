@@ -1,0 +1,7 @@
+PWD C:\Users\einar\OneDrive - NTNU\11.Semester IogIKT\Fordypningsprosjekt\Overleaf github\Prosjektoppgave-NTNU
+INPUT C:\Users\einar\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT title.tex
+OUTPUT title.log
+INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
