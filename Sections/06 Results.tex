@@ -13,6 +13,151 @@ Its important to include how humans act in different scenarios, as regardless of
 \import{./Tables/}{HumanFactorResults}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{jürgensen2025rcrailvehicles}
+- Finds actually latency in project
+- Uses Car threshold to evaluate
+
+Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
+
+Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
+And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
+Which references (Lane, 2002) and (Neumeier, 2019)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{kozarevic2025}
+- Finds actually latency in project
+- Uses Car / Drone threshold to evaluate
+Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
+Reference drone and says 100 ms
+Reference Chen?, and Neumeier, 170 ms and 300 ms have minimal impact on remote operators.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{mejias2024}
+- Evaluate latency depending on parameters / tools
+Compare:
+- RTSP
+- WebRTC Web Real time communication
+as their Real-time Transport Protocol (RTP) protocol.
+- E2E
+- H.264
+
+Methodology for latency measurement.
+Network Time Protocol (NTP) is necessary to synchronize sender and receiver.
+Server obtains the TS1 when image is captured. Adds it to the RTP packets generated after the encoding. Player retrieves the timestamp (TS1) from the RTP packets and compares it with the current time TS2 when the image is beeing displayed. To do this, you must retrive it from the package before the decoder and comapre it with the image comming out of the decoder. 
+
+1 Capture: the camera captures an image together with the timestamp. The timestamp is added to the metadata of the image.
+2 Encoding: the image is encoded into a H.264 bit stream. The metadata is maintained unaltered along the encoding process.
+3 Encapsulation: the H.264 video stream is encapsulated into RTP payload. The capture timestamp is extracted from the metadata and added to the RTP header. For this, it is required both the RTP standard header and its RFC 8286 extension.
+4 Sender: RTP packets are sent on the communication channel. In the case of RTSP, the player opens a connection with the sender. For WebRTC, a negotiation between the sender and receiver is performed through the signaling server to determine the communication route.
+
+The player receives the RTP packets through RTSP or WebRTC and calculates the latency:
+1 Receiver: it receives the RTP packets through the channel established with the media server.
+2 Decapsulation: the original H.264 content is extracted from the RTP payload. In addition, the timestamp contained in the RTP header is extracted and added as metadata of the H.264 content.
+3 Decoding: the H.264 content is decoded to retrieve the uncompressed image. The metadata is maintained unaltered along the decoding process.
+4 Displaying: the image is displayed. Moreover, the timestamp is extracted from the metadata and subtracted from the current time to obtain the End-to-End latency. This is shown to the remote driver, who will consider it during the operations.
+
+BITRATE 
+Change bitrate regarding quality of output (jitter or packet loss). Bitrate vary between 5Mbps, 3.5Mbps, 2Mbps.
+A change of 2\% packet loss and 500Hz / 1000Hz jitter.
+
+implementation.
+GStreamer framework. (Open source)
+Pylon source from Basler element that capture of camera images and timestamps.
+H.264 NVidia en/de coder. Provided by NVIDIA graphics cards. It is the key to enable bitrate adaption.
+RTP H.264 pay/depay. For packaging encoded video signal into RTP packets, and RTP includes timestamp in header.
+
+WebRTCbin. Allows communication via WebRTC, peer2peer, must connect to signaling server responsible for negotiation.
+RTSP server/client. Manage connection and send/receive data.
+
+Camera, Media server on Jetson Xavier (Either WebRTC or RTSP), Network equipment (switch or laptop simulating a router, allowing to evaluate against bandwith degradation). Computer as player and reciver.
+
+Results
+E2E, time after capture to the time before display
+S2S, time in front of camera to time displayed on player image 
+
+Measurments for each camera and alternating available bandwidth.
+When enough bandwidth results in 150 ms S2S and <75 ms E2E 
+Bandwidth of <=10 results in 570 ms - 1000 ms or pixelation freezing in both S2S and E2E
+
+RTSP
+Difference in S2S and E2E is approx 70 ms - 100 ms which is image capturing and displaying.
+
+WebRTC is faster E2E but not S2S
+
+RTSP with rate control
+Allows the bandwidth to go past 7 Mbps that was issue before, although with high latency. 
+Adjust itself back up again. Also we can see a shift in latency between latency when increased bitsize of video.  
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+D41.2 - Testing reports \& assessment 
+Results of the remote driving of tramways demonstrator. 
+\cite{fp2r2dato2024d41_2}
+- Finds actually latency
+
+Image latency 
+- G2G, (capturing processing, compression, transmission, reception, decompressing, displaying)
+- Oslo to Berlin
+- Two atomic clocks on phones.
+- Measured to be 340 - 380 ms (Always under 400 ms)
+
+
+Auxiliary circuit tests,
+- Driver safety
+- Remote wake up
+- R driving loop
+- R control commands
+- R ...
+Static functional tests,
+- Start Tram, CERES,
+- CERES do step 1.2.3\dots
+
+Dynamis functional tests,
+- CERES Local brakte test
+- CERES Remote Brakte test 
+- C Drive 5km/h 
+- C Drive 100\% dont break max speed 
+- C loose communication.
+- C DSD brake sequence
+- C Local driver break priority over remote.
+
+Reaction Time,
+reduction in time needed to perform spesific tram operations, fleet management and preparation, start-up and shut-down procedures, maintenance tasks, shunting. 
+Time reduction in these processes are efficiency improvments.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{brandenburger2023vqreactiontimertc}
+- Evaluates latency by performance, (human) IRL
+
+Test of human factors and realiable communcations via 5g
+"Limited literature on:" 
+"Positive effect of bitrate on quaility", "Stalling has worse effect on QoExperience, if bitrate is higher"
+"Higher frame rate not linked to information assimiliation, but increased user enjoyment"
+
+Tested with three different levels of bitrate
+1, 6, 24 Mbps
+5, 15, 25 FPS
+Stimulus
+Light signal, Distance marker
+
+MeasurementsResponce accuracyResponce speed
+
+Study 1:
+Higher bitrate -> faster answears, more correct
+Higher FPS -> same speed on answear, same amount of correct
+Study 2:
+Higher bitrate -> same speed on answears, more correct
+Higher FPS -> same speed on answear, same amount of correct
+
+Bitrate is more important (source 5 in PP: https://dl.acm.org/doi/abs/10.1145/2072298.2072351)
+Stimulus type:
+Distance marker signs where answeared faster and more correct than light signals
+5000 -> 3000 speed, and 0.51 -> 0.58 and 0.61 -> 0.69
+
+This is promosing new with the implementation of ERTMS as the only input stimulus in signalling threw camera and video stream will be signs as the remote control operatior will get the ETCS directly in the control room. 
+After certain bitrate less helpful
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \cite{brandenburger2023vqreactiontimertc}
 Test of human factors and realiable communcations via 5g
 "Limited literature on:" 
@@ -107,12 +252,9 @@ Use this report \cite{fp2r2dato2023d5_4}
 \import{./Tables/}{ToolsFactorResults}
 
 
-//Kanskje ikke ha ny tittel? Bare ha result og diskusjon om hverandre
-\section{Discussion}
-Discussion of the result from the measurements, what they could mean and possible use cases for the inforation gathered
-
 \subsection{Theory v. Practical test}
 Compare from the PreDraft of what expected result and hopes were, and discussing them with the information of what happend in the test and measurments.
+
 
 \subsection{Future work}
 - MJPEG vs H.264
@@ -121,6 +263,11 @@ Compare from the PreDraft of what expected result and hopes were, and discussing
 
 Differnt aspects of latency \textit{What is the difference}
 Fixed, static v dynamic.
+
+\begin{comment}
+
+
+
 
 \subsection{Parameters for latency testing}
 What parameters are we measuring. 
@@ -135,5 +282,6 @@ speed, distance, braking distance, reaction time, margin for error.
 - Avg Speed 
 - Acceleration 
 
-
 \subsection{Calculations of parameters}
+
+\end{comment}

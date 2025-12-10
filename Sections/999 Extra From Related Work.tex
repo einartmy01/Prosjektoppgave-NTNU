@@ -1,0 +1,81 @@
+\cite{jürgensen2025rcrailvehicles}
+\paragraph{Additional extracted points:}
+\begin{enumerate}
+    \item \textbf{Purpose for ATO and RTO} \\
+    Remote control is a necessary step toward high automation levels (GoA~4). Remote control enables safe testing of autonomous functions, provides human intervention capability, and serves as a fallback mode during degraded or emergency operation of autonomous trains. It ensures safety during the transition from manually operated to fully autonomous vehicles and supports autonomy by allowing oversight and intervention from a distance :contentReference\cite{jürgensen2025rcrailvehicles}.
+
+    \item \textbf{Digitalization in Railway} \\
+    The report emphasizes the broader digitization trend in German railways, including ATO over ETCS, improved connectivity, autonomous traffic management, and the reactivation of rural rail networks. Remote control is embedded within this digital transformation as part of automated and on-demand mobility concepts such as those pursued by REAKT and REAKTOR to increase efficiency and safety in rural rail operations :contentReference\cite{jürgensen2025rcrailvehicles}.
+
+    \item \textbf{Protocols Used (and reasons, if stated)} \\
+    The system currently uses \textbf{TCP} for communication between server and vehicle, prioritizing reliability for control commands, Heartbeat integrity, and safe data transfer. For the livestream, TCP is used in the prototype for stability, though the report notes that \textbf{UDP} may become preferable on cellular networks due to lower latency. Communication between components relies on Python sockets, JSON-encoded messages, and OpenCV for video handling :contentReference\cite{jürgensen2025rcrailvehicles}.
+
+    \item \textbf{Regulations Used (if mentioned)} \\
+    The report does not reference any formal external railway regulations or standards (e.g., TSI, ERA, IEC). It discusses safety concepts, human factors, and operational modes conceptually but does not apply specific regulatory frameworks. Any regulatory alignment (such as ETCS levels or GoA definitions) is descriptive rather than normative, and no regulatory compliance process is implemented in the system :contentReference\cite{jürgensen2025rcrailvehicles}.
+\end{enumerate}
+
+\cite{kozarevic2025}
+\paragraph{Additional extracted points:}
+\begin{enumerate}
+    \item \textbf{Purpose for ATO and RTO} \\
+    The fallback system is positioned as a safety mechanism within ATO: when autonomous functions fail or become unavailable, a Remote Train Operator must be able to take over. The thesis emphasises that such fallback capability is essential for achieving high Grades of Automation and for maintaining safety during degraded-mode operation .
+
+    \item \textbf{Digitalization in Railway} \\
+    The study is situated within the broader digitalisation of rail transport, where automation, remote operation, and new operational concepts require redesigned roles and interfaces. The transition to digital and autonomous systems motivates the need for remote supervisory and fallback functionality, which must align with evolving human–machine interaction requirements .
+
+    \item \textbf{Protocols Used (if mentioned)} \\
+    The report does not specify communication or networking protocols. It discusses functional requirements and human-factor needs rather than technical implementation details. No protocol choice or justification is provided .
+
+    \item \textbf{Regulations Used (if mentioned)} \\
+    No formal regulatory frameworks (e.g., TSI, ERA, safety standards) are applied. The thesis references operational concepts such as degraded-mode handling but does not cite or rely on specific railway regulations. Its focus is conceptual and requirement-oriented rather than compliance-oriented .
+\end{enumerate}
+
+\cite{mejias2024}
+\paragraph{Additional extracted points:}
+\begin{enumerate}
+    \item \textbf{Purpose for ATO and RTO} \\
+    Remote driving is treated as a fallback capability for automated trains, requiring stable and low-delay video so an operator can intervene when needed :contentReference.
+
+    \item \textbf{Digitalization in Railway} \\
+    The work fits into the shift toward FRMCS and 5G, which are expected to replace GSM-R and support real-time remote operation with higher bandwidth and reliability :contentReference.
+
+    \item \textbf{Protocols Used} \\
+    RTSP and WebRTC are compared, both running on RTP/RTCP. RTP provides low-latency transport, and RTCP supplies the metrics used for bitrate adaptation. RTSP is highlighted as more suitable when several users must access the same stream.
+
+    \item \textbf{Regulations Used} \\
+    No formal regulations are applied. FRMCS video quality recommendations are mentioned but not used as regulatory constraints.
+\end{enumerate}
+
+\cite{fp2r2dato2024d41_2}.
+\paragraph{Additional extracted points:}
+\begin{enumerate}
+    \item \textbf{Purpose for ATO and RTO} \\
+    Remote driving is treated as a capability that supports automated operations by enabling safe telecommand and fallback intervention. It allows operators to manage vehicle preparation, shunting, and movements in controlled areas without being physically in the cab, contributing to more efficient depot operations :contentReference.
+
+    \item \textbf{Digitalization in Railway} \\
+    The work is positioned within broader digitalisation goals, where remote control, perception systems, and integrated communication tools support more automated workflows. The KPI analysis highlights expected gains in operational efficiency, resource use, and system availability as digital processes replace manual ones.
+
+    \item \textbf{Protocols Used} \\
+    The deliverable does not specify technical communication or streaming protocols. It focuses on operational testing rather than implementation details, and no communication standards or protocol choices are discussed.
+
+    \item \textbf{Regulations Used} \\
+    No specific regulations or standards are referenced. The demonstrator follows internal safety procedures, operational rules from Sporveien, and agreed test protocols, but no external regulatory frameworks are cited in the document.
+\end{enumerate}
+
+
+\cite{fp2r2dato2023d5_4}
+\paragraph{Additional extracted points:}
+\begin{enumerate}
+    \item \textbf{Purpose for ATO and RTO} \\
+    The degraded-mode scenarios support both ATO and RTO by defining how a Remote Driver can maintain safe control when autonomy cannot be relied on. They describe when the driver must take over, how responsibility shifts, and what operational limits apply under degraded information quality :contentReference[oaicite:1]{index=1}.
+
+    \item \textbf{Digitalization in Railway} \\
+    The chapter reflects the dependency of remote operation on digital systems such as communication links and onboard perception. It highlights how digital weaknesses—reduced bandwidth, sensor faults, missing data—directly affect the feasibility of remote driving and require defined fallback responses :contentReference[oaicite:2]{index=2}.
+
+    \item \textbf{Protocols Used} \\
+    No technical protocols are specified. The chapter focuses on operational behaviour, not communication architecture or protocol design :contentReference[oaicite:3]{index=3}.
+
+    \item \textbf{Regulations Used} \\
+    No regulations are referenced. The content provides operational descriptions only and does not discuss standards or compliance requirements :contentR
+
+\end{enumerate}
