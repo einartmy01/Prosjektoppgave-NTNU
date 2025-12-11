@@ -6,8 +6,16 @@ Introduction to the paper and theories that are going to be used.
 Find a way to effectively measure, validate and evaluate latency for remote train operation systems. 
 Establish acceptable latency thresholds that ensure safety and performance. Identify key factors influencing latency and propose optimization strategies.
 
+\subsection{Purpose}
+
+The purpose of this paper is to establish a structured foundation for understanding, measuring, and evaluating latency in remote train operation (RTO) systems. As the railway sector transitions toward higher Grades of Automation (GoA), particularly GoA~3 and GoA~4, remote control becomes an essential operational component. Previous research highlights that RTO is a required for safely deploying and validating autonomous capabilities, as it enables controlled testing and secure intervention when automated functions cannot perform as intended \cite{jürgensen2025rcrailvehicles}. In this context, RTO functions as a mandatory fallback layer within the ATO architecture, ensuring continuity of safe operation during degraded modes or for unexpected track conditions \cite{kozarevic2025}.
+
+A important requirement for such fallback control is the availability of reliable low-latency video transmission. Studies on remote train supervision emphasise that successful human intervention depends heavily on the stability and responsiveness of video streams when the physical control room is replaced by a remote workstation \cite{mejias2024}. Industry demonstrations show that remote operation can supports practical tasks such as shunting, depot movements, and vehicle preparation and thereby improving efficiency while maintaining safety \cite{fp2r2dato2024d41_2}. At the same time, the downgraded mode scenarios described in deliveries from Europe's Rail \cite{fp2r2dato2023d5_4} show how responsibility will transition between automated systems and human operators. And it is therefore important to identify the operational limits imposed by latency, uncertainty, and reduced information quality.
+
+An equally important aspect is understanding how latency affects human perception and reaction time. Human-factors research provides insight into how video quality, bitrate, and delay influence a remote operator's ability to detect signals, interpret scene dynamics, and perform corrective actions under time constraints. These findings contribute to defining minimum perceptual requirements for safe fallback operation and support the formulation of latency thresholds for high automation environments \cite{brandenburger2023vqreactiontimertc}.
+
+
 \subsubsection{Research Questions}
-\textit{What are we hoping to answear and/or achieve during this paper}
 To achieve the purpose of this paper, the research questions listed below was created to help. 
 
 \begin{enumerate}
