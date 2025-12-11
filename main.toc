@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Purpose}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Research Questions}{1}{subsubsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Digitalization in Railway}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Digitalisation in Railway}{1}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}System Overview}{2}{subsection.1.3}%
 \contentsline {subsubsection}{\numberline {1.3.1}Components}{2}{subsubsection.1.3.1}%
 \contentsline {section}{\numberline {2}Method}{3}{section.2}%
@@ -61,12 +61,12 @@
 \contentsline {subsection}{\numberline {4.6}Cybersecurity}{18}{subsection.4.6}%
 \contentsline {section}{\numberline {5}Results and discussion}{19}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Human factors results}{19}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Adaptation to stable latency.}{24}{subsubsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.2}Comparing latency for different vehicles}{24}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Calculation of latency}{26}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Threshold for acceptable latency}{26}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.1.1}Adaptation to stable latency.}{22}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}Comparing latency for different vehicles}{23}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Calculation of latency}{25}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Threshold for acceptable latency}{25}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Tools and protocols for remote control}{26}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Theory v. Practical test}{28}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Future work}{28}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Conclusion}{29}{section.6}%
-\contentsline {section}{Bibliography}{30}{section.6}%
+\contentsline {subsection}{\numberline {5.5}Theory v. Practical test}{29}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Future work}{29}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Conclusion}{30}{section.6}%
+\contentsline {section}{Bibliography}{31}{section.6}%
