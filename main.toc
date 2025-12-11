@@ -44,11 +44,11 @@
 \contentsline {subsubsection}{\numberline {4.1.6}FP2R2Dato, EuropesRail 2023 D5.4 - Chapter 12}{14}{subsubsection.4.1.6}%
 \contentsline {subsubsection}{\numberline {4.1.7}Brandernburger 2023}{15}{subsubsection.4.1.7}%
 \contentsline {subsection}{\numberline {4.2}Car Control}{15}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Sato 2021}{15}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Nakamura 2021}{15}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Ouden 2022}{15}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.1}Ouden 2022}{15}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Sato 2021}{15}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Nakamura 2021}{15}{subsubsection.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.2.4}Jernberg 2024}{15}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Kaknjo 2018}{15}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.5}Kaknjo 2018}{16}{subsubsection.4.2.5}%
 \contentsline {subsubsection}{\numberline {4.2.6}Neumier 2019}{16}{subsubsection.4.2.6}%
 \contentsline {subsubsection}{\numberline {4.2.7}Kang 2018}{16}{subsubsection.4.2.7}%
 \contentsline {subsection}{\numberline {4.3}Drone Control}{16}{subsection.4.3}%

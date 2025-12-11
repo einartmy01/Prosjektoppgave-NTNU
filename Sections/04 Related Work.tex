@@ -4,8 +4,10 @@ Experiences from other similar fields, remote controlled cars, drones, cranes an
 
 \import{./04 Related Work Controls}{Train Control}
 
-\subsection{Car Control}
+\import{./04 Related Work Controls}{Car Control}
 
+
+Going to hold on Sato and Nakamura too see if needed
 \subsubsection{Sato 2021}
 %https://ieeexplore.ieee.org/document/9575817
 Base of 150 ms
@@ -20,30 +22,7 @@ The improvement increased as well for higher latency
 %https://ieeexplore.ieee.org/abstract/document/9622069
 Samme som de andre, sim med lagt på latency.
 
-\subsubsection{Ouden 2022}
-\cite{ouden2022}
-- Evaluates Latency by performance, (people) IRL  
 
-- Evaluate Latency threshold on SIMulation
-
-- 4G and 5G 
-- 4 times 120 angle camera
-- H.264
-- Split latency up into Control and video and does
-- min, mean, 95\%ile, max latency in ms
-
-- Speed of 10, 20, 30 and 40km/h
-100 manual test runs for benchmark
-180 runs of RC with 4G
-300 runs of RC with 5G 
-One Trip Latency.” Every unit
-was time synchronized with a GPS-PPP source.
-Packets logged using tcpdump.
-
-
-Includes a test that results in at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
-
-Did not find resonable difference in the latencies of straight acceleration test. 
 
 \subsubsection{Jernberg 2024}
 \cite{jernberg2024}
@@ -68,6 +47,7 @@ H5/P5: Bicycal in lane that driver needs to pass in oppsing lane.
 
 According to Jernberg \cite{jernberg2024}, when performing a study with more naturalistic driving scenarios, speed and type of task is significant for results as well as latency. 
 They also adapt to cerumstances, adjusting speed and safetymargins.
+
 \subsubsection{Kaknjo 2018}
 \cite{kaknjo2018videolatency}
 - Evaluate latency by perfomance, (different tools) IRL, 

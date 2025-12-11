@@ -13,25 +13,6 @@ Its important to include how humans act in different scenarios, as regardless of
 \import{./Tables/}{HumanFactorResults}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{jürgensen2025rcrailvehicles}
-- Finds actually latency in project
-- Uses Car threshold to evaluate
-
-Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
-
-Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
-And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
-Which references (Lane, 2002) and (Neumeier, 2019)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{kozarevic2025}
-- Finds actually latency in project
-- Uses Car / Drone threshold to evaluate
-Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
-Reference drone and says 100 ms
-Reference Chen?, and Neumeier, 170 ms and 300 ms have minimal impact on remote operators.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cite{mejias2024}
 - Evaluate latency depending on parameters / tools
@@ -158,30 +139,30 @@ This is promosing new with the implementation of ERTMS as the only input stimulu
 After certain bitrate less helpful
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cite{brandenburger2023vqreactiontimertc}
-Test of human factors and realiable communcations via 5g
-"Limited literature on:" 
-"Positive effect of bitrate on quaility", "Stalling has worse effect on QoExperience, if bitrate is higher"
-"Higher frame rate not linked to information assimiliation, but increased user enjoyment"
-Tested with three different levels of bitrate
-1, 6, 24 Mbps at 5, 15, 25 FPS
-Stimulus: Light signal, Distance marker
-Measurements: Responce accuracy, Responce speed
+\cite{ouden2022}
+- Evaluates Latency by performance, (people) IRL  
 
-Study 1:
-Higher bitrate -> faster answears, more correct
-Higher FPS -> same speed on answear, same amount of correct
-Study 2:
-Higher bitrate -> same speed on answears, more correct
-Higher FPS -> same speed on answear, same amount of correct
+- Evaluate Latency threshold on SIMulation
 
-Bitrate is more important (source 5 in PP: https://dl.acm.org/doi/abs/10.1145/2072298.2072351)
-Stimulus type:
-Distance marker signs where answeared faster and more correct than light signals
-5000 -> 3000 ms speed, and 0.51 -> 0.58 and 0.61 -> 0.69 correct.
-This is promosing new with the implementation of ERTMS as the only input stimulus in signalling threw camera and video stream will be signs as the remote control operatior will get the ETCS directly in the control room. 
-After certain bitrate less helpful
+- 4G and 5G 
+- 4 times 120 angle camera
+- H.264
+- Split latency up into Control and video and does
+- min, mean, 95\%ile, max latency in ms
 
+- Speed of 10, 20, 30 and 40km/h
+100 manual test runs for benchmark
+180 runs of RC with 4G
+300 runs of RC with 5G 
+One Trip Latency.” Every unit
+was time synchronized with a GPS-PPP source.
+Packets logged using tcpdump.
+
+
+Includes a test that results in at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
+
+Did not find resonable difference in the latencies of straight acceleration test. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cite{jernberg2024}
 "However, it also seems to be the case that remote operators adapt to the circumstances they find themselves in; for example, they drive with a safety margin reducing risks to their personal chosen limit and do not override the barriers of their own choice."
@@ -228,6 +209,26 @@ Image latency
 - Oslo to Berlin
 - Two atomic clocks on phones.
 - Measured to be 340 - 380 ms (Always under 400 ms)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{jürgensen2025rcrailvehicles}
+- Finds actually latency in project
+- Uses Car threshold to evaluate
+
+Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
+
+Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
+And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
+Which references (Lane, 2002) and (Neumeier, 2019)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{kozarevic2025}
+- Finds actually latency in project
+- Uses Car / Drone threshold to evaluate
+Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
+Reference drone and says 100 ms
+Reference Chen?, and Neumeier, 170 ms and 300 ms have minimal impact on remote operators.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Calculation of latency}
 The measurements and therefore the calculations of latency is not easily done. Since its a fluctuating measurement that varies alot depending on the components in the system used, the way to calculate various on what the personens want to find. 

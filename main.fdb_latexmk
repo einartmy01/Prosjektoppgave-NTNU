@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1765401363.42945 "main.bcf" "main.bbl" "main" 1765401412.58175 0
-  "main.bcf" 1765401412 116408 af05b5fdf8ee261751cd3ff319056eaa "pdflatex"
-  "references.bib" 1765394909 16320 7d003dd6980825de81c149b8c025f567 ""
+["biber main"] 1765445640.66381 "main.bcf" "main.bbl" "main" 1765445716.45633 0
+  "main.bcf" 1765445716 116564 d46ff5c354b39935705d0af710e6dbcd "pdflatex"
+  "references.bib" 1765445272 16308 9e04b1418a73ec9006253e2513a7ee7d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765401405.07488 "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Prosjektoppgave-NTNU/main.tex" "main.pdf" "main" 1765401412.58292 0
+["pdflatex"] 1765445712.37806 "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Prosjektoppgave-NTNU/main.tex" "main.pdf" "main" 1765445716.45719 0
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765368953 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1760786514 11548 f6a9dfd2457f37b31e2a8605d46c0ab7 ""
   "C:/Users/einar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760786364 13321623 0f0cfbfa57017b5a90a6cd5a43911fd5 ""
@@ -252,7 +252,8 @@
   "Images/ETCS lv2.png" 1765371898 302970 9df810ae9019fe18a41202254adf5410 ""
   "Images/GoA from UITP.png" 1765371898 49314 4529acabf3510192dd1cb192449f5dcd ""
   "Images/NTNU_logo.png" 1765371898 59242 c9f4f1196347f4a06dda9af8575c81d2 ""
-  "Sections/./04 Related Work Controls/Train Control.tex" 1765401404 7192 21e19c4a7b70a2a5906b468ab6cd98ce ""
+  "Sections/./04 Related Work Controls/Car Control.tex" 1765445636 949 190831d5878fa3b14c8fd9c43e246317 ""
+  "Sections/./04 Related Work Controls/Train Control.tex" 1765444848 8078 b6b56af0117e779a8a584f3171e73d21 ""
   "Sections/./Tables/ETCSItems.tex" 1765371898 1321 cb5e9392483433d2841b8aed8223a67e ""
   "Sections/./Tables/GoATable.tex" 1765371898 1183 8dbccd6bc2bfa6c8cfa17dc5fdea5fcf ""
   "Sections/./Tables/HowToMeasure.tex" 1765371898 1202 7fd8062d1a6585fecbbfedaa7e1a126a ""
@@ -265,18 +266,18 @@
   "Sections/02 Introduction.tex" 1765371898 2031 1209e733f46320dfd371d9f592f387a6 ""
   "Sections/02.5 Method.tex" 1765371898 8870 a60f0335a5cdb0872de0470dc3d7eb73 ""
   "Sections/03 Theory.tex" 1765393118 17589 35f66a9714b82b6c013d4725289181b6 ""
-  "Sections/04 Related Work.tex" 1765396342 7255 3a4473d4979d0c5521cbba0f1bf6c1d7 ""
-  "Sections/06 Results.tex" 1765397537 14931 082dad6fde75e25be4954238567223ae ""
+  "Sections/04 Related Work.tex" 1765445707 6612 33f524c5bba5a7526be0ef0ef3839f0c ""
+  "Sections/06 Results.tex" 1765445479 15753 e2a14e497c9e224f04192b6c259d539b ""
   "Sections/20 Conclusion.tex" 1765371898 124 eccec5b0370e63a3820b215084196583 ""
   "c:/Users/einar/OneDrive - NTNU/11.Semester IogIKT/Fordypningsprosjekt/Prosjektoppgave-NTNU/main.tex" 1765381864 989 35f58f15797f6f59b552c878e7252e61 ""
-  "main.aux" 1765401411 24162 95b441897d66fbbab08ec25d90f259dc "pdflatex"
-  "main.bbl" 1765401366 78304 04bbb1c496706e2a03869c7f8c696b9c "biber main"
-  "main.lof" 1765401412 387 b4b39670dc88d4ebba61912bb5b7f469 "pdflatex"
-  "main.lot" 1765401412 990 3cdb5ad82bf3462fe2b2651549497a58 "pdflatex"
-  "main.out" 1765401412 9990 a114bb46efe6a056486107b06361b073 "pdflatex"
-  "main.run.xml" 1765401412 2341 774b1370d7471097fc23c34b072738c2 "pdflatex"
+  "main.aux" 1765445716 24330 78701596e4c8a70728a9679fcb63121d "pdflatex"
+  "main.bbl" 1765445643 78304 04bbb1c496706e2a03869c7f8c696b9c "biber main"
+  "main.lof" 1765445716 387 b4b39670dc88d4ebba61912bb5b7f469 "pdflatex"
+  "main.lot" 1765445716 990 3cdb5ad82bf3462fe2b2651549497a58 "pdflatex"
+  "main.out" 1765445716 9990 de70335d0db25880fd9d0cd404309615 "pdflatex"
+  "main.run.xml" 1765445716 2341 774b1370d7471097fc23c34b072738c2 "pdflatex"
   "main.tex" 1765381864 989 35f58f15797f6f59b552c878e7252e61 ""
-  "main.toc" 1765401412 6046 7360809abc85092fa2dd79f9be559d5f "pdflatex"
+  "main.toc" 1765445716 6046 601c8ea60098324932f6b5eeedbe02d3 "pdflatex"
   "packages.sty" 1765371898 6573 0f2b982c0dbe53540c4ea207b4fcb929 ""
   "title.tex" 1765371898 832 49015bd91f82fa836b6adc384fcb38e8 ""
   (generated)
