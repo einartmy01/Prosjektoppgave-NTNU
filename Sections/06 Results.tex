@@ -108,6 +108,21 @@ According to Jernberg \cite{jernberg2024}, when performing a study with more nat
 They also adapt to cerumstances, adjusting speed and safetymargins.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{gonzález2023}
+- Evaluation tools for latency, 
+- People tested
+
+URLLC
+4K quality res 1080 x 720, at 30 FPS
+H.264 encoded
+
+LTE server, LTE direct, WiFi -> avg packet delay =  500 ms, 42 ms 4 ms %Er et bilde i filutforsker hvis trengs
+Can activate low latency mode. 
+Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for unmanned aerial vehicles
+Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
+concludes with a e2e of 250 ms is vaiable for service usability.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cite{jernberg2024}
 "However, it also seems to be the case that remote operators adapt to the circumstances they find themselves in; for example, they drive with a safety margin reducing risks to their personal chosen limit and do not override the barriers of their own choice."
@@ -324,6 +339,39 @@ Found detoriation in performance in latencies above 300 ms and increase in error
 - Video and camerea catching timestamps
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Larsen 2022}
+\cite{larsen2022}
+- Evaluation latency on perfomance, (tools) IRL
+
+5G URLLC network
+H.264
+
+Le2e = Lprop agation + Lproc essing + Lser ialisation
+Lprop = distance / v in medium
+Lser = S datasize / R transmission rate
+
+Le2e = nLproc + (n+1)Lser + Lprop + LQ 
+n = switches along the network
+n+1 = number of links
+LQ = queing latency.
+
+0.5 Mbps video rate in uplink and a 60 Hz update rate in downlink. Further, we assume that the higher quality video for inspection require 8 Mbps.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{gonzález2023}
+- Evaluation tools for latency, 
+- People tested
+
+URLLC
+4K quality res 1080 x 720, at 30 FPS
+H.264 encoded
+
+LTE server, LTE direct, WiFi -> avg packet delay =  500 ms, 42 ms 4 ms %Er et bilde i filutforsker hvis trengs
+Can activate low latency mode. 
+Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for unmanned aerial vehicles
+Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
+concludes with a e2e of 250 ms is vaiable for service usability.
+
+
 
 
 
