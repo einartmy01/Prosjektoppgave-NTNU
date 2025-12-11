@@ -110,29 +110,21 @@ Test tools. Measurements are typically expressed in milliseconds and include met
 
 Railway automation must satisfy national and EU regulatory frameworks. In the EU, the \textit{Technical Specifications for Interoperability} (TSIs) notably the Control-Command and Signalling (CCS) TSI — define safety and interoperability requirements for ETCS, ATO interfaces and signalling subsystems. The European Union Agency for Railways (ERA) provides technical guidance, variables coordination and ERTMS documentation \cite{era_tsi,era_ertms}. 
 
-National authorities, for example the Norwegian Railway Directorate and the Norwegian Railway Authority, implement national legislation, issue national safety rules, and specify how EU TSIs map to national processes; operators must demonstrate compliance with both national rules and applicable TSIs for approval and operation \cite{sjt_regulations,banenor_network}. For freight ATO trials (such as ATO-Cargo), project teams must prepare evidence on safety, human factors (remote supervision ergonomics), communication performance and conformity with the CCS TSI and national rules before trials are permitted \cite{dlr2025atocargo,era_tsi}.
+National authorities, for example the Norwegian Railway Directorate and the Norwegian Railway Authority, implement national legislation, issue national safety rules, and specify how EU TSIs map to national processes where operators must demonstrate compliance with both national rules and applicable TSIs for approval and operation \cite{sjt_regulations,banenor_network}. For freight ATO trials (such as ATO-Cargo), project teams must prepare evidence on safety, human factors (remote supervision ergonomics), communication performance and conformity with the CCS TSI and national rules before trials are permitted \cite{dlr2025atocargo,era_tsi}.
 
-From \cite{era_ertms}
-8.2 ATO 2: Supervision and regulation 
-8.2.1 ATO 2.1 - Supervise train operations 
-During ATO operation, it shall be possible to: 
-• Supervise train location by monitoring trains automatically using train identification and status (including delay information) to recognise deviations from normal operation as soon as possible; 
-8.2.2 ATO 2.2 - Manage the train service 
-During ATO operation, it shall be possible to: 
-• Input the journey profile from the planning system; 
-• Start the journey profile; 
-• Dynamically modify the journey profile in real time to take account of changes in operating conditions including: disruption management; re-routing; re-timing. 
-• Adapt the trai's journey profile to meet any update of the operational timetable; 
-• Regulate trains to avoid bunching of trains and to reduce delays to trains in the case of disturbances; 
-• Dispatch ATO trains to harmonise the starting of ATO trains, corresponding to results of train regulation and ensuring connecting services; 
-• Operate both ATO and non-ATO trains simultaneously. 
+From ERA's \cite{era_ertms} rules about during ATO operation, it shall be possible to: 
+\begin{enumerate}
+\item Supervise train location by monitoring trains automatically using train identification and status (including delay information) to recognise deviations from normal operation as soon as possible; 
+\item Input the journey profile from the planning system; 
+\item Start the journey profile; 
+\item Dynamically modify the journey profile in real time to take account of changes in operating conditions including: disruption management; re-routing; re-timing. 
+\item Adapt the trail's journey profile to meet any update of the operational timetable; 
+\item Regulate trains to avoid bunching of trains and to reduce delays to trains in the case of disturbances; 
+\item Dispatch ATO trains to harmonise the starting of ATO trains, corresponding to results of train regulation and ensuring connecting services; 
+\item Operate both ATO and non-ATO trains simultaneously; 
+\end{enumerate}
 
-
-
-I think this could be very useful: 
-Commission Regulation (EU) 2016/919 of 27 May 2016 on the technical specification for 
-interoperability relating to the "control-command and signalling" subsystems of the rail 
-system in the European Union 
+A way to guarantee these rules are followed and maintained is to implement a safety for when ATO is not working like intended, demanding a downgrade either to manual and physical steering or a option of remote control.
 
 %cspell:words Sporveien Trikken Dato 
 \subsubsection{WP41 - Validation Criteria Tramways}
