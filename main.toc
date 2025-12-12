@@ -58,7 +58,7 @@
 \contentsline {section}{\numberline {5}Results and discussion}{20}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Human factors results}{20}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Adaptation to stable latency.}{23}{subsubsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.2}Comparing latency for different vehicles}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Measured Latency for Different Vehicles}{24}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Calculation of latency}{26}{subsubsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.3}Threshold for acceptable latency}{26}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Tools and protocols for remote control}{27}{subsection.5.4}%

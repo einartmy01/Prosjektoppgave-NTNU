@@ -6,15 +6,16 @@
 
 
 \subsection{Human factors results}
-Discuss how a high stable latency could be more acceptable than a low unstable latency due to info found in Theory, Human Factors.
+Human performance is a decisive part of remote train operation, because every control action is performed by a human operator who must interpret a video feed, react to system feedback, and compensate for delays. The results in this subsection focus on how operators respond to different levels and types of latency, and how stable versus unstable delay affects their ability to perform remote driving tasks. By comparing findings from railway, car, drone and crane studies, a sense of which latency ranges operators can adapt to, which conditions cause performance loss, and how these observations influence acceptable thresholds for remote train control. These insights form the basis for evaluating how much latency the system can tolerate before performance is affected.
 
+In Table \ref{tab:HumanEvaluation} I have sorted some of the previously introduced papers and compared them. Method and added effect show how the research has decided to set up the tests, while task define what the participants had to do. The results were many and varying for each research, but I have extracted a specific number the paper decided represents performance downgrade.
 
-Its important to include how humans act in different scenarios, as regardless of the systems, the remote operator will always be a constant high latency of atleast 500 - 1000 ms \cite{ouden2022}. And how they react to a possible system latency will also be crucial for the full remote operation.
 \import{./Tables/}{HumanFactorResults}
 
 
 
 
+Its important to include how humans act in different scenarios, as regardless of the systems, the remote operator will always be a constant high latency of atleast 500 - 1000 ms \cite{ouden2022}. And how they react to a possible system latency will also be crucial for the full remote operation.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cite{brandenburger2023vqreactiontimertc}
 - Evaluates latency by performance, (human) IRL
@@ -194,12 +195,16 @@ In the event of offloading a truck with a crane, the participents where exposed 
 
 
 
-\subsection{Comparing latency for different vehicles}
+\subsection{Measured Latency for Different Vehicles}
+Different researchers have approached remote operation with their own measurement methods, system architectures and performance criteria, but the challenges of latency remain comparable. This subsection examines how latency has been measured across trains, cars, drones and cranes, what numerical values these studies reported, and which thresholds they used to classify acceptable and unacceptable delay. By reviewing both the technical measurement approaches, such as synchronized timestamping, G2G and E2E evaluation, the results illustrate how various industries establish practical latency boundaries. This comparison provides a reference point for railway applications, showing how today's measurements are compared to thresholds and discussing how more research on a dedicated railway threshold is still needed.
 
-After reading threw an  reasearch paper on the topic of how latency treshold are set. It became apparent to me that very few have done enhanced research on this very topic for railway remote control. Papers such as XX, who mentions anything about the maximum latency before loosing performance reference sources of other vehicles and their tests of remote control. 
+
+After reading threw research paper on the topic of how latency threshold are set. It became apparent that very few have done enhanced research on this very topic for railway remote control. Papers such as Jürgensen \cite{jürgensen2025rcrailvehicles} and Kozarevic \cite{kozarevic2025}, who mentions the maximum latency measured before loosing performance reference sources of other vehicles and their tests of remote control. 
 \import{./Tables/}{LatencyThresholdResults}
 
-In the case of XX who reference Jernberg 2024 adn their findings of. Jernberg goes into details of the hazards and proxy hazards that the driver were facing. As mentionen in Section 4 "Related Work" \cite{jernberg2024}
+
+
+In the case of XX who reference Jernberg 2024 adn their findings of. Jernberg goes into details of the hazards and proxy hazards that the driver were facing. As mentioned in Section 4 "Related Work" \cite{jernberg2024}
 How in control of the vehicle were you during the drive (1-5)
 Baseline 3.7, 100ms 3.5, 200ms 2.9
 
