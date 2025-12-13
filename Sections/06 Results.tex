@@ -32,210 +32,95 @@ The other vehicles also include interesting results form their research. Both do
 Even with the same form for evaluation, the results vary between the different vehicles. For the crane remote operation a latency of 480 ms gave a slight reduction in both QoE and effect of the work at hand, but at 880 ms it was a major decrease in effect and operability \cite{brunnström2020}. While the drone evaluation of performance found added latency of around 180 ms start causing lower performance score and QoE, and steady deterioration with more latency, and ending up with the lowest grade at around 460 ms. Yet it concludes with a E2E of 250 ms is viable for service usability, but draws the line at 300 ms. The same scores and QoE was measured to be around 0.2\% and 0.3\% packet loss.
 
 
-\begin{comment}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Its important to include how humans act in different scenarios, as regardless of the systems, the remote operator will always be a constant high latency of at least 500 - 1000 ms \cite{ouden2022}. And how they react to a possible system latency will also be crucial for the full remote operation.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cite{gonzález2023}
-- Evaluation tools for latency, 
-- People tested
-
-URLLC
-4K quality res 1080 x 720, at 30 FPS
-H.264 encoded
-
-LTE server, LTE direct, WiFi -> avg packet delay =  500 ms, 42 ms 4 ms %Er et bilde i filutforsker hvis trengs
-Can activate low latency mode. 
-Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for unmanned aerial vehicles
-Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
-concludes with a e2e of 250 ms is vaiable for service usability.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\cite{jernberg2024}
-"However, it also seems to be the case that remote operators adapt to the circumstances they find themselves in; for example, they drive with a safety margin reducing risks to their personal chosen limit and do not override the barriers of their own choice."
-
-"The reaction time in H1 (a car cutting in into the ego lane) increased more, for each latency condition, than the offset in time that the manipulation created. This suggests that even an unperceived increase in latency (based on subjective ratings) is affecting the participants in a way that makes them less observant of their surroundings. Combined with a self-reported decline in performance and control as the latency increases, a conclusion could be that the added mental workload is turning the primary driving task into a distraction in itself, by forcing the operator to devote an unusual amount of attention just to maintain speed and lane position."
-
-\end{comment}
-
-\subsubsection{Adaptation to stable latency.}
-
-\begin{comment}
-
-Jernberg(2024) 
-"Fixed latency seems to be better than varied latency" (Davis et al., 2010, Gnatzig et al., 2013) 
-
-
-Gorsich et al. (2018) found that a higher latency results in more inaccurate behavior, with a drastic decrease starting at a latency of 600 ms, and Gnatzig et al. (2013) found that a constant latency of 500 ms was unproblematic for drivers when the vehicle was steadily kept at 30 km/h on their track. 
-\cite{jernberg2024}
-- driver was not given a latency
-
-(Neumier 2019)
-Could not confirm that fixed latency resultet in any better result than varied latency.
-Could not confirm "Kang et al" \cite{kang2018} who stated that fixed latency leads to better driving performance than varying. \cite{neumeier2019}
-For the slalom, even with stable, the car swivels more out of lane.
-% Kang did not at all mention fixed vs variable latencies. 
-\cite{neumeier2019}
-Was given the ca. latency
-
-
-
-In the event of offloading a truck with a crane, the participents where exposed to constant levels of latency, and showing that delaly of joystick all the way up to 480 ms was basicly irrelevant for QoE and the results of task done pr time. However a delay of 880 significantly reduced the performance overall by atleast halfing the rating on the scores (1-5).
-\cite{brunnström2020}
-\end{comment}
+\subsubsection{Adaptation to latency}
+A topic for discussion in more of the research around remote control is the human ability to adapt to latency. Neumeier et al. \cite{neumeier2019} points this out to be one of the research questions for their paper. Even with a lot of test with different levels of mixed latency or stable and multiple runs, could they not confirm or deny any adaptation resulting in a stable latency is better than varied. The research by Jernberg et al. \cite{jernberg2024} also discuss stable latency, mentioning that the papers of Davis et al. (2010) and Gnatzig et al. (2013) found that a stable latency even as high as 500 ms \cite{jernberg2024}. A observation was that remote operators adapt to circumstances, for example driving with safety margins to reduce risks. Yet Jernberg et al. could not confirm and conclude that this was adaption to latency alone. As there was a lot of parameters tested and only up to 289 ms, the results of the test could also be credited to the differences in the individual participant, setting like rural or urban and type of hazard. 
 
 
 \subsection{Measured Latency for Different Vehicles}
-Different researchers have approached remote operation with their own measurement methods, system architectures and performance criteria, but the challenges of latency remain comparable. This subsection examines how latency has been measured across trains, cars, drones and cranes, what numerical values these studies reported, and which thresholds they used to classify acceptable and unacceptable delay. By reviewing both the technical measurement approaches, such as synchronized timestamping, G2G and E2E evaluation, the results illustrate how various industries establish practical latency boundaries. This comparison provides a reference point for railway applications, showing how today's measurements are compared to thresholds and discussing how more research on a dedicated railway threshold is still needed.
+Different researchers have approached remote operation with their own measurement methods, system architectures and performance criteria, but the challenges of latency remain comparable. This subsection examines how latency has been measured across trains, cars, and drones, what numerical values these studies reported, and which thresholds they used to classify acceptable and unacceptable delay. By reviewing both the technical measurement approaches, such as synchronized timestamping, RTT, G2G and E2E evaluation, the results illustrate how various industries establish practical latency boundaries. This comparison provides a reference point for railway applications, showing how today's measurements are compared to thresholds and discussing how more research on a dedicated railway threshold is still needed.
 
 
-Table \ref{tab:LatencyMeasured} contains the papers inclduing own latency measurments of real test of remote control operation. Which method they use to measure, the threshold they decided to compare it to and where that threshold has its origin.
+Table \ref{tab:LatencyMeasured} contains the papers including own latency measurements of real test of remote control operation. Which method they use to measure, the threshold they decided to compare it to and where that threshold has its origin.
 
 \import{./Tables/}{LatencyThresholdResults}
 
-\begin{comment}
-In the case of XX who reference Jernberg 2024 adn their findings of. Jernberg goes into details of the hazards and proxy hazards that the driver were facing. As mentioned in Section 4 "Related Work" \cite{jernberg2024}
-How in control of the vehicle were you during the drive (1-5)
-Baseline 3.7, 100ms 3.5, 200ms 2.9
+Latency measurements reported in the reviewed studies vary considerably, not only because different vehicles and communication technologies were tested, but also because the research community does not use a single standardised method for reporting delay. This creates challenges when comparing results across studies, as terms such as E2E, G2G, and RTT latency capture fundamentally different parts of the video transmission.
 
+Several studies report End-to-End (E2E) latency, but the definition of E2E differs. In some cases, E2E refers to only video transmission from the sender to receiver, while other include also image capturing and image display, making it the same as G2G. While in others it also includes operator reaction time, vehicle actuation delays, or additional processing within control software. Because the boundary of the measurement is inconsistent, two studies reporting “E2E latency” may in practice have measured processes of very different scope and it is therefore important to be precise and thorough when performing and describing the results. This is seen clearly in automotive research such as Ouden \cite{ouden2022}, where E2E was separated into video latency and control latency, compared to the drone studies where E2E typically includes only camera to display time, G2G.
+The G2G approach was utilized by Railway testing in D41.2 \cite{fp2r2dato2024d41_2} with synchronized devices and recorded values of 340 - 380 ms. While G2G gives a clear representation of how the video stream is experienced by a human operator, it does not indicate the contribution of individual components such as encoding, network transport, or decoding. As a result, G2G measurements are useful for assessing operational feasibility but less suitable for diagnosing technical bottlenecks.
 
-The most referenced remote control latency effect paper, Neumeier's paper \textit{Teleoperation: The Holy Grail to Solve Problems of Automated Driving? Sure, but Latency Matters} \cite{neumeier2019}, talks about how participant leave the car lane significantly more with higher latency, even tho with stable high latency. However, as mentioned Neumeier got no differences for whatever latency\cite{neumeier2019}
-Scenarios, was driving with turns, and one parking. No hazards except latency. 
+Round-Trip Time (RTT) methods, often used in robotics and drone studies such as Kaknjo \cite{kaknjo2018videolatency} and Böhmer \cite{böhmer2020}, measure the time for a packet to travel from source to destination and back again. RTT is simple to compute but does not represent how a remote operator perceives delay. Video transmission is not normally round-trip, and RTT values can overestimate or underestimate the latency relevant for remote driving. RTT also struggles with revealing the individual components effect.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{fp2r2dato2024d41_2} % Need more information about bitsize + other
-D41.2 - Testing reports \& assessment 
-Results of the remote driving of tramways demonstrator. 
-Image latency 
-- G2G, (capturing processing, compression, transmission, reception, decompressing, displaying)
-- Oslo to Berlin
-- Two atomic clocks on phones.
-- Measured to be 340 - 380 ms (Always under 400 ms)
+As some of the papers has specified, they have taken in use synchronized clocks. These are essential for accurate measurements as even our computers deviate by some milliseconds \cite{kozarevic2025}. Therefore more recent papers like Kozarevic \cite{kozarevic2025}, Ouden \cite{ouden2022} Jernberg \cite{jernberg2024} and more have introduced this as to not produce inaccurate results of the their setups.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{jürgensen2025rcrailvehicles}
-- Finds actually latency in project
-- Uses Car threshold to evaluate
+Because of these methodological differences, the numerical values reported across railway, automotive, drone, and crane studies cannot be directly compared without understanding the measurement technique used. For example, a 300 ms G2G latency during tram remote control represents a complete perception delay for an operator, while a 300 ms RTT measurement in a drone test may correspond to less than half that value in actual one-way visual delay. Similarly, E2E results that include human reaction time cannot be compared to E2E results describing only transmission delay.
 
-Is a project in "Remote Control for Rail Vehicles" where they test a remote control train for a short track from "X" to "X" in Germany. Here they do "this" and found "that".
+\subsubsection{Threshold for acceptable latency}
+Across the papers about remote control there are a vast amount of results for acceptable latency. The lowest discussed as a threshold was 0 ms for drone and 500 ms for crane and car. Yet the majority ends up with a threshold around the middle of those.
+After reading threw research paper on the topic of how latency threshold are set. It became apparent that very few have done enhanced research on this very topic for railway remote control. Papers such as Jürgensen \cite{jürgensen2025rcrailvehicles} and Kozarevic \cite{kozarevic2025}, who mentions the maximum latency measured before loosing performance reference sources of other vehicles and their tests of remote control. 
+At the same time, Neumeier observed that some tasks, particularly predictable or hazard-free ones were not significantly affected even at higher delays. Which as discussed earlier is what tasks expected of railway. Neumeier's research directly influenced later studies as Jernberg \cite{jernberg2024} explicitly chose +100 ms and +200 ms latency increases because Neumeier had identified 300 ms as a potential upper range for manageable control. However, Jernberg also found that even smaller increases could negatively influence operator performance in complex hazard situations, indicating that thresholds are task-dependent rather than universal. Even Jürgensen \cite{jürgensen2025rcrailvehicles} decided to evaluate their results based on the results from research for remote car operation, Ouden et al. \cite{ouden2022} which also had chosen its limits from Neumeier et al. \cite{neumeier2019}. 
 
-Says that at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
-And references: "Design and Evaluation of Remote Driving Architecture on 4G and 5G Mobile Networks" (Ouden, 2022) \cite{ouden2022}
-Which references (Lane, 2002) and (Neumeier, 2019)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%
-D41.2 - Testing reports \& assessment 
-Results of the remote driving of tramways demonstrator. 
-\cite{fp2r2dato2024d41_2}
-- Finds actually latency
+In the release of FP2R2DATO D5.4 in Chapter 12 \cite{fp2r2dato2023d5_4} about \textit{Degraded modes specific to remote control}, a graph about speed threshold related to video latency for RTO is proposed as you can see in Figure \ref{fig:SpeedByLatencyThreshold}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/D5_4 threshold.png}
+    \caption[Threshold]{Maximum speed function of latency}
+    \label{fig:SpeedByLatencyThreshold}
+    \source{\cite{fp2r2dato2023d5_4}}
+\end{figure}
+Where as the Y-axis is not directly speed in km/h but a scaled measure of the trains max speed accredited. The figure suggest a steep reduction in speed at 150 ms, before at 400 ms that the train goes to the absolute minium speed possible \cite{fp2r2dato2023d5_4}. These numbers are not directly calculated, but rather chosen from the understanding of the author with the influence of Table \ref{fig:DistancePerTime} that show driven distance at different speeds.
 
-Image latency 
-- G2G, (capturing processing, compression, transmission, reception, decompressing, displaying)
-- Oslo to Berlin
-- Two atomic clocks on phones.
-- Measured to be 340 - 380 ms (Always under 400 ms)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/D5_4 driven distance.png}
+    \caption[DistancePrTime]{Driven distance function of speed}
+    \label{fig:DistancePerTime}
+    \source{\cite{fp2r2dato2023d5_4}}
+\end{figure}
 
-
-Auxiliary circuit tests,
-- Driver safety
-- Remote wake up
-- R driving loop
-- R control commands
-- R ...
-Static functional tests,
-- Start Tram, CERES,
-- CERES do step 1.2.3\dots
-
-Dynamis functional tests,
-- CERES Local brakte test
-- CERES Remote Brakte test 
-- C Drive 5km/h 
-- C Drive 100\% dont break max speed 
-- C loose communication.
-- C DSD brake sequence
-- C Local driver break priority over remote.
-
-Reaction Time,
-reduction in time needed to perform spesific tram operations, fleet management and preparation, start-up and shut-down procedures, maintenance tasks, shunting. 
-Time reduction in these processes are efficiency improvments.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{kozarevic2025}
-- Finds actually latency in project
-- Uses Car / Drone threshold to evaluate
-Talks about the dangers of latency in high speed vehicles. Comparing it to drone operations.
-Reference drone and says 100 ms
-Reference Chen?, and Neumeier, 170 ms and 300 ms have minimal impact on remote operators.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cite{ouden2022}
-- Evaluates Latency by performance, (people) IRL  
-
-- Evaluate Latency threshold on SIMulation
-
-- 4G and 5G 
-- 4 times 120 angle camera
-- H.264
-- Split latency up into Control and video and does
-- min, mean, 95\%ile, max latency in ms
-
-- Speed of 10, 20, 30 and 40km/h
-100 manual test runs for benchmark
-180 runs of RC with 4G
-300 runs of RC with 5G 
-One Trip Latency.” Every unit
-was time synchronized with a GPS-PPP source.
-Packets logged using tcpdump.
-
-
-Includes a reference that results in at 300ms, you get loss of performance, and at 1000ms the delay becomes unfeasible.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cite{jernberg2024}
-- Evaluates Latency by performance, (people) Sim
-
-- Voysys
-- G2G
-- Average delay of 88.8 ms and added conditions of +100 -> 188 ms and +200 -> 288 ms
-- 50km/h and 70km/h (Try to keep speedlimits)
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{comment}
+This way to decide a threshold seem problematic. This is from Europe's Rail delivery but give no scientific grounds for the choices. Use Norway as an example where the max allowed speed for passing threw a station is 40 km/t \cite{snlrail}. Easy formula from Norwegian railway operators Bane NOR \cite{banenor}:
+\[
+b = \frac{v^{2}}{2r} + s
+\]
+given the example values of r (retardation) = 1 m/s and ignoring the s (safety). We get 61.7 m of break length. While 150 ms of latency in video control will result in 1.7 m added length which is only 2.7\% of total length. Without discussing this much further, this graph and recommendation of speed, seem very conservative, and set a maybe unrealistic and harsh threshold for railway operation.
 
 \subsubsection{Calculation of latency}
 The measurements and therefore the calculations of latency is not easily done. Since its a fluctuating measurement that varies a lot depending on the components in the system used, the way to calculate various on what the research aims to figure out.
 
-\begin{comment}
-Very difficult from related works:
-Real time video latency: \cite{kaknjo2018videolatency}
-Here, the time of the visual event in front of
-the camera is denoted as T1 and the time when the event
-was detected on the receiving end as T2. The start of frame processing is denoted as T3.
-\textit{TVL =(T1 - T1)-(T2 -T3)=T3 -T1}
-\end{comment}
+Some studies, such as Larsen \cite{larsen2022}, estimate latency analytically by decomposing it into propagation delay, serialization delay, queueing, and processing. These models help explain why latency changes over long distances or across different network architectures, but they require detailed knowledge of the network path and still do not capture camera or display-related delays. Larsen express total communication delay as:
 
-\subsubsection{Threshold for acceptable latency}
-After reading threw research paper on the topic of how latency threshold are set. It became apparent that very few have done enhanced research on this very topic for railway remote control. Papers such as Jürgensen \cite{jürgensen2025rcrailvehicles} and Kozarevic \cite{kozarevic2025}, who mentions the maximum latency measured before loosing performance reference sources of other vehicles and their tests of remote control. 
+\[
+L_{\mathrm{e2e}} = n L_{\mathrm{proc}} + (n+1)L_{\mathrm{ser}} + L_{\mathrm{prop}} + L_{Q},
+\]
 
-\begin{comment}
-+100 and +200 was chosen because of Neumeier result.
-Reference Neumeier et al. (2019) stated that 300 ms might be manageable for trained operators but in some conditions during their simulator study there were tendencies that even smaller latencies affected the performance of the operator negatively.
-\cite{jernberg2024}
-\end{comment}
+with processing, serialization, propagation and queueing terms depending on distance, data size, and link rate. (n = switches along the network, n+1 = number of links, LQ = queing latency)
 
-\textit{Maybe include calculations of speed of train, compare to the previous and discuss a posible latency treshhold. End in that research on spesificly train drivers on railway should be tested.
-Use this report \cite{fp2r2dato2023d5_4}}
+One common approach is G2G latency, used for example in the tramway demonstrator in D41.2 \cite{fp2r2dato2024d41_2}. In that report G2G was measured by the time from light hitting the camera sensor to the moment the corresponding frame appears on the operator display. In its simplest form:
+
+\[
+L_{\mathrm{G2G}} = T_{\mathrm{display}} - T_{\mathrm{capture}}.
+\]
+
+Another widely used method is Round-Trip Time (RTT), which does not require synchronized clocks. Böhmer \cite{böhmer2020} computes RTT by sending a packet and measuring the time until the response arrives:
+
+\[
+L_{\mathrm{RTT}} = t_{r1} - t_{p1}.
+\]
+
+RTT is simple to measure but does not fully represent visual delay, since video streams are one-way.
+
+A more detailed method of E2E is shown in Kaknjo \cite{kaknjo2018videolatency}, who measures real-time video latency by timestamping the visual events in front of the camera (\(T_1\)) and event detected on the receiving end (\(T_2\)). The start of frame processing is denoted as (\(T_3\)):
+
+\[
+L_{\mathrm{video}} =(T_2 - T_1)-(T_2 - T_3) = T_3 -T_1
+\]
+
+This isolates video-processing delay but requires accurate timestamp extraction.
+
+All one-way methods depend on clock synchronisation; inaccurate clocks introduce measurement error. For this reason, studies such as D41.2 \cite{fp2r2dato2024d41_2} synchronised devices with atomic references, while others rely on GPS time or avoid one-way measurement entirely.
+
+Overall, because G2G, E2E, RTT, and video-latency measurements capture different parts of the signal chain, latency values from different studies cannot be directly compared without understanding which method was used.
+
 
 \subsection{Tools and protocols for remote control}
 Remote operation depends not only on network performance but also on the tools and protocols used to capture, encode, transmit and display video. This subsection outlines the main technical options applied across the reviewed studies as well as encoding formats and measurement frameworks.This is done for the purpose of showing how different protocols influence latency, stability and video quality, and to compare their practical strengths and limitations for real-time control. By highlighting the variety of available tools and the results they produced in different vehicle domains, the subsection provides a foundation for identifying which approaches are most suitable for remote train operation.
@@ -403,10 +288,6 @@ Differnt aspects of latency \textit{What is the difference}
 Fixed, static v dynamic.
 
 \begin{comment}
-
-
-
-
 \subsection{Parameters for latency testing}
 What parameters are we measuring. 
 Latency, Jitter, Packet loss.

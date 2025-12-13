@@ -1296,6 +1296,7 @@
       \strng{authornamehash}{d67308f0b2af9309db74bc422722653e}
       \strng{authorfullhash}{d67308f0b2af9309db74bc422722653e}
       \strng{authorfullhashraw}{d67308f0b2af9309db74bc422722653e}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -1837,6 +1838,69 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0923596520301648
+      \endverb
+    \endentry
+    \entry{snlrail}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d92ee5df9848f2a36376687db9d80f1}{%
+           family={SNL},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{fullhash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{fullhashraw}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{bibnamehash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{authorbibnamehash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{authornamehash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{authorfullhash}{5d92ee5df9848f2a36376687db9d80f1}
+      \strng{authorfullhashraw}{5d92ee5df9848f2a36376687db9d80f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Jernbane}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://snl.no/jernbane
+      \endverb
+      \verb{url}
+      \verb https://snl.no/jernbane
+      \endverb
+    \endentry
+    \entry{banenor}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d67308f0b2af9309db74bc422722653e}{%
+           family={NOR},
+           familyi={N\bibinitperiod},
+           given={Bane},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d67308f0b2af9309db74bc422722653e}
+      \strng{fullhash}{d67308f0b2af9309db74bc422722653e}
+      \strng{fullhashraw}{d67308f0b2af9309db74bc422722653e}
+      \strng{bibnamehash}{d67308f0b2af9309db74bc422722653e}
+      \strng{authorbibnamehash}{d67308f0b2af9309db74bc422722653e}
+      \strng{authornamehash}{d67308f0b2af9309db74bc422722653e}
+      \strng{authorfullhash}{d67308f0b2af9309db74bc422722653e}
+      \strng{authorfullhashraw}{d67308f0b2af9309db74bc422722653e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{"Kapaistet på jernbane" or "Hastighet" or "Bremser"}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://oppslagsverk.banenor.no/
+      \endverb
+      \verb{url}
+      \verb https://oppslagsverk.banenor.no/
       \endverb
     \endentry
   \enddatalist

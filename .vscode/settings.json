@@ -1,9 +1,11 @@
 {
     "cSpell.words": [
+        "Böhmer",
         "Brandenburger",
         "Brandernburger",
         "Brunnström",
         "CBTC",
+        "DATO",
         "Decapsulation",
         "ERTMS",
         "ETCS",
@@ -12,6 +14,7 @@
         "González",
         "Jernberg",
         "Jürgensen",
+        "Kaknjo",
         "Kozarevic",
         "Neumeier",
         "Ouden",
@@ -22,7 +25,8 @@
         "TWAMP",
         "UITP",
         "UITP's",
-        "URLLC"
+        "URLLC",
+        "Voysys"
     ],
     "cSpell.language": "en-GB"
 }
