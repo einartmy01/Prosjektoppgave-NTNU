@@ -3,7 +3,7 @@
 \begin{table}[H]
     \centering
     \caption{Tools evaluation of Latency}\label{tab:ToolsEvaluation}
-    \begin{tabularx}{\linewidth}{l|X|c|C|C|C} 
+    \begin{tabularx}{\linewidth}{|l|l|c|C|c|C|} 
         \toprule
         \textbf{Vehicle} & 
         \textbf{Paper} & 
@@ -15,34 +15,32 @@
 
         % --- RAILWAY Category ---
         \multirow{2}{*}{\textbf{Railway}} 
-         & Mejías 2024 \cite{mejias2024} & 2024 & Method  \\
+         & Mejías \cite{mejias2024} & 2024 & E2E, with NTP-sync timestamps & Adaptive Bitrate, RTSP vs WebRTC & RTSP $>$ WebRTC for multi-viewer setup. Adaptive bitrate allow lower bandwidth, but get higher latency \\
         \cmidrule{2-6}
-         & Paper C & 2023 & X & X & X \\ 
+         & Kozarevic \cite{kozarevic2025}& 2025 & G2G via synchronized clocks + screenshot/OCR latency measurement & Voysys video system & Stable G2G $<$ 400 ms with Voysys \\ 
         \midrule 
 
         % --- CAR Category ---
         \multirow{3}{*}{\textbf{Car}} 
-            & Kaknjo 2018 \cite{kaknjo2018videolatency} & 2018 & X & X & X \\ 
+            & Kaknjo \cite{kaknjo2018videolatency} & 2018 & G2G latency with dedicated stratum-1 NTP sync & TCP vs UDP, H.264 vs MJPEG & latency $<$ MJPEG, Bandwidth $<$ H.264 and UDP $<$ TCP for latency \\ 
         \cmidrule{2-6} 
-            & Kang 2018 \cite{kang2018} & 2018 & X & X & X \\ 
-        \cmidrule{2-6}
-            & Paper C & 2023 & X & X & X \\ 
+            & Kang \cite{kang2018} & 2018 & X & X & X \\ 
+        \cmidrule{2-6} 
+            & Ouden \cite{ouden2022} & 2022 & X & X & X \\ 
         \midrule 
 
         % --- Drone Category --- 
         \multirow{3}{*}{\textbf{Drone}} 
-            & N. González 2023 \cite{gonzález2023} & 2023 & Video in front of camera & LTE server, LTEdirect WifiDirect & 500 ms for LTEs and 42 ms for LTEd, 4 ms for Wifid \\
+            & N. González \cite{gonzález2023} & 2023 & Video in front of camera & LTE server, LTEdirect WifiDirect & 500 ms for LTEs and 42 ms for LTEd, 4 ms for Wifid \\
         \cmidrule{2-6} 
-            & Larsen 2022 \cite{larsen2022} & 2022 & X & X & X \\
+            & Larsen \cite{larsen2022} & 2022 & X & X & X \\
         \cmidrule{2-6}
-            & Böhmer 2020 \cite{böhmer2020} & 2020 & X & X & X \\
+            & Böhmer \cite{böhmer2020} & 2020 & X & X & X \\
         \midrule 
             
         % --- Crane Category ---
-        \multirow{2}{*}{\textbf{Crane}} 
-            & Paper A & X & X & X & X \\ 
-        \cmidrule{2-6} 
-            & Paper B & X & X & X & X \\ 
+        \multirow{1}{*}{\textbf{Crane}} 
+            & Brunnström \cite{brunnström2020} & 2020 & X & X & X \\ 
         \bottomrule
 
     \end{tabularx}
