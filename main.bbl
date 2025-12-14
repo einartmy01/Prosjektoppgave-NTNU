@@ -1216,37 +1216,6 @@
       \verb https://www.techtarget.com/whatis/definition/Request-for-Comments-RFC
       \endverb
     \endentry
-    \entry{dns_latency_protocols}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=7a6949c0cc179351f826f697de88ff43}{%
-           family={DNSstuff},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{fullhash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{fullhashraw}{7a6949c0cc179351f826f697de88ff43}
-      \strng{bibnamehash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{authorbibnamehash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{authornamehash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{authorfullhash}{7a6949c0cc179351f826f697de88ff43}
-      \strng{authorfullhashraw}{7a6949c0cc179351f826f697de88ff43}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Network Latency Test Tools: Measuring Ping, Traceroute, and Delay}
-      \field{urlday}{8}
-      \field{urlmonth}{11}
-      \field{urlyear}{2025}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.dnsstuff.com/network-latency-test-tools
-      \endverb
-      \verb{url}
-      \verb https://www.dnsstuff.com/network-latency-test-tools
-      \endverb
-    \endentry
     \entry{sjt_regulations}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=14c9adcb7c5b81d863072d8d309feeda}{%
@@ -1514,8 +1483,8 @@
       \strng{authornamehash}{b3a64faa8dc0c1b5ccf96afa15c9a280}
       \strng{authorfullhash}{a6ea819838a42d964debbe1597c9cc44}
       \strng{authorfullhashraw}{a6ea819838a42d964debbe1597c9cc44}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Wireless Communications and Mobile Computing}
@@ -1573,8 +1542,8 @@
       \strng{authornamehash}{9f2f1453729ea907d73aa7b63e1638d7}
       \strng{authorfullhash}{51f3359b2fcc0590d32a87d2362146ed}
       \strng{authorfullhashraw}{51f3359b2fcc0590d32a87d2362146ed}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Teleoperation: The Holy Grail to Solve Problems of Automated Driving? Sure, but Latency Matters}
