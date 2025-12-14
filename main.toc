@@ -67,4 +67,4 @@
 \contentsline {subsection}{\numberline {6.2}Important aspects of latency}{32}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Measuring latency}{32}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Future work}{33}{subsection.6.4}%
-\contentsline {section}{References}{34}{subsection.6.4}%
+\contentsline {section}{References}{35}{subsection.6.4}%
