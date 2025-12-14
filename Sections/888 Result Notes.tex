@@ -217,3 +217,133 @@ RTT = tr1 - tp1 (Round-trip time)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{comment}
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{mejias2024}
+- Evaluate latency depending on parameters / tools
+Compare:
+- RTSP
+- WebRTC Web Real time communication
+as their Real-time Transport Protocol (RTP) protocol.
+- E2E
+- H.264
+
+Methodology for latency measurement.
+Network Time Protocol (NTP) is necessary to synchronize sender and receiver.
+Server obtains the TS1 when image is captured. Adds it to the RTP packets generated after the encoding. Player retrieves the timestamp (TS1) from the RTP packets and compares it with the current time TS2 when the image is beeing displayed. To do this, you must retrive it from the package before the decoder and comapre it with the image comming out of the decoder. 
+
+1 Capture: the camera captures an image together with the timestamp. The timestamp is added to the metadata of the image.
+2 Encoding: the image is encoded into a H.264 bit stream. The metadata is maintained unaltered along the encoding process.
+3 Encapsulation: the H.264 video stream is encapsulated into RTP payload. The capture timestamp is extracted from the metadata and added to the RTP header. For this, it is required both the RTP standard header and its RFC 8286 extension.
+4 Sender: RTP packets are sent on the communication channel. In the case of RTSP, the player opens a connection with the sender. For WebRTC, a negotiation between the sender and receiver is performed through the signaling server to determine the communication route.
+
+The player receives the RTP packets through RTSP or WebRTC and calculates the latency:
+1 Receiver: it receives the RTP packets through the channel established with the media server.
+2 Decapsulation: the original H.264 content is extracted from the RTP payload. In addition, the timestamp contained in the RTP header is extracted and added as metadata of the H.264 content.
+3 Decoding: the H.264 content is decoded to retrieve the uncompressed image. The metadata is maintained unaltered along the decoding process.
+4 Displaying: the image is displayed. Moreover, the timestamp is extracted from the metadata and subtracted from the current time to obtain the End-to-End latency. This is shown to the remote driver, who will consider it during the operations.
+
+BITRATE 
+Change bitrate regarding quality of output (jitter or packet loss). Bitrate vary between 5Mbps, 3.5Mbps, 2Mbps.
+A change of 2\% packet loss and 500Hz / 1000Hz jitter.
+
+implementation.
+GStreamer framework. (Open source)
+Pylon source from Basler element that capture of camera images and timestamps.
+H.264 NVidia en/de coder. Provided by NVIDIA graphics cards. It is the key to enable bitrate adaption.
+RTP H.264 pay/depay. For packaging encoded video signal into RTP packets, and RTP includes timestamp in header.
+
+WebRTCbin. Allows communication via WebRTC, peer2peer, must connect to signaling server responsible for negotiation.
+RTSP server/client. Manage connection and send/receive data.
+
+Camera, Media server on Jetson Xavier (Either WebRTC or RTSP), Network equipment (switch or laptop simulating a router, allowing to evaluate against bandwith degradation). Computer as player and reciver.
+
+Results
+E2E, time after capture to the time before display
+S2S, time in front of camera to time displayed on player image 
+
+Measurments for each camera and alternating available bandwidth.
+When enough bandwidth results in 150 ms S2S and <75 ms E2E 
+Bandwidth of <=10 results in 570 ms - 1000 ms or pixelation freezing in both S2S and E2E
+
+RTSP
+Difference in S2S and E2E is approx 70 ms - 100 ms which is image capturing and displaying.
+
+WebRTC is faster E2E but not S2S
+
+RTSP with rate control
+Allows the bandwidth to go past 7 Mbps that was issue before, although with high latency. 
+Adjust itself back up again. Also we can see a shift in latency between latency when increased bitsize of video.  
+
+%%%%%%%%%%%%%%%
+\cite{kaknjo2018videolatency}
+- Evaluate latency by perfomance, (different tools) IRL, 
+
+- G2G
+- Time stamps
+- H.264
+- MJPEG
+- RTSP (Real Time Streaming protocol)
+- TCP/UDP
+
+Found MJPEG to be 300 ms lower latency than H.264. However it found H.264 to demand less bandwitdh 50-380Kbps as it compresses more enhensive than MJPEG 4.6-5Mbps.
+Found detoriation in performance in latencies above 300 ms and increase in errors during control for latencies larger than 500 ms.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Kang 2018}
+\cite{kang2018}
+- Evaluate latency by perfomance, (different tools) IRL, 
+
+- 3 different resulutions (320x240, 640x480, 1280x960)
+- 3 different bitrate (0.5Mbps, 1Mbps, 4Mbps)
+- LTE and WiFi
+- Video and camerea catching timestamps
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Larsen 2022}
+\cite{larsen2022}
+- Evaluation latency on perfomance, (tools) IRL
+
+5G URLLC network
+H.264
+
+Le2e = Lprop agation + Lproc essing + Lser ialisation
+Lprop = distance / v in medium
+Lser = S datasize / R transmission rate
+
+Le2e = nLproc + (n+1)Lser + Lprop + LQ 
+n = switches along the network
+n+1 = number of links
+LQ = queing latency.
+
+0.5 Mbps video rate in uplink and a 60 Hz update rate in downlink. Further, we assume that the higher quality video for inspection require 8 Mbps.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{böhmer2020}
+- Evaluation latency on perfomance, (tools) IRL
+
+Predictably Reliable Real-time Transport (PRRT) protocol [A. Schmidt, “Cross-layer latency-aware and -predictable data communication 2019]
+The Crazyflie is controlled by Bitcraze's application layer protocol called Crazy Real-Time Protocol (CRTP)
+
+Rasberry Pi including WiFi 2.4GHz due to Rasberry Pi constraints
+timestamps by controller to drone: 
+
+the Crazyradio communication path using the traditional radio link
+the PRRT communication path with the Python bridge, and
+the PRRT communication path with the Rust bridge.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cite{gonzález2023}
+- Evaluation tools for latency, 
+- People tested
+
+URLLC
+4K quality res 1080 x 720, at 30 FPS
+H.264 encoded
+
+LTE server, LTE direct, WiFi -> avg packet delay =  500 ms, 42 ms 4 ms %Er et bilde i filutforsker hvis trengs
+Can activate low latency mode. 
+Connection requirments of 100 ms for video streaming, set by 3GPP TS 22.829 for unmanned aerial vehicles
+Found added latency of around 180 start causing lower MOS / QoE, and steady deteriation making it 1, lowest grade at around 460 ms
+concludes with a e2e of 250 ms is vaiable for service usability.
+
+\end{comment}
