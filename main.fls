@@ -493,6 +493,14 @@ INPUT Sections\02.5 Method.tex
 INPUT .\Sections\02.5 Method.tex
 INPUT Sections\02.5 Method.tex
 INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT .\Images\Prisma.png
+INPUT .\Images\Prisma.png
+INPUT Images\Prisma.png
+INPUT .\Images\Prisma.png
+INPUT .\Images\Prisma.png
+INPUT .\Images\Prisma.png
+INPUT .\Images\Prisma.png
+INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT .\Sections\03 Theory.tex
 INPUT .\Sections\03 Theory.tex
 INPUT Sections\03 Theory.tex
@@ -512,7 +520,6 @@ INPUT .\Images\GoA from UITP.png
 INPUT .\Images\GoA from UITP.png
 INPUT .\Images\GoA from UITP.png
 INPUT .\Images\GoA from UITP.png
-INPUT C:\Users\einar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT .\Sections\.\Tables\ETCSItems.tex
 INPUT .\Sections\.\Tables\ETCSItems.tex
 INPUT Sections\.\Tables\ETCSItems.tex
