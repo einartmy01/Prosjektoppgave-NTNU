@@ -1,8 +1,9 @@
+%cspell:words CPRI CRTP 
 \cite{jürgensen2025rcrailvehicles}
 \paragraph{Additional extracted points:}
 \begin{enumerate}
     \item \textbf{Protocols Used (and reasons, if stated)} \\
-    The system currently uses \textbf{TCP} for communication between server and vehicle, prioritizing reliability for control commands, Heartbeat integrity, and safe data transfer. For the livestream, TCP is used in the prototype for stability, though the report notes that \textbf{UDP} may become preferable on cellular networks due to lower latency. Communication between components relies on Python sockets, JSON-encoded messages, and OpenCV for video handling :contentReference\cite{jürgensen2025rcrailvehicles}.
+    The system currently uses \textbf{TCP} for communication between server and vehicle, prioritizing reliability for control commands, Heartbeat integrity, and safe data transfer. For the livestream, TCP is used in the prototype for stability, though the report notes that \textbf{UDP} may become preferable on cellular networks due to lower latency. Communication between components relies on Python sockets, JSON-encoded messages, and OpenCV for video handling \cite{jürgensen2025rcrailvehicles}.
 \end{enumerate}
 
 \cite{mejias2024}
@@ -17,7 +18,7 @@
 \paragraph{Additional extracted points:}
 \begin{enumerate}
     \item \textbf{Protocols Used} \\
-    The video stream uses H.264 encoding, with command-and-control messages carried over mobile 4G/5G networks. No additional transport protocols are discussed in detail :contentReference[oaicite:3]{index=3}.
+    The video stream uses H.264 encoding, with command-and-control messages carried over mobile 4G/5G networks. No additional transport protocols are discussed in detail .
 \end{enumerate}
 
 
@@ -27,7 +28,7 @@ The paper evaluates video transmission using RTSP over both TCP and UDP. Tests i
 
 \cite{kang2018}
 \paragraph{Protocols used}
-The streaming setup uses UDP to transmit H.264- or MPEG-4–encoded video frames from the vehicle to the server. The server decompresses frames using a GStreamer pipeline. LTE and Wi-Fi are used as transport networks, but no additional communication protocols are implemented beyond UDP for frame delivery. 
+The streaming setup uses UDP to transmit H.264- or MPEG-4 encoded video frames from the vehicle to the server. The server decompresses frames using a GStreamer pipeline. LTE and Wi-Fi are used as transport networks, but no additional communication protocols are implemented beyond UDP for frame delivery. 
 
 \cite{gonzález2023}
 \paragraph{Protocols used}
@@ -35,7 +36,7 @@ Telemetry and command/control use MAVLink over TCP. Video is transmitted with RT
 
 \cite{larsen2022}
 \paragraph{Protocols used}
-The fronthaul assumes Ethernet transport using eCPRI to carry 5G split-7.2x traffic. All latency modelling is based on Ethernet frames traversing multiple switches with strict-priority scheduling or Time-Aware Shaping (TAS). No application-layer protocols are used, as the study focuses on transport-layer behaviour rather than drone-specific command or video formats. :contentReference[oaicite:1]{index=1}
+The fronthaul assumes Ethernet transport using eCPRI to carry 5G split-7.2x traffic. All latency modelling is based on Ethernet frames traversing multiple switches with strict-priority scheduling or Time-Aware Shaping (TAS). No application-layer protocols are used, as the study focuses on transport-layer behaviour rather than drone-specific command or video formats. 
 
 \cite{böhmer2020}
 \paragraph{Protocols used}

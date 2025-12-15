@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "ANOVAs",
+        "balises",
         "Bannigan",
         "beamforming",
         "Böhmer",
@@ -7,6 +9,7 @@
         "Brandernburger",
         "Brunnström",
         "CBTC",
+        "Crazyflie",
         "Crazyradio",
         "DATO",
         "Decapsulation",
@@ -14,6 +17,7 @@
         "ETCS",
         "Eurobalises",
         "FRMCS",
+        "fronthaul",
         "Gnatzig",
         "González",
         "interlockings",
@@ -47,6 +51,7 @@
         "UITP's",
         "Urassa",
         "URLLC",
+        "VMAF",
         "Voysys"
     ],
     "cSpell.language": "en-GB"

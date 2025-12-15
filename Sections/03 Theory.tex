@@ -4,17 +4,18 @@
 Automatic Train Operation (ATO) describes systems that automate driving tasks normally performed by a human driver. ATO implementation range from assisting the driver with speed guidance, optimized speed profiles and other information to fully unattended operation where starting, cruising, stopping and door control are automatic. The primary goals are improved punctuality, energy efficiency and safe, repeatable performance \cite{milroy1980aspects}. In freight-specific research such as the ATO-Cargo project, ATO is combined with existing train protection systems (for example ETCS Level~2) and a Remote Supervision and Control Centre (RSC) to allow remote human oversight and intervention during degraded operation or faults \cite{dlr2025atocargo}. 
 
 \subsection{GoA}
-The Grade of Automation (GoA) classifies how much of the train operation is automated. Standards such as IEC 62290 and industry reports \cite{cbtc_goa} describe the commonly used levels from GoA~0 to GoA~4. The table below summarises the practical meaning of each level.
+The Grade of Automation (GoA) classifies how much of the train operation is automated. Standards such as IEC 62290 and industry reports \cite{cbtc_goa} describe the commonly used levels from GoA~0 to GoA~4. Table \ref{tab:GoA} below summarises the practical meaning of each level.
 
 \import{./Tables/}{GoATable}
 
 Remote Train Operations (RTO), as discussed in this paper, is a part of stage GoA~3 as a disruption management handling system and as a safety system for GoA~4 if it were to fail. \cite{brandenburger2023vqreactiontimertc}
 
-GoA also changes and updates regularly because of new technology added that shifts the definition. The figure below is UITP's definition of how GoA is graded.
+GoA also changes and updates regularly because of new technology added that shifts the definition. Figure \ref{fig:GoAUITP} below is UITP's definition of how GoA is graded.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{Images/GoA from UITP.png}
-    \caption[GoA]{UITP's simple definition of GoA}
+    \caption[GoA definition]{UITP's simple definition of GoA}
+    \label{fig:GoAUITP}
     \source{\cite{uitp2018metro}}
   \end{figure}
 
@@ -73,11 +74,12 @@ Wi-Fi is a wireless communication technology following the standards of IEEE 802
 In the domain of vehicular control, Wi-Fi functions by establishing Local Area Networks (LAN) that allow for the secure transmission of real-time control commands and audiovisual feeds, demonstrating in some specific single-access point configurations a lower median latency compared to LTE and 5G cellular networks. Although primarily associated with general data networking, the principles of Wi-Fi signal extension are relevant to railway logistics with the concept of relay chains. Wireless networks can employ repeating nodes to extend the operational range of remote monitoring and control systems to trains far away from the operator. \cite{amador2022wifi, pandey2022wifi}
 
 \subsection{ERTMS/ATO}
-Because of the international rollout of ERTMS, ATO will have to follow along. ERA has designed a solution to have an integrated ERTMS/ATO solution as you can see in the figure below. It showcase how ETCS can be independent, but for ATO to be operational it is crucial for ETCS to guarantee safety.
+Because of the international rollout of ERTMS, ATO will have to follow along. ERA has designed a solution to have an integrated ERTMS/ATO solution as you can see in Figure \ref{fig:ERTMS-ATO}. It showcase how ETCS can be independent, but for ATO to be operational it is crucial for ETCS to guarantee safety.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{Images/ERTMS-ATO solution.png}
     \caption[ERTMS/ATO solution]{Architecture of ERA's ERTMS/ATO solution}
+    \label{fig:ERTMS-ATO}
     \source{\cite{era_ertms}}
 \end{figure}
 Showcasing different ATO working together with different responsibility and how they communicate with each other \cite{era_ertms}.
