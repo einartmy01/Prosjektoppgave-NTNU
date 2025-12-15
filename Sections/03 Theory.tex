@@ -8,7 +8,7 @@ The Grade of Automation (GoA) classifies how much of the train operation is auto
 
 \import{./Tables/}{GoATable}
 
-Remote Train Operations (RTO), as discussed in this paper, is a part of stage GoA~3 as a disruption management handling system and as a safety system for GoA~4 if it were to fail. \cite{brandenburger2023vqreactiontimertc}
+Remote Train Operations (RTO), as discussed in this paper, is a part of stage GoA~3 as a disruption management handling system and as a safety system for GoA~4 if it were to fail \cite{brandenburger2023vqreactiontimertc}. 
 
 GoA also changes and updates regularly because of new technology added that shifts the definition. Figure \ref{fig:GoAUITP} below is UITP's definition of how GoA is graded.
  \begin{figure}[H]
@@ -23,9 +23,9 @@ The formal definitions and required functions per level are described in IEC 622
 
 
 \subsection{ERTMS}
-The European Rail Traffic Management System (ERTMS) is the standardized signalling and control framework developed to improve interoperability, safety, and capacity across European railways. Its introduction replaces diverse national signalling systems with a unified architecture consisting primarily of the European Train Control System (ETCS) and a digital radio communication layer (GSM-R, and in the future FRMCS). According to the European Union Agency for Railways, ERTMS is designed to harmonize train control and supervision across borders while enabling higher automation levels and modern traffic management solutions. \cite{era_ertms}
+The European Rail Traffic Management System (ERTMS) is the standardized signalling and control framework developed to improve interoperability, safety, and capacity across European railways. Its introduction replaces diverse national signalling systems with a unified architecture consisting primarily of the European Train Control System (ETCS) and a digital radio communication layer (GSM-R, and in the future FRMCS). According to the European Union Agency for Railways, ERTMS is designed to harmonize train control and supervision across borders while enabling higher automation levels and modern traffic management solutions \cite{era_ertms}. 
 
-The shift toward ERTMS is the result of decades of signalling evolution from mechanical and relay-based interlocking to computer-based systems. Early interlocking systems (mechanical, relay, and later electronic) require local signal interpretation and fixed block sections, limiting both network capacity and flexibility. \cite{holter2025ertmshistory}
+The shift toward ERTMS is the result of decades of signalling evolution from mechanical and relay-based interlocking to computer-based systems. Early interlocking systems (mechanical, relay, and later electronic) require local signal interpretation and fixed block sections, limiting both network capacity and flexibility \cite{holter2025ertmshistory}.
 
 ERTMS is built around ETCS, which operates in multiple “levels” depending on how information is transmitted.
 \begin{enumerate}
@@ -34,18 +34,18 @@ ERTMS is built around ETCS, which operates in multiple “levels” depending on
   \item \textbf{Level 3:} Removes track-based train detection and relies on train integrity confirmation, reducing infrastructure needs.
 \end{enumerate}
  
-Norway's national program adopts ERTMS Level 2 across the entire network, using axle counters as train detection and preparing for future migration to Level 3. The system architecture in the Bane NOR program material shows a fully digital backbone connecting interlockings, RBCs, the Traffic Management System (TMS), and onboard ETCS equipment. \cite{holter2025ertmsprogramme}
+Norway's national program adopts ERTMS Level 2 across the entire network, using axle counters as train detection and preparing for future migration to Level 3. The system architecture in the Bane NOR program material shows a fully digital backbone connecting interlockings, RBCs, the Traffic Management System (TMS), and onboard ETCS equipment \cite{holter2025ertmsprogramme}.
 
 
 \subsection{ETCS}
 The European Train Control System (ETCS) is a signalling and train protection element developed and included in the ERTMS initiative. ETCS provides movement authorities and intermittently or continuously supervises train speed and braking to ensure safe train separation. It replaces or complements national trackside signals by delivering standardized information to onboard equipment, enabling safer and more interoperable cross-border operation \cite{era_ertms,eu_etcs_levels}.
 
 \subsubsection{Levels} 
-ETCS is commonly described with levels that express how information is exchanged:
+ETCS is commonly described with levels that express how information is exchanged \cite{eu_etcs_levels}:
 \import{./Tables/}{ETCSItems}
 
 \subsubsection{Modes}
-ETCS defines different operational modes such as Full Supervision, On-Sight, Staff Responsible, Shunting, and Automatic Driving. Modes determine how the onboard equipment supervises movement authority and interacts with ATO where present. Automatic Driving mode is used when conditions for ATO are satisfied and ETCS provides the required movement and track data while Full Supervision is when ETCS is supplied with all possible train and track data needed \cite{eu_etcs_levels}.
+ETCS defines different operational modes such as Full Supervision, On-Sight, Staff Responsible, Shunting, and Automatic Driving. Modes determine how the onboard equipment supervises movement authority and interacts with ATO where present. Automatic Driving mode is used when conditions for ATO are satisfied and ETCS provides the required movement and track data while Full Supervision is when ETCS is supplied with all possible train and track data needed are onboard \cite{eu_etcs_levels}.
 
 
 \subsection{Cellular communications}
@@ -53,25 +53,25 @@ A very import part of latency for operating a train remotely will be cellular co
 
 \subsubsection{5G URLLC}
 %BONUS Source: Toward ultra reliable low-latency communications: Typical scenarios, possible solutions, and open issues
-5G is built up by OFDM, Orthogonal Frequency Division Multiplexing which divides "Spectrum" into small subcarriers. 5G is designed to support three different service categories, one of which is Ultra-Reliable and Low-Latency Communications (URLLC). URLLC is a communication service characterized by the need to successfully deliver packets with strict requirements in terms of availability, latency, and reliability. This capability is essential for providing connectivity to new services and applications from vertical domains, such as autonomous driving and factory automation. \cite{akhila20235g, li20185g}
+5G is built up by OFDM, Orthogonal Frequency Division Multiplexing which divides "Spectrum" into small subcarriers. 5G is designed to support three different service categories, one of which is Ultra-Reliable and Low-Latency Communications (URLLC). URLLC is a communication service characterized by the need to successfully deliver packets with strict requirements in terms of availability, latency, and reliability. This capability is essential for providing connectivity to new services and applications from vertical domains, such as autonomous driving and factory automation \cite{akhila20235g, li20185g}. 
 
-URLLC could be crucial for supporting emerging applications like wireless control and automation in industrial factory environments. For the specific use case of Remote Control, the required key performance indicators are an end-to-end latency of 5 ms and a reliability of 99.999\%. Remote control applications often involve closed-loop control applications, like the use of collaborative robots in a factory, which require URLLC services. \cite{akhila20235g, li20185g}
+URLLC could be crucial for supporting emerging applications like wireless control and automation in industrial factory environments. For the specific use case of remote control, the required key performance indicators are an end to end latency of 5 ms and a reliability of 99.999\%. Remote control applications often involve closed-loop control applications, like the use of collaborative robots in a factory, which require URLLC services \cite{akhila20235g, li20185g}.
 
 \subsubsection{GSM-R}
-The Global System for Mobile Communications - Railway (GSM-R) serves as the unified radio communication platform for ERTMS, designed to take over from incompatible legacy analog systems with a standardized digital solution. Its operation is crucial for the railway system as it functions as the essential data carrier for ETCS, facilitating the continuous and real-time supervision of the train movement. \cite{sniady2012gsmr, he2016gsmr}
+The Global System for Mobile Communications - Railway (GSM-R) serves as the unified radio communication platform for ERTMS, designed to take over from incompatible legacy analog systems with a standardized digital solution. Its operation is crucial for the railway system as it functions as the essential data carrier for ETCS, facilitating the continuous and real-time supervision of the train movement \cite{sniady2012gsmr, he2016gsmr}.
 
 GSM-R is built upon the commercial GSM standard, the system operates within a dedicated harmonized frequency band, with 876-880 MHz uplink and 921-925 MHz downlink, and utilizes a linear network of base stations to ensure continuous connectivity for trains travelling at speeds up to 500 km/h. 
-GSM-R employs Time Division Multiple Access (TDMA) to organize radio resources and primarily relies on circuit-switched connections to guarantee dedicated bandwidth for critical transmissions. \cite{sniady2012gsmr, he2016gsmr}
+GSM-R employs Time Division Multiple Access (TDMA) to organize radio resources and primarily relies on circuit-switched connections to guarantee dedicated bandwidth for critical transmissions \cite{sniady2012gsmr, he2016gsmr}. 
 
 \subsubsection{FRMCS}
-FRMCS or Future Railway Mobile Communication System is product of International Union of Railways (UIC) to find a successor for GSM-R as it was getting older. FRMCS is built upon 3GPP standards with 5G URLLC and other more modern technology. FRMCS is set to replace GSM-R as the unified radio communication for ERTMS and will be a huge part of the future of railway technology.\cite{uic_frmcs, mandoc2019erauicfrmcs}
+FRMCS or Future Railway Mobile Communication System is a product of International Union of Railways (UIC) to find a successor for GSM-R as it was getting older. FRMCS is built upon 3GPP standards with 5G URLLC and other more modern technology. FRMCS is set to replace GSM-R as the unified radio communication for ERTMS and will be a huge part of the future of railway technology \cite{uic_frmcs, mandoc2019erauicfrmcs}.
 
-\textit{3GPP Rel-16} define video quality for railway operations. And is already used for setup of remote control by CAF. Mejias mention that the minimum requirements mentioned int the report is of H.264 codec, 320x240 resolution at 10 fps, but a recommended 1920x1080 at 30 FPS \cite{mejias2024}. This will evolve as we get closer to acquiring FRMCS in the system used today.
+\textit{3GPP Rel-16} define video quality for railway operations. And is already used for setup of remote control by CAF. Mejias mention that the minimum requirements mentioned in the report is of H.264 codec, 320x240 resolution at 10 fps, but a recommended 1920x1080 at 30 FPS \cite{mejias2024}. This will evolve as we get closer to acquiring FRMCS in the system used today.
 
 \subsubsection{Wi-Fi}
-Wi-Fi is a wireless communication technology following the standards of IEEE 802.11 that enables data transmission across networks. It operates across specific frequency bands such as 2.4 GHz and 5 GHz and the technology has evolved to support high speed data transfer and robust connectivity through advanced methods like beamforming, which strengthens wireless connections by targeting specific devices rather than broadcasting signals. \cite{amador2022wifi, pandey2022wifi}
+Wi-Fi is a wireless communication technology following the standards of IEEE 802.11 that enables data transmission across networks. It operates across specific frequency bands such as 2.4 GHz and 5 GHz and the technology has evolved to support high speed data transfer and robust connectivity through advanced methods like beamforming, which strengthens wireless connections by targeting specific devices rather than broadcasting signals \cite{amador2022wifi, pandey2022wifi}.
 
-In the domain of vehicular control, Wi-Fi functions by establishing Local Area Networks (LAN) that allow for the secure transmission of real-time control commands and audiovisual feeds, demonstrating in some specific single-access point configurations a lower median latency compared to LTE and 5G cellular networks. Although primarily associated with general data networking, the principles of Wi-Fi signal extension are relevant to railway logistics with the concept of relay chains. Wireless networks can employ repeating nodes to extend the operational range of remote monitoring and control systems to trains far away from the operator. \cite{amador2022wifi, pandey2022wifi}
+In the domain of vehicular control, Wi-Fi functions by establishing Local Area Networks (LAN) that allow for the secure transmission of real-time control commands and audiovisual feeds, demonstrating in some specific single-access point configurations a lower median latency compared to LTE and 5G cellular networks. Although primarily associated with general data networking, the principles of Wi-Fi signal extension are relevant to railway logistics with the concept of relay chains. Wireless networks can employ repeating nodes to extend the operational range of remote monitoring and control systems to trains far away from the operator \cite{amador2022wifi, pandey2022wifi}.
 
 \subsection{ERTMS/ATO}
 Because of the international rollout of ERTMS, ATO will have to follow along. ERA has designed a solution to have an integrated ERTMS/ATO solution as you can see in Figure \ref{fig:ERTMS-ATO}. It showcase how ETCS can be independent, but for ATO to be operational it is crucial for ETCS to guarantee safety.
@@ -82,24 +82,24 @@ Because of the international rollout of ERTMS, ATO will have to follow along. ER
     \label{fig:ERTMS-ATO}
     \source{\cite{era_ertms}}
 \end{figure}
-Showcasing different ATO working together with different responsibility and how they communicate with each other \cite{era_ertms}.
+Figure \ref{fig:ERTMS-ATO} is showcasing different ATO working together with different responsibility and how they communicate with each other \cite{era_ertms}.
 
 \subsection{Latency}
 Latency is the time delay between when a command or data packet is sent and when it is received or acted upon. In railway automation, latency is critical for control loops, including brake initiation following an emergency command, and for ensuring the onboard ATO and remote systems remain synchronized. 
 
-The impact of latency, such as excessive one-way delay or variable delay can degrade braking calculations, delay alarm propagation, and reduce the margin available for safe intervention. For real-time safety commands systems are designed with strict latency and reliability budgets and use prioritized and redundant communication channels.
+The impact of latency, such as excessive one-way delay or variable delay can degrade braking calculations, slow down alarm propagation, and reduce the margin available for safe intervention. Real-time safety commands systems are designed with strict latency and reliability budgets and use prioritized and redundant communication channels.
 
 \subsubsection{Latency Measurements}
 There is many ways to measure and structure latency. Some of the most commonly referred to are:
 \import{./Tables/}{HowToMeasure}
 
 \begin{comment}
-Following the different structure of latency measurements, there is different protocols and methods to get these measurements. Many have been posted and created through Request for Comments (RFC) which is a series of publications from Internet Engineering Task Force (IETF) and other institutions working on standardization of the web. Many of these RFC's has been backed further by institutions as International Telecommunication Union (ITU) and Institute of Electrical and Electronics Engineers (IEEE). \cite{itu_g1051,techtarget_rfc_definition}.
+Following the different structure of latency measurements, there is different protocols and methods to get these measurements. Many have been posted and created through Request for Comments (RFC) which is a series of publications from Internet Engineering Task Force (IETF) and other institutions working on standardization of the web. Many of these RFC's has been backed further by institutions as International Telecommunication Union (ITU) and Institute of Electrical and Electronics Engineers (IEEE) \cite{itu_g1051,techtarget_rfc_definition}. 
 
 \textit{Table these protocols to match structure above}
-Internet Control Message Protocol (ICMP): With ICMP we can use two effective methods, Ping and Traceback. Both return the Round-Trip Time(RTT) latency but in different ways. Ping sends data packets to a specified destination, and report the time it takes before a the same data packets is received. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time. \cite{dns_latency_protocols}.
+Internet Control Message Protocol (ICMP): With ICMP we can use two effective methods, Ping and Traceback. Both return the Round-Trip Time(RTT) latency but in different ways. Ping sends data packets to a specified destination, and report the time it takes before a the same data packets is received. Traceback also sends data packets waiting for return, but tracks routes and notifies if certain routes use to long time \cite{dns_latency_protocols}.. 
 
-Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing.\cite{itu_g1051}.
+Two-Way Active Measurement Protocol (TWAMP) and One-Way Active Measurement Protocol (OWAMP): Protocols designed for measuring one-way and two-way latency, often used in network performance testing \cite{itu_g1051}.
 
 \end{comment}
 
@@ -142,4 +142,4 @@ Relevant information from table in 3GPP TS 22.289 about requirements for FRMCS c
 
 In the table we can see end to end latency being mentioned, and they have defined it as the same as G2G \cite{3gppts22289}, measured at the communication interface, from the moment it is transmitted by the source to the moment it is successfully received at the destination.
 
-The work of 3GPP, TS 22.289, is not yet considered in ERA's TSI CCS and therefore not completely applied. Yet it is still to be expected to be the regulations of future work and something to keep in mind under future development. \cite{era_tsi}
+The work of 3GPP, TS 22.289, is not yet considered in ERA's TSI CCS and therefore not completely applied. Yet it is still to be expected to be the regulations of future work and something to keep in mind under future development \cite{era_tsi}.
